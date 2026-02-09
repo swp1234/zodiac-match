@@ -1,0 +1,48 @@
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#0f0f23"/>
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#6c2e8a;stop-opacity:0.2" />
+    </linearGradient>
+    <radialGradient id="starGradient" cx="40%" cy="40%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a55ec7;stop-opacity:0.5" />
+    </radialGradient>
+  </defs>
+
+  <!-- Gradient overlay -->
+  <rect width="192" height="192" fill="url(#bgGradient)"/>
+
+  <!-- Left zodiac symbol (Aries) -->
+  <g transform="translate(48, 96)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#a55ec7" stroke-width="2"/>
+    <path d="M0 -20 L12 5 L-5 0 Z M12 5 L20 20 L5 10 Z" fill="#a55ec7"/>
+  </g>
+
+  <!-- Heart in center -->
+  <g transform="translate(96, 96)">
+    <!-- Heart shape -->
+    <path d="M 0,-5 C -8,-13 -20,-13 -20,-3 C -20,5 -10,13 0,20 C 10,13 20,5 20,-3 C 20,-13 8,-13 0,-5"
+          fill="#ff8fab" stroke="#ff4757" stroke-width="1.5"/>
+  </g>
+
+  <!-- Right zodiac symbol (Pisces) -->
+  <g transform="translate(144, 96)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#a55ec7" stroke-width="2"/>
+    <path d="M-15 0 Q -5 -10 5 -10 Q 15 -10 20 0 M-15 0 Q -5 10 5 10 Q 15 10 20 0 M5 -10 L 5 10"
+          stroke="#a55ec7" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stars decoration -->
+  <circle cx="50" cy="40" r="2" fill="url(#starGradient)" opacity="0.8"/>
+  <circle cx="140" cy="45" r="1.5" fill="url(#starGradient)" opacity="0.7"/>
+  <circle cx="55" cy="155" r="1.5" fill="url(#starGradient)" opacity="0.7"/>
+  <circle cx="135" cy="160" r="2" fill="url(#starGradient)" opacity="0.8"/>
+
+  <!-- Border -->
+  <rect x="0" y="0" width="192" height="192" fill="none" stroke="#8e44ad" stroke-width="2" rx="10"/>
+</svg>

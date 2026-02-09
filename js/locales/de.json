@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "Sternzeichen-Kompatibilitätstest",
+        "subtitle": "Entdecken Sie Ihre Kompatibilität mit jemandem Besonderem"
+    },
+    "selector": {
+        "myZodiac": "Mein Sternzeichen",
+        "theirZodiac": "Sein/Ihr Sternzeichen",
+        "check": "Kompatibilität prüfen"
+    },
+    "zodiac": {
+        "aries": "Widder",
+        "taurus": "Stier",
+        "gemini": "Zwillinge",
+        "cancer": "Krebs",
+        "leo": "Löwe",
+        "virgo": "Jungfrau",
+        "libra": "Waage",
+        "scorpio": "Skorpion",
+        "sagittarius": "Schütze",
+        "capricorn": "Steinbock",
+        "aquarius": "Wassermann",
+        "pisces": "Fische"
+    },
+    "results": {
+        "overallScore": "Gesamtpunktzahl",
+        "romantic": "Romantisch",
+        "friendship": "Freundschaft",
+        "work": "Arbeit",
+        "elementCompat": "Elementkompatibilität",
+        "analysis": "Detaillierte Analyse",
+        "strengths": "Stärken",
+        "cautions": "Vorsichtsmaßnahmen",
+        "advice": "Ratschlag",
+        "deepAnalysis": "KI-Tiefenanalyse anzeigen",
+        "shareCard": "Karte teilen",
+        "backToTest": "Erneut testen",
+        "relationshipDynamics": "Beziehungsdynamik",
+        "communicationStyle": "Kommunikationsstil",
+        "emotionalMatch": "Emotionale Übereinstimmung",
+        "growthPotential": "Wachstumspotential",
+        "close": "Schließen"
+    }
+}

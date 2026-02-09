@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "Burç Uyum Testi",
+        "subtitle": "Özel birinin ile uyumunuzu keşfedin"
+    },
+    "selector": {
+        "myZodiac": "Benim Burç",
+        "theirZodiac": "Onun/Onun Burcu",
+        "check": "Uyumu Kontrol Et"
+    },
+    "zodiac": {
+        "aries": "Koç",
+        "taurus": "Boğa",
+        "gemini": "İkizler",
+        "cancer": "Yengeç",
+        "leo": "Aslan",
+        "virgo": "Başak",
+        "libra": "Terazi",
+        "scorpio": "Akrep",
+        "sagittarius": "Yay",
+        "capricorn": "Oğlak",
+        "aquarius": "Kova",
+        "pisces": "Balık"
+    },
+    "results": {
+        "overallScore": "Genel Puan",
+        "romantic": "Romantik",
+        "friendship": "Arkadaşlık",
+        "work": "İş",
+        "elementCompat": "Element Uyumu",
+        "analysis": "Detaylı Analiz",
+        "strengths": "Güçlü Yönler",
+        "cautions": "Dikkat Edilmesi Gerekenler",
+        "advice": "Tavsiye",
+        "deepAnalysis": "AI Derin Analizi Gör",
+        "shareCard": "Kartı Paylaş",
+        "backToTest": "Yeniden Test Et",
+        "relationshipDynamics": "İlişki Dinamikleri",
+        "communicationStyle": "İletişim Tarzı",
+        "emotionalMatch": "Duygusal Uyum",
+        "growthPotential": "Gelişim Potansiyeli",
+        "close": "Kapat"
+    }
+}

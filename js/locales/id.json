@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "Tes Kompatibilitas Zodiak",
+        "subtitle": "Temukan kompatibilitas Anda dengan seseorang yang istimewa"
+    },
+    "selector": {
+        "myZodiac": "Zodiak Saya",
+        "theirZodiac": "Zodiak Mereka",
+        "check": "Periksa Kompatibilitas"
+    },
+    "zodiac": {
+        "aries": "Aries",
+        "taurus": "Taurus",
+        "gemini": "Gemini",
+        "cancer": "Cancer",
+        "leo": "Leo",
+        "virgo": "Virgo",
+        "libra": "Libra",
+        "scorpio": "Scorpio",
+        "sagittarius": "Sagittarius",
+        "capricorn": "Capricorn",
+        "aquarius": "Aquarius",
+        "pisces": "Pisces"
+    },
+    "results": {
+        "overallScore": "Skor Keseluruhan",
+        "romantic": "Romantis",
+        "friendship": "Persahabatan",
+        "work": "Pekerjaan",
+        "elementCompat": "Kompatibilitas Elemen",
+        "analysis": "Analisis Terperinci",
+        "strengths": "Kekuatan",
+        "cautions": "Peringatan",
+        "advice": "Saran",
+        "deepAnalysis": "Lihat Analisis Mendalam AI",
+        "shareCard": "Bagikan Kartu",
+        "backToTest": "Tes Lagi",
+        "relationshipDynamics": "Dinamika Hubungan",
+        "communicationStyle": "Gaya Komunikasi",
+        "emotionalMatch": "Keselarasan Emosional",
+        "growthPotential": "Potensi Pertumbuhan",
+        "close": "Tutup"
+    }
+}

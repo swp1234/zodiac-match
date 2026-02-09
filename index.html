@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="별자리 궁합 테스트 - 나와 상대방의 궁합을 알아보세요. 연애, 우정, 직장 궁합 분석">
+    <meta name="theme-color" content="#0f0f23">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="별자리 궁합 테스트">
+    <meta property="og:description" content="나와 상대방의 별자리 궁합을 알아보세요. 연애, 우정, 직장 궁합까지!">
+    <meta property="og:image" content="icon-512.svg">
+    <meta property="og:url" content="https://dopabrain.com/zodiac-match/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="별자리 궁합 테스트">
+    <meta name="twitter:description" content="나와 상대방의 별자리 궁합을 알아보세요">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Zodiac Match Test",
+        "description": "Find your zodiac compatibility with loved ones",
+        "url": "https://dopabrain.com/zodiac-match/",
+        "applicationCategory": "GameApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0"
+        }
+    }
+    </script>
+
+    <title data-i18n="app.title">별자리 궁합 테스트</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J8GSWM40TV');
+    </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
+
+    <!-- StarField Background -->
+    <div id="starfield"></div>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 data-i18n="app.title">별자리 궁합 테스트</h1>
+                <p class="subtitle" data-i18n="app.subtitle">나와 상대방의 궁합을 알아보세요</p>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="lang-btn" title="Language">🌐</button>
+                <div id="lang-menu" class="lang-menu hidden">
+                    <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+                    <button class="lang-option" data-lang="en">🇺🇸 English</button>
+                    <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+                    <button class="lang-option" data-lang="zh">🇨🇳 中文</button>
+                    <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+                    <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+                    <button class="lang-option" data-lang="id">🇮🇩 Bahasa</button>
+                    <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
+                    <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+                    <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+                    <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
+                    <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Top Ad Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="1234567890" data-ad-format="horizontal"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- App Content -->
+        <main class="app-content">
+            <!-- Screen: Selector -->
+            <div id="selector-screen" class="screen active">
+                <div class="selector-container">
+                    <h2 data-i18n="selector.myZodiac">내 별자리</h2>
+
+                    <!-- My Zodiac Selection -->
+                    <div class="zodiac-grid">
+                        <div class="zodiac-items">
+                            <button class="zodiac-btn" data-zodiac="aries" data-i18n="zodiac.aries">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M60 30 L70 50 L55 45 Z M70 50 L80 70 L60 60 Z" fill="currentColor"/>
+                                </svg>
+                                <span data-i18n="zodiac.aries">양자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="taurus" data-i18n="zodiac.taurus">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M40 50 Q40 30 60 30 Q80 30 80 50 M50 65 L50 85 M70 65 L70 85" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.taurus">황소자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="gemini" data-i18n="zodiac.gemini">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M45 40 L45 80 M75 40 L75 80 M45 60 L75 60" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.gemini">쌍둥이자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="cancer" data-i18n="zodiac.cancer">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M45 50 Q45 30 60 30 Q75 30 75 50 Q75 70 60 75 Q45 70 45 50" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span data-i18n="zodiac.cancer">게자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="leo" data-i18n="zodiac.leo">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="60" cy="60" r="20" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="85" cy="45" r="5" fill="currentColor"/>
+                                </svg>
+                                <span data-i18n="zodiac.leo">사자자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="virgo" data-i18n="zodiac.virgo">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M50 40 Q50 50 60 55 Q70 50 70 40 M60 55 L60 80" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.virgo">처녀자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="libra" data-i18n="zodiac.libra">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="40" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="50" cy="65" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="70" cy="65" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span data-i18n="zodiac.libra">천칭자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="scorpio" data-i18n="zodiac.scorpio">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M50 40 L50 70 L60 75 L70 70 L70 40 M65 70 L75 85" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.scorpio">전갈자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="sagittarius" data-i18n="zodiac.sagittarius">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M40 70 L80 40 M75 40 L80 40 L80 45" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.sagittarius">궁수자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="capricorn" data-i18n="zodiac.capricorn">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M50 35 L50 60 L70 60 L70 35 Q70 50 60 80" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.capricorn">염소자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="aquarius" data-i18n="zodiac.aquarius">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M45 50 L45 70 M55 50 L55 70 M65 50 L65 70 M75 50 L75 70" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span data-i18n="zodiac.aquarius">물병자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="pisces" data-i18n="zodiac.pisces">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M40 60 Q50 50 60 50 Q70 50 80 60 M40 60 Q50 70 60 70 Q70 70 80 60 M60 50 L60 70" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.pisces">물고기자리</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h2 data-i18n="selector.theirZodiac">상대방 별자리</h2>
+
+                    <!-- Their Zodiac Selection -->
+                    <div class="zodiac-grid">
+                        <div class="zodiac-items">
+                            <button class="zodiac-btn" data-zodiac="aries" data-i18n="zodiac.aries">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M60 30 L70 50 L55 45 Z M70 50 L80 70 L60 60 Z" fill="currentColor"/>
+                                </svg>
+                                <span data-i18n="zodiac.aries">양자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="taurus" data-i18n="zodiac.taurus">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M40 50 Q40 30 60 30 Q80 30 80 50 M50 65 L50 85 M70 65 L70 85" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.taurus">황소자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="gemini" data-i18n="zodiac.gemini">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M45 40 L45 80 M75 40 L75 80 M45 60 L75 60" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.gemini">쌍둥이자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="cancer" data-i18n="zodiac.cancer">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M45 50 Q45 30 60 30 Q75 30 75 50 Q75 70 60 75 Q45 70 45 50" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span data-i18n="zodiac.cancer">게자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="leo" data-i18n="zodiac.leo">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="60" cy="60" r="20" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="85" cy="45" r="5" fill="currentColor"/>
+                                </svg>
+                                <span data-i18n="zodiac.leo">사자자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="virgo" data-i18n="zodiac.virgo">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M50 40 Q50 50 60 55 Q70 50 70 40 M60 55 L60 80" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.virgo">처녀자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="libra" data-i18n="zodiac.libra">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="40" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="50" cy="65" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="70" cy="65" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span data-i18n="zodiac.libra">천칭자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="scorpio" data-i18n="zodiac.scorpio">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M50 40 L50 70 L60 75 L70 70 L70 40 M65 70 L75 85" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.scorpio">전갈자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="sagittarius" data-i18n="zodiac.sagittarius">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M40 70 L80 40 M75 40 L80 40 L80 45" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.sagittarius">궁수자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="capricorn" data-i18n="zodiac.capricorn">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M50 35 L50 60 L70 60 L70 35 Q70 50 60 80" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.capricorn">염소자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="aquarius" data-i18n="zodiac.aquarius">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M45 50 L45 70 M55 50 L55 70 M65 50 L65 70 M75 50 L75 70" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span data-i18n="zodiac.aquarius">물병자리</span>
+                            </button>
+                            <button class="zodiac-btn" data-zodiac="pisces" data-i18n="zodiac.pisces">
+                                <svg viewBox="0 0 120 120" class="zodiac-icon">
+                                    <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M40 60 Q50 50 60 50 Q70 50 80 60 M40 60 Q50 70 60 70 Q70 70 80 60 M60 50 L60 70" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                                <span data-i18n="zodiac.pisces">물고기자리</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Check Compatibility Button -->
+                    <button id="check-btn" class="primary-btn" data-i18n="selector.check">궁합 확인</button>
+                </div>
+            </div>
+
+            <!-- Screen: Results -->
+            <div id="results-screen" class="screen">
+                <div class="results-container">
+                    <!-- Zodiac Pair Display -->
+                    <div class="zodiac-pair">
+                        <div class="zodiac-display">
+                            <svg viewBox="0 0 120 120" class="zodiac-icon-lg" id="my-zodiac-display">
+                                <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <p id="my-zodiac-name"></p>
+                        </div>
+                        <div class="heart-symbol">💜</div>
+                        <div class="zodiac-display">
+                            <svg viewBox="0 0 120 120" class="zodiac-icon-lg" id="their-zodiac-display">
+                                <circle cx="60" cy="60" r="55" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <p id="their-zodiac-name"></p>
+                        </div>
+                    </div>
+
+                    <!-- Overall Compatibility Score -->
+                    <div class="score-card overall">
+                        <h3 data-i18n="results.overallScore">전체 궁합</h3>
+                        <div class="heart-gauge">
+                            <div class="heart-fill" id="overall-gauge"></div>
+                            <span class="score-text" id="overall-score">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Compatibility Types -->
+                    <div class="compatibility-types">
+                        <div class="type-card">
+                            <h4 data-i18n="results.romantic">연애 궁합</h4>
+                            <div class="mini-gauge">
+                                <div class="gauge-fill" id="romantic-gauge"></div>
+                            </div>
+                            <span class="score-value" id="romantic-score">0%</span>
+                        </div>
+                        <div class="type-card">
+                            <h4 data-i18n="results.friendship">우정 궁합</h4>
+                            <div class="mini-gauge">
+                                <div class="gauge-fill" id="friendship-gauge"></div>
+                            </div>
+                            <span class="score-value" id="friendship-score">0%</span>
+                        </div>
+                        <div class="type-card">
+                            <h4 data-i18n="results.work">직장 궁합</h4>
+                            <div class="mini-gauge">
+                                <div class="gauge-fill" id="work-gauge"></div>
+                            </div>
+                            <span class="score-value" id="work-score">0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Element Compatibility -->
+                    <div class="element-card">
+                        <h4 data-i18n="results.elementCompat">엘리먼트 궁합</h4>
+                        <p id="element-text"></p>
+                    </div>
+
+                    <!-- Detailed Analysis -->
+                    <div class="analysis-card">
+                        <h4 data-i18n="results.analysis">상세 분석</h4>
+
+                        <div class="analysis-section">
+                            <h5 data-i18n="results.strengths">장점</h5>
+                            <p id="strengths-text"></p>
+                        </div>
+
+                        <div class="analysis-section">
+                            <h5 data-i18n="results.cautions">주의점</h5>
+                            <p id="cautions-text"></p>
+                        </div>
+
+                        <div class="analysis-section">
+                            <h5 data-i18n="results.advice">조언</h5>
+                            <p id="advice-text"></p>
+                        </div>
+                    </div>
+
+                    <!-- Premium Analysis Button -->
+                    <button id="premium-btn" class="premium-btn" data-i18n="results.deepAnalysis">AI 심층 분석 보기</button>
+
+                    <!-- Share Button -->
+                    <button id="share-btn" class="share-btn" data-i18n="results.shareCard">카드 공유</button>
+
+                    <!-- Back Button -->
+                    <button id="back-btn" class="secondary-btn" data-i18n="results.backToTest">다시 테스트</button>
+                </div>
+            </div>
+
+            <!-- Screen: Premium Analysis -->
+            <div id="premium-screen" class="screen">
+                <div class="premium-container">
+                    <button id="close-premium" class="close-btn">&times;</button>
+                    <h2 data-i18n="results.deepAnalysis">AI 심층 궁합 분석</h2>
+
+                    <div class="premium-content">
+                        <div class="premium-section">
+                            <h4 data-i18n="results.relationshipDynamics">관계 역학</h4>
+                            <p id="premium-dynamics"></p>
+                        </div>
+
+                        <div class="premium-section">
+                            <h4 data-i18n="results.communicationStyle">의사소통 방식</h4>
+                            <p id="premium-communication"></p>
+                        </div>
+
+                        <div class="premium-section">
+                            <h4 data-i18n="results.emotionalMatch">감정적 궁합</h4>
+                            <p id="premium-emotional"></p>
+                        </div>
+
+                        <div class="premium-section">
+                            <h4 data-i18n="results.growthPotential">성장 가능성</h4>
+                            <p id="premium-growth"></p>
+                        </div>
+                    </div>
+
+                    <button id="close-premium-btn" class="secondary-btn" data-i18n="results.close">닫기</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Ad Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="9876543210" data-ad-format="horizontal"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Canvas for image generation (hidden) -->
+    <canvas id="share-canvas" style="display:none;"></canvas>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration failed:', err));
+        }
+    </script>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/zodiac-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "별자리 궁합 테스트",
+        "subtitle": "나와 상대방의 궁합을 알아보세요"
+    },
+    "selector": {
+        "myZodiac": "내 별자리",
+        "theirZodiac": "상대방 별자리",
+        "check": "궁합 확인"
+    },
+    "zodiac": {
+        "aries": "양자리",
+        "taurus": "황소자리",
+        "gemini": "쌍둥이자리",
+        "cancer": "게자리",
+        "leo": "사자자리",
+        "virgo": "처녀자리",
+        "libra": "천칭자리",
+        "scorpio": "전갈자리",
+        "sagittarius": "궁수자리",
+        "capricorn": "염소자리",
+        "aquarius": "물병자리",
+        "pisces": "물고기자리"
+    },
+    "results": {
+        "overallScore": "전체 궁합",
+        "romantic": "연애 궁합",
+        "friendship": "우정 궁합",
+        "work": "직장 궁합",
+        "elementCompat": "엘리먼트 궁합",
+        "analysis": "상세 분석",
+        "strengths": "장점",
+        "cautions": "주의점",
+        "advice": "조언",
+        "deepAnalysis": "AI 심층 분석 보기",
+        "shareCard": "카드 공유",
+        "backToTest": "다시 테스트",
+        "relationshipDynamics": "관계 역학",
+        "communicationStyle": "의사소통 방식",
+        "emotionalMatch": "감정적 궁합",
+        "growthPotential": "성장 가능성",
+        "close": "닫기"
+    }
+}

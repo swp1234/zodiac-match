@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "Prueba de Compatibilidad de Signos",
+        "subtitle": "Descubre tu compatibilidad con alguien especial"
+    },
+    "selector": {
+        "myZodiac": "Mi Signo",
+        "theirZodiac": "Su Signo",
+        "check": "Ver Compatibilidad"
+    },
+    "zodiac": {
+        "aries": "Aries",
+        "taurus": "Tauro",
+        "gemini": "Géminis",
+        "cancer": "Cáncer",
+        "leo": "Leo",
+        "virgo": "Virgo",
+        "libra": "Libra",
+        "scorpio": "Escorpio",
+        "sagittarius": "Sagitario",
+        "capricorn": "Capricornio",
+        "aquarius": "Acuario",
+        "pisces": "Piscis"
+    },
+    "results": {
+        "overallScore": "Puntuación General",
+        "romantic": "Romántica",
+        "friendship": "Amistad",
+        "work": "Trabajo",
+        "elementCompat": "Compatibilidad de Elementos",
+        "analysis": "Análisis Detallado",
+        "strengths": "Fortalezas",
+        "cautions": "Precauciones",
+        "advice": "Consejo",
+        "deepAnalysis": "Ver Análisis Profundo de IA",
+        "shareCard": "Compartir Tarjeta",
+        "backToTest": "Probar de Nuevo",
+        "relationshipDynamics": "Dinámicas de Relación",
+        "communicationStyle": "Estilo de Comunicación",
+        "emotionalMatch": "Compatibilidad Emocional",
+        "growthPotential": "Potencial de Crecimiento",
+        "close": "Cerrar"
+    }
+}

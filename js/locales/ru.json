@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "Тест совместимости знаков зодиака",
+        "subtitle": "Откройте для себя вашу совместимость с кем-то особенным"
+    },
+    "selector": {
+        "myZodiac": "Мой знак",
+        "theirZodiac": "Его/Её знак",
+        "check": "Проверить совместимость"
+    },
+    "zodiac": {
+        "aries": "Овен",
+        "taurus": "Телец",
+        "gemini": "Близнецы",
+        "cancer": "Рак",
+        "leo": "Лев",
+        "virgo": "Дева",
+        "libra": "Весы",
+        "scorpio": "Скорпион",
+        "sagittarius": "Стрелец",
+        "capricorn": "Козерог",
+        "aquarius": "Водолей",
+        "pisces": "Рыбы"
+    },
+    "results": {
+        "overallScore": "Общий рейтинг",
+        "romantic": "Романтическая",
+        "friendship": "Дружба",
+        "work": "Работа",
+        "elementCompat": "Совместимость элементов",
+        "analysis": "Подробный анализ",
+        "strengths": "Сильные стороны",
+        "cautions": "Осторожность",
+        "advice": "Совет",
+        "deepAnalysis": "Посмотреть глубокий анализ ИИ",
+        "shareCard": "Поделиться карточкой",
+        "backToTest": "Пройти тест снова",
+        "relationshipDynamics": "Динамика отношений",
+        "communicationStyle": "Стиль общения",
+        "emotionalMatch": "Эмоциональная совместимость",
+        "growthPotential": "Потенциал роста",
+        "close": "Закрыть"
+    }
+}

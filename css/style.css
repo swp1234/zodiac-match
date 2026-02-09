@@ -1,0 +1,774 @@
+/* Zodiac Match - Global Styles */
+
+:root {
+    --primary: #8e44ad;
+    --primary-light: #a55ec7;
+    --primary-dark: #6c2e8a;
+    --bg-dark: #0f0f23;
+    --bg-darker: #0a0a16;
+    --surface: #1a1a2e;
+    --surface-light: #242442;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --heart-red: #ff4757;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --border: #2d2d4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Starfield Background */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%, rgba(142, 68, 173, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(142, 68, 173, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+    animation: starTwinkle 8s ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* App Container */
+.app-container {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-dark);
+}
+
+/* Header */
+.app-header {
+    background: linear-gradient(135deg, rgba(142, 68, 173, 0.2), rgba(142, 68, 173, 0.05));
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a55ec7, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-content .subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.header-controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lang-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--surface-light);
+    border-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.lang-btn:active {
+    transform: scale(0.95);
+}
+
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    min-width: 150px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
+}
+
+.lang-menu.hidden {
+    display: none;
+}
+
+.lang-option {
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.lang-option:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.lang-option:active {
+    transform: scale(0.95);
+}
+
+/* Ad Containers */
+.ad-container {
+    padding: 1rem;
+    background: rgba(142, 68, 173, 0.05);
+    border-bottom: 1px solid var(--border);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-container ins {
+    display: block !important;
+}
+
+/* Content Area */
+.app-content {
+    flex: 1;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Screens */
+.screen {
+    display: none;
+    animation: slideIn 0.3s ease;
+}
+
+.screen.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Selector Screen */
+.selector-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.selector-container h2 {
+    font-size: 1.3rem;
+    color: var(--primary-light);
+    margin-top: 1rem;
+}
+
+.zodiac-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.zodiac-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.zodiac-btn {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.zodiac-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.zodiac-btn:hover {
+    border-color: var(--primary);
+    background: var(--surface-light);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(142, 68, 173, 0.2);
+}
+
+.zodiac-btn:hover::before {
+    opacity: 1;
+}
+
+.zodiac-btn.selected {
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(142, 68, 173, 0.4);
+}
+
+.zodiac-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--primary);
+}
+
+.zodiac-btn.selected .zodiac-icon {
+    color: var(--text-primary);
+}
+
+.zodiac-btn span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Buttons */
+.primary-btn, .secondary-btn, .premium-btn, .share-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(142, 68, 173, 0.3);
+}
+
+.primary-btn:active {
+    transform: translateY(0);
+}
+
+.primary-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.secondary-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    width: 100%;
+}
+
+.secondary-btn:hover {
+    background: var(--surface-light);
+    border-color: var(--primary);
+}
+
+.premium-btn {
+    background: linear-gradient(135deg, var(--warning), #ff7f5c);
+    color: white;
+    width: 100%;
+}
+
+.premium-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
+}
+
+.share-btn {
+    background: linear-gradient(135deg, var(--primary), #6c2e8a);
+    color: white;
+    width: 100%;
+}
+
+.share-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(142, 68, 173, 0.3);
+}
+
+/* Results Screen */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.zodiac-pair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(142, 68, 173, 0.05));
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.zodiac-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.zodiac-icon-lg {
+    width: 80px;
+    height: 80px;
+    color: var(--primary);
+}
+
+.zodiac-display p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.heart-symbol {
+    font-size: 2rem;
+    animation: heartBeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+}
+
+/* Score Card */
+.score-card {
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(142, 68, 173, 0.1));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.score-card h3 {
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.heart-gauge {
+    position: relative;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.heart-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--heart-red), #ff8fab);
+    border-radius: 30px;
+    transition: width 1s ease-out;
+    width: 0%;
+}
+
+.score-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Compatibility Types */
+.compatibility-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.type-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.type-card h4 {
+    font-size: 0.95rem;
+    color: var(--primary-light);
+    margin-bottom: 0.75rem;
+}
+
+.mini-gauge {
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.gauge-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    width: 0%;
+    transition: width 1s ease-out;
+    border-radius: 10px;
+}
+
+.score-value {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+/* Element Card */
+.element-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.element-card h4 {
+    color: var(--primary-light);
+    margin-bottom: 0.75rem;
+}
+
+.element-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Analysis Card */
+.analysis-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.analysis-card h4 {
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+.analysis-section {
+    margin-bottom: 1.5rem;
+}
+
+.analysis-section:last-child {
+    margin-bottom: 0;
+}
+
+.analysis-section h5 {
+    color: var(--primary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.analysis-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Premium Screen */
+.premium-container {
+    background: linear-gradient(135deg, rgba(142, 68, 173, 0.15), rgba(142, 68, 173, 0.05));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.premium-container h2 {
+    color: var(--primary-light);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.premium-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.premium-section {
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 3px solid var(--primary);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.premium-section h4 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.premium-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 1rem 0.75rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .header-content .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .zodiac-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .zodiac-btn {
+        padding: 0.75rem;
+        min-height: 110px;
+    }
+
+    .zodiac-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .compatibility-types {
+        grid-template-columns: 1fr;
+    }
+
+    .zodiac-pair {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .zodiac-icon-lg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .score-card h3 {
+        font-size: 1rem;
+    }
+
+    .primary-btn {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-content {
+        padding: 0.75rem;
+    }
+
+    .selector-container h2 {
+        font-size: 1.1rem;
+    }
+
+    .zodiac-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .zodiac-btn {
+        padding: 0.5rem;
+        min-height: 100px;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+
+    .zodiac-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .zodiac-btn span {
+        font-size: 0.75rem;
+    }
+
+    .heart-symbol {
+        font-size: 1.5rem;
+    }
+
+    .zodiac-pair {
+        padding: 1rem 0.75rem;
+        gap: 1rem;
+    }
+
+    .zodiac-icon-lg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .zodiac-display p {
+        font-size: 0.85rem;
+    }
+
+    .type-card h4 {
+        font-size: 0.85rem;
+    }
+
+    .score-text {
+        font-size: 1.4rem;
+    }
+
+    .premium-container {
+        padding: 1.5rem 1rem;
+        margin: 1rem auto;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark mode (already set as default) */
+@media (prefers-color-scheme: light) {
+    /* Light mode support if needed */
+    :root {
+        --bg-dark: #f8f9fa;
+        --bg-darker: #f0f2f5;
+        --surface: #ffffff;
+        --surface-light: #f8f9fa;
+        --text-primary: #1a1a1a;
+        --text-secondary: #666666;
+        --border: #e0e0e0;
+    }
+
+    .app-header {
+        background: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(142, 68, 173, 0.05));
+    }
+}

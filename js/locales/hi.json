@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "राशि संगति परीक्षण",
+        "subtitle": "किसी विशेष व्यक्ति के साथ अपनी संगति खोजें"
+    },
+    "selector": {
+        "myZodiac": "मेरी राशि",
+        "theirZodiac": "उनकी राशि",
+        "check": "संगति जांचें"
+    },
+    "zodiac": {
+        "aries": "मेष",
+        "taurus": "वृषभ",
+        "gemini": "मिथुन",
+        "cancer": "कर्क",
+        "leo": "सिंह",
+        "virgo": "कन्या",
+        "libra": "तुला",
+        "scorpio": "वृश्चिक",
+        "sagittarius": "धनु",
+        "capricorn": "मकर",
+        "aquarius": "कुंभ",
+        "pisces": "मीन"
+    },
+    "results": {
+        "overallScore": "कुल स्कोर",
+        "romantic": "रोमांटिक",
+        "friendship": "दोस्ती",
+        "work": "काम",
+        "elementCompat": "तत्व संगति",
+        "analysis": "विस्तृत विश्लेषण",
+        "strengths": "शक्तियां",
+        "cautions": "सावधानियां",
+        "advice": "सलाह",
+        "deepAnalysis": "AI गहरे विश्लेषण देखें",
+        "shareCard": "कार्ड साझा करें",
+        "backToTest": "फिर से परीक्षण करें",
+        "relationshipDynamics": "संबंध गतिशीलता",
+        "communicationStyle": "संचार शैली",
+        "emotionalMatch": "भावनात्मक संगति",
+        "growthPotential": "विकास की क्षमता",
+        "close": "बंद करें"
+    }
+}

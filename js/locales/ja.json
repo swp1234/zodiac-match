@@ -1,0 +1,44 @@
+{
+    "app": {
+        "title": "星座相性テスト",
+        "subtitle": "あなたと相手の相性を調べましょう"
+    },
+    "selector": {
+        "myZodiac": "私の星座",
+        "theirZodiac": "相手の星座",
+        "check": "相性を確認"
+    },
+    "zodiac": {
+        "aries": "牡羊座",
+        "taurus": "牡牛座",
+        "gemini": "双子座",
+        "cancer": "蟹座",
+        "leo": "獅子座",
+        "virgo": "乙女座",
+        "libra": "天秤座",
+        "scorpio": "蠍座",
+        "sagittarius": "射手座",
+        "capricorn": "山羊座",
+        "aquarius": "水瓶座",
+        "pisces": "魚座"
+    },
+    "results": {
+        "overallScore": "総合相性",
+        "romantic": "恋愛相性",
+        "friendship": "友情相性",
+        "work": "仕事相性",
+        "elementCompat": "エレメント相性",
+        "analysis": "詳細分析",
+        "strengths": "長所",
+        "cautions": "注意点",
+        "advice": "アドバイス",
+        "deepAnalysis": "AI深層分析を表示",
+        "shareCard": "カードを共有",
+        "backToTest": "もう一度テスト",
+        "relationshipDynamics": "関係のダイナミクス",
+        "communicationStyle": "コミュニケーションスタイル",
+        "emotionalMatch": "感情的相性",
+        "growthPotential": "成長の可能性",
+        "close": "閉じる"
+    }
+}
