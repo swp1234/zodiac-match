@@ -10,6 +10,14 @@ class ZodiacMatchApp {
 
     async init() {
         try {
+            // Initialize theme
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            const themeToggle = document.getElementById('theme-toggle');
+            if (themeToggle) {
+                themeToggle.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+            }
+
             if (window.i18n && typeof i18n.init === 'function') {
                 await i18n.init();
             }
@@ -30,6 +38,18 @@ class ZodiacMatchApp {
     }
 
     setupEventListeners() {
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme') || 'dark';
+                const next = current === 'light' ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                themeToggle.textContent = next === 'light' ? '🌙' : '☀️';
+            });
+        }
+
         // Language selector
         const langToggle = document.getElementById('lang-toggle');
         const langMenu = document.getElementById('lang-menu');

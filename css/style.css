@@ -99,6 +99,31 @@ body {
     gap: 0.5rem;
 }
 
+.theme-toggle {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--surface-light);
+    border-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
 .lang-btn {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -771,6 +796,33 @@ body {
     .app-header {
         background: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(142, 68, 173, 0.05));
     }
+}
+
+/* Light mode override via data-theme */
+[data-theme="light"] {
+    --bg-dark: #f5f5fa;
+    --bg-darker: #efeff5;
+    --surface: #ffffff;
+    --surface-light: #f9f9fa;
+    --text-primary: #1a1a2e;
+    --text-secondary: #5a5a70;
+    --border: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] body {
+    background-color: var(--bg-dark);
+}
+
+[data-theme="light"] .app-header {
+    background: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(142, 68, 173, 0.05));
+}
+
+[data-theme="light"] #starfield {
+    opacity: 0.3;
+}
+
+[data-theme="light"] .theme-toggle:hover {
+    background: rgba(142, 68, 173, 0.1);
 }
 
 /* App Loader */
