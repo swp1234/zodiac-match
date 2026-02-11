@@ -772,3 +772,50 @@ body {
         background: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(142, 68, 173, 0.05));
     }
 }
+
+/* App Loader */
+.app-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.app-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loader-content { text-align: center; }
+
+.loader-emoji {
+    font-size: 56px;
+    margin-bottom: 16px;
+    animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
+.loader-spinner {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 16px;
+    border: 3px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: loaderSpin 0.8s linear infinite;
+}
+
+@keyframes loaderSpin { to { transform: rotate(360deg); } }
+@keyframes loaderPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+.loader-text {
+    color: var(--text-secondary);
+    font-size: 14px;
+}

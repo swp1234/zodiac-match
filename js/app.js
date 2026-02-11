@@ -8,9 +8,25 @@ class ZodiacMatchApp {
         this.init();
     }
 
-    init() {
+    async init() {
+        try {
+            if (window.i18n && typeof i18n.init === 'function') {
+                await i18n.init();
+            }
+        } catch (e) {
+            console.warn('i18n init failed:', e);
+        }
         this.setupEventListeners();
         this.setupStarfield();
+        this.hideAppLoader();
+    }
+
+    hideAppLoader() {
+        const loader = document.getElementById('app-loader');
+        if (loader) {
+            loader.classList.add('hidden');
+            setTimeout(() => loader.remove(), 400);
+        }
     }
 
     setupEventListeners() {
