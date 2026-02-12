@@ -1,6 +1,6 @@
 // Service Worker for Zodiac Match App
 
-const CACHE_NAME = 'zodiac-match-v1';
+const CACHE_NAME = 'zodiac-match-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -54,43 +54,27 @@ self.addEventListener('activate', (event) => {
     self.clients.claim();
 });
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - network first, fallback to cache
 self.addEventListener('fetch', (event) => {
-    // Skip non-GET requests
-    if (event.request.method !== 'GET') {
-        return;
-    }
+    if (event.request.method !== 'GET') return;
 
-    // Skip external requests (analytics, ads, etc)
-    const url = new URL(event.request.url);
-    if (url.origin !== self.location.origin) {
-        return;
-    }
+    // Skip external requests (ads, analytics, etc.)
+    if (!event.request.url.startsWith(self.location.origin)) return;
 
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            if (response) {
-                return response;
-            }
-
-            return fetch(event.request).then((response) => {
-                // Don't cache non-successful responses
-                if (!response || response.status !== 200 || response.type === 'error') {
-                    return response;
+        fetch(event.request)
+            .then((response) => {
+                if (response && response.status === 200) {
+                    const responseToCache = response.clone();
+                    caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, responseToCache);
+                    });
                 }
-
-                // Clone the response
-                const responseToCache = response.clone();
-
-                caches.open(CACHE_NAME).then((cache) => {
-                    cache.put(event.request, responseToCache);
-                });
-
                 return response;
-            }).catch(() => {
-                // Return offline page or cached resource
-                return caches.match('./index.html');
-            });
-        })
+            })
+            .catch(() => {
+                return caches.match(event.request)
+                    .then((cached) => cached || caches.match('./index.html'));
+            })
     );
 });
