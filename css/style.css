@@ -360,6 +360,18 @@ body {
     cursor: not-allowed;
 }
 
+/* CTA pulse animation */
+@keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3); }
+    50% { box-shadow: 0 4px 30px rgba(155, 89, 182, 0.6), 0 0 60px rgba(155, 89, 182, 0.2); }
+}
+.primary-btn:not(:disabled) {
+    animation: ctaPulse 2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+    .primary-btn:not(:disabled) { animation: none !important; }
+}
+
 .secondary-btn {
     background: var(--surface);
     border: 1px solid var(--border);

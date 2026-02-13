@@ -78,8 +78,16 @@ class ZodiacMatchApp {
         const zodiacBtns = document.querySelectorAll('.zodiac-btn');
         let isMySideActive = true;
 
+        let engageFired = false;
         zodiacBtns.forEach((btn, index) => {
             btn.addEventListener('click', (e) => {
+                // GA4 engagement on first interaction
+                if (!engageFired) {
+                    engageFired = true;
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'engagement', { event_category: 'zodiac_match', event_label: 'first_interaction' });
+                    }
+                }
                 const zodiac = btn.getAttribute('data-zodiac');
 
                 if (index < 12) {
@@ -410,6 +418,20 @@ class ZodiacMatchApp {
         });
     }
 }
+
+// GA4 engagement tracking (scroll + timer)
+(function() {
+    let scrollFired = false;
+    window.addEventListener('scroll', function() {
+        if (!scrollFired && window.scrollY > 100) {
+            scrollFired = true;
+            if (typeof gtag === 'function') gtag('event', 'scroll_engagement', { engagement_type: 'scroll' });
+        }
+    }, { passive: true });
+    setTimeout(function() {
+        if (typeof gtag === 'function') gtag('event', 'timer_engagement', { engagement_time_msec: 5000 });
+    }, 5000);
+})();
 
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
