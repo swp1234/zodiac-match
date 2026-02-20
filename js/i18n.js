@@ -96,6 +96,15 @@ class I18n {
             const translation = this.t(key);
             element.title = translation;
         });
+
+        // Update document title and meta description
+        const titleKey = this.t('meta.title');
+        if (titleKey !== 'meta.title') document.title = titleKey;
+        const meta = document.querySelector('meta[name="description"]');
+        if (meta) {
+            const d = this.t('meta.description');
+            if (d !== 'meta.description') meta.content = d;
+        }
     }
 
     getCurrentLanguage() {
