@@ -44,5 +44,49 @@
         "emotionalMatch": "Emotional Match",
         "growthPotential": "Growth Potential",
         "close": "Close"
+    },
+    "element": {
+        "fire_fire": "Dynamic and passionate! Both signs bring intensity and enthusiasm to the relationship.",
+        "fire_earth": "Challenging but rewarding. Fire can learn stability, earth can learn spontaneity.",
+        "fire_air": "Excellent synergy! Air fuels fire, creating dynamic and exciting energy.",
+        "fire_water": "Complex dynamics. Fire evaporates water, but steam can be powerful together.",
+        "earth_earth": "Solid foundation! Both signs value stability, loyalty, and security.",
+        "earth_air": "Different rhythms. Earth is grounded, air is free-spirited.",
+        "earth_water": "Beautiful harmony! Earth nurtures water, creating growth and understanding.",
+        "air_air": "Intellectual connection! Both love communication and mental stimulation.",
+        "air_water": "Interesting contrast. Air is logical, water is emotional.",
+        "water_water": "Deeply intuitive! Both understand emotions and empathy naturally."
+    },
+    "analysis": {
+        "aries_leo": {
+            "strengths": "Both are passionate, ambitious fire signs that fuel each other's energy. You share a zest for life, adventure, and taking risks. Natural leaders, you support each other's goals with enthusiasm and loyalty.",
+            "cautions": "Both love being in the spotlight. Competition for attention or control could be an issue. Try to find ways to celebrate each other's wins.",
+            "advice": "Channel your combined fire energy into shared adventures. Be mindful of ego clashes and practice admiring each other genuinely."
+        },
+        "aries_sagittarius": {
+            "strengths": "Perfect match! Both fire signs crave adventure, freedom, and new experiences. You understand each other's need for independence and excitement naturally.",
+            "cautions": "Both can be impulsive and impatient. Recklessness could lead to problems if not checked.",
+            "advice": "Your shared enthusiasm is your superpower. Balance spontaneity with some planning to ensure success."
+        },
+        "taurus_capricorn": {
+            "strengths": "Both practical earth signs value hard work, loyalty, and building something lasting. You understand each other's need for security and material stability.",
+            "cautions": "Both can be stubborn and overly focused on work. Remember to enjoy life together.",
+            "advice": "Create goals together and build wealth as a team. Schedule time for romance despite busy schedules."
+        },
+        "gemini_libra": {
+            "strengths": "Fellow air signs who speak the same language! Excellent communication, shared intellectual interests, and natural harmony make this a delightful pairing.",
+            "cautions": "Both can be indecisive or overly analytical. Balance thinking with doing.",
+            "advice": "Use your communication skills to explore ideas together. Keep conversations flowing and decisions moving forward."
+        },
+        "cancer_scorpio": {
+            "strengths": "Deep water sign connection! Both understand emotional depths and intuition. Intense loyalty, natural empathy, and authentic understanding create powerful bonds.",
+            "cautions": "Both can be secretive or overly protective. Trust and open communication are essential.",
+            "advice": "Create safe emotional space for each other. Allow vulnerability without judgment."
+        },
+        "default": {
+            "strengths": "Every pairing has unique strengths waiting to be discovered. Focus on your shared values and what attracts you to each other.",
+            "cautions": "Different signs have different needs. Be patient in understanding each other's perspectives.",
+            "advice": "Celebrate your differences while building on common ground. Communication is key to any successful relationship."
+        }
     }
 }

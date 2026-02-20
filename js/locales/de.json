@@ -44,5 +44,49 @@
         "emotionalMatch": "Emotionale Übereinstimmung",
         "growthPotential": "Wachstumspotential",
         "close": "Schließen"
+    },
+    "element": {
+        "fire_fire": "Dynamisch und leidenschaftlich! Beide Zeichen bringen Intensität und Begeisterung in die Beziehung.",
+        "fire_earth": "Herausfordernd, aber lohnend. Feuer kann Stabilität lernen, Erde kann Spontanität lernen.",
+        "fire_air": "Ausgezeichnete Synergie! Luft facht Feuer an und erzeugt dynamische und aufregende Energie.",
+        "fire_water": "Komplexe Dynamik. Feuer verdampft Wasser, aber Dampf zusammen kann mächtig sein.",
+        "earth_earth": "Solide Grundlage! Beide Zeichen schätzen Stabilität, Treue und Sicherheit.",
+        "earth_air": "Unterschiedliche Rhythmen. Erde ist geerdet, Luft ist freigeistig.",
+        "earth_water": "Wunderschöne Harmonie! Erde nährt Wasser und schafft Wachstum und Verständnis.",
+        "air_air": "Intellektuelle Verbindung! Beide lieben Kommunikation und geistige Anregung.",
+        "air_water": "Interessanter Kontrast. Luft ist logisch, Wasser ist emotional.",
+        "water_water": "Tief intuitiv! Beide verstehen Emotionen und Empathie natürlich."
+    },
+    "analysis": {
+        "aries_leo": {
+            "strengths": "Beide sind leidenschaftliche, ehrgeizige Feuerzeichen, die sich gegenseitig Energie geben. Sie teilen eine Begeisterung für das Leben, Abenteuer und Risikobereitschaft. Als geborene Führer unterstützen Sie die Ziele des anderen mit Enthusiasmus und Loyalität.",
+            "cautions": "Beide stehen gerne im Rampenlicht. Wettbewerb um Aufmerksamkeit oder Kontrolle könnte ein Problem sein. Finden Sie Wege, die Erfolge des anderen zu feiern.",
+            "advice": "Lenken Sie Ihre gemeinsame Feuerenergie in geteilte Abenteuer. Achten Sie auf Ego-Konflikte und üben Sie aufrichtige gegenseitige Bewunderung."
+        },
+        "aries_sagittarius": {
+            "strengths": "Perfekte Kombination! Beide Feuerzeichen sehnen sich nach Abenteuer, Freiheit und neuen Erfahrungen. Sie verstehen das Bedürfnis des anderen nach Unabhängigkeit und Aufregung ganz natürlich.",
+            "cautions": "Beide können impulsiv und ungeduldig sein. Leichtsinn könnte zu Problemen führen, wenn er nicht kontrolliert wird.",
+            "advice": "Ihr gemeinsamer Enthusiasmus ist Ihre Superkraft. Balancieren Sie Spontanität mit etwas Planung für den Erfolg."
+        },
+        "taurus_capricorn": {
+            "strengths": "Beide praktischen Erdzeichen schätzen harte Arbeit, Treue und den Aufbau von etwas Dauerhaftem. Sie verstehen gegenseitig das Bedürfnis nach Sicherheit und materieller Stabilität.",
+            "cautions": "Beide können stur und zu arbeitsfokussiert sein. Denken Sie daran, das Leben zusammen zu genießen.",
+            "advice": "Setzen Sie gemeinsame Ziele und bauen Sie als Team Wohlstand auf. Planen Sie trotz voller Terminkalender Zeit für Romantik ein."
+        },
+        "gemini_libra": {
+            "strengths": "Luftzeichen, die dieselbe Sprache sprechen! Hervorragende Kommunikation, gemeinsame intellektuelle Interessen und natürliche Harmonie machen dies zu einer wunderbaren Kombination.",
+            "cautions": "Beide können unentschlossen oder zu analytisch sein. Finden Sie ein Gleichgewicht zwischen Denken und Handeln.",
+            "advice": "Nutzen Sie Ihre Kommunikationsfähigkeiten, um gemeinsam Ideen zu erkunden. Halten Sie Gespräche am Laufen und treiben Sie Entscheidungen voran."
+        },
+        "cancer_scorpio": {
+            "strengths": "Tiefe Verbindung der Wasserzeichen! Beide verstehen emotionale Tiefen und Intuition. Intensive Loyalität, natürliche Empathie und authentisches Verständnis schaffen starke Bindungen.",
+            "cautions": "Beide können geheimniskrämerisch oder überfürsorglich sein. Vertrauen und offene Kommunikation sind unerlässlich.",
+            "advice": "Schaffen Sie einen sicheren emotionalen Raum füreinander. Lassen Sie Verletzlichkeit ohne Urteile zu."
+        },
+        "default": {
+            "strengths": "Jede Kombination hat einzigartige Stärken, die darauf warten, entdeckt zu werden. Konzentrieren Sie sich auf gemeinsame Werte und was Sie aneinander anzieht.",
+            "cautions": "Verschiedene Zeichen haben verschiedene Bedürfnisse. Seien Sie geduldig beim Verstehen der Perspektive des anderen.",
+            "advice": "Feiern Sie Ihre Unterschiede, während Sie Gemeinsamkeiten aufbauen. Kommunikation ist der Schlüssel zu jeder erfolgreichen Beziehung."
+        }
     }
 }

@@ -44,5 +44,49 @@
         "emotionalMatch": "Compatibilidad Emocional",
         "growthPotential": "Potencial de Crecimiento",
         "close": "Cerrar"
+    },
+    "element": {
+        "fire_fire": "¡Dinámico y apasionado! Ambos signos aportan intensidad y entusiasmo a la relación.",
+        "fire_earth": "Desafiante pero gratificante. El fuego puede aprender estabilidad, la tierra puede aprender espontaneidad.",
+        "fire_air": "¡Excelente sinergia! El aire aviva el fuego, creando energía dinámica y emocionante.",
+        "fire_water": "Dinámicas complejas. El fuego evapora el agua, pero el vapor juntos puede ser poderoso.",
+        "earth_earth": "¡Base sólida! Ambos signos valoran la estabilidad, la lealtad y la seguridad.",
+        "earth_air": "Ritmos diferentes. La tierra es estable, el aire es libre.",
+        "earth_water": "¡Hermosa armonía! La tierra nutre el agua, creando crecimiento y comprensión.",
+        "air_air": "¡Conexión intelectual! Ambos aman la comunicación y la estimulación mental.",
+        "air_water": "Contraste interesante. El aire es lógico, el agua es emocional.",
+        "water_water": "¡Profundamente intuitivo! Ambos entienden las emociones y la empatía naturalmente."
+    },
+    "analysis": {
+        "aries_leo": {
+            "strengths": "Ambos son signos de fuego apasionados y ambiciosos que alimentan la energía del otro. Comparten pasión por la vida, la aventura y los riesgos. Líderes naturales, se apoyan mutuamente con entusiasmo y lealtad.",
+            "cautions": "Ambos aman ser el centro de atención. La competencia por la atención o el control puede ser un problema. Encuentra maneras de celebrar los logros del otro.",
+            "advice": "Canaliza tu energía de fuego combinada en aventuras compartidas. Ten cuidado con los choques de ego y practica admirar al otro genuinamente."
+        },
+        "aries_sagittarius": {
+            "strengths": "¡Combinación perfecta! Ambos signos de fuego anhelan aventura, libertad y nuevas experiencias. Entienden naturalmente la necesidad de independencia y emoción del otro.",
+            "cautions": "Ambos pueden ser impulsivos e impacientes. La imprudencia podría causar problemas si no se controla.",
+            "advice": "Su entusiasmo compartido es su superpoder. Equilibra la espontaneidad con algo de planificación para asegurar el éxito."
+        },
+        "taurus_capricorn": {
+            "strengths": "Ambos signos de tierra prácticos valoran el trabajo duro, la lealtad y construir algo duradero. Entienden mutuamente la necesidad de seguridad y estabilidad material.",
+            "cautions": "Ambos pueden ser tercos y demasiado centrados en el trabajo. Recuerden disfrutar la vida juntos.",
+            "advice": "Creen metas juntos y construyan riqueza como equipo. Programen tiempo para el romance a pesar de las agendas ocupadas."
+        },
+        "gemini_libra": {
+            "strengths": "¡Signos de aire que hablan el mismo idioma! Excelente comunicación, intereses intelectuales compartidos y armonía natural hacen de esta una combinación encantadora.",
+            "cautions": "Ambos pueden ser indecisos o demasiado analíticos. Equilibra el pensar con el hacer.",
+            "advice": "Usa tus habilidades de comunicación para explorar ideas juntos. Mantén las conversaciones fluyendo y las decisiones avanzando."
+        },
+        "cancer_scorpio": {
+            "strengths": "¡Conexión profunda de signos de agua! Ambos entienden las profundidades emocionales y la intuición. Lealtad intensa, empatía natural y comprensión auténtica crean vínculos poderosos.",
+            "cautions": "Ambos pueden ser reservados o sobreprotectores. La confianza y la comunicación abierta son esenciales.",
+            "advice": "Creen un espacio emocional seguro para el otro. Permitan la vulnerabilidad sin juicio."
+        },
+        "default": {
+            "strengths": "Cada combinación tiene fortalezas únicas esperando ser descubiertas. Concéntrate en tus valores compartidos y en lo que te atrae del otro.",
+            "cautions": "Diferentes signos tienen diferentes necesidades. Sé paciente al comprender las perspectivas del otro.",
+            "advice": "Celebra tus diferencias mientras construyes sobre lo que tienen en común. La comunicación es clave para cualquier relación exitosa."
+        }
     }
 }

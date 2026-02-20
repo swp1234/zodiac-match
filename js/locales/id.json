@@ -44,5 +44,49 @@
         "emotionalMatch": "Keselarasan Emosional",
         "growthPotential": "Potensi Pertumbuhan",
         "close": "Tutup"
+    },
+    "element": {
+        "fire_fire": "Dinamis dan penuh gairah! Kedua zodiak membawa intensitas dan antusiasme ke dalam hubungan.",
+        "fire_earth": "Menantang tapi menguntungkan. Api bisa belajar stabilitas, bumi bisa belajar spontanitas.",
+        "fire_air": "Sinergi luar biasa! Udara menyulut api, menciptakan energi yang dinamis dan menarik.",
+        "fire_water": "Dinamika kompleks. Api menguapkan air, tapi uap bersama bisa sangat kuat.",
+        "earth_earth": "Fondasi kokoh! Kedua zodiak menghargai stabilitas, kesetiaan, dan keamanan.",
+        "earth_air": "Ritme berbeda. Bumi itu stabil, udara itu bebas.",
+        "earth_water": "Harmoni indah! Bumi memelihara air, menciptakan pertumbuhan dan pemahaman.",
+        "air_air": "Koneksi intelektual! Keduanya menyukai komunikasi dan stimulasi mental.",
+        "air_water": "Kontras menarik. Udara itu logis, air itu emosional.",
+        "water_water": "Sangat intuitif! Keduanya memahami emosi dan empati secara alami."
+    },
+    "analysis": {
+        "aries_leo": {
+            "strengths": "Keduanya adalah zodiak api yang penuh gairah dan ambisius yang saling memicu energi. Kalian berbagi semangat hidup, petualangan, dan keberanian mengambil risiko. Pemimpin alami, kalian mendukung tujuan satu sama lain dengan antusiasme dan kesetiaan.",
+            "cautions": "Keduanya suka menjadi pusat perhatian. Persaingan untuk perhatian atau kendali bisa menjadi masalah. Cari cara untuk merayakan keberhasilan satu sama lain.",
+            "advice": "Salurkan energi api gabungan kalian ke dalam petualangan bersama. Waspadai benturan ego dan berlatihlah untuk saling mengagumi dengan tulus."
+        },
+        "aries_sagittarius": {
+            "strengths": "Pasangan sempurna! Kedua zodiak api mendambakan petualangan, kebebasan, dan pengalaman baru. Kalian secara alami memahami kebutuhan satu sama lain akan kemandirian dan kegembiraan.",
+            "cautions": "Keduanya bisa impulsif dan tidak sabar. Kecerobohan bisa menyebabkan masalah jika tidak dikontrol.",
+            "advice": "Antusiasme bersama kalian adalah kekuatan super kalian. Seimbangkan spontanitas dengan perencanaan untuk memastikan keberhasilan."
+        },
+        "taurus_capricorn": {
+            "strengths": "Kedua zodiak bumi yang praktis menghargai kerja keras, kesetiaan, dan membangun sesuatu yang langgeng. Kalian memahami kebutuhan satu sama lain akan keamanan dan stabilitas material.",
+            "cautions": "Keduanya bisa keras kepala dan terlalu fokus pada pekerjaan. Ingatlah untuk menikmati hidup bersama.",
+            "advice": "Buat tujuan bersama dan bangun kekayaan sebagai tim. Jadwalkan waktu untuk romansa meski jadwal padat."
+        },
+        "gemini_libra": {
+            "strengths": "Zodiak udara yang berbicara bahasa yang sama! Komunikasi luar biasa, minat intelektual bersama, dan harmoni alami membuat pasangan ini menyenangkan.",
+            "cautions": "Keduanya bisa ragu-ragu atau terlalu analitis. Seimbangkan berpikir dengan bertindak.",
+            "advice": "Gunakan kemampuan komunikasi kalian untuk menjelajahi ide bersama. Jaga percakapan tetap mengalir dan keputusan tetap bergerak maju."
+        },
+        "cancer_scorpio": {
+            "strengths": "Koneksi zodiak air yang dalam! Keduanya memahami kedalaman emosional dan intuisi. Kesetiaan kuat, empati alami, dan pemahaman otentik menciptakan ikatan yang kuat.",
+            "cautions": "Keduanya bisa tertutup atau terlalu protektif. Kepercayaan dan komunikasi terbuka sangat penting.",
+            "advice": "Ciptakan ruang emosional yang aman untuk satu sama lain. Izinkan kerentanan tanpa penghakiman."
+        },
+        "default": {
+            "strengths": "Setiap pasangan memiliki kekuatan unik yang menunggu untuk ditemukan. Fokus pada nilai-nilai bersama dan apa yang menarik kalian satu sama lain.",
+            "cautions": "Zodiak yang berbeda memiliki kebutuhan yang berbeda. Bersabarlah dalam memahami perspektif satu sama lain.",
+            "advice": "Rayakan perbedaan kalian sambil membangun kesamaan. Komunikasi adalah kunci untuk setiap hubungan yang sukses."
+        }
     }
 }

@@ -247,8 +247,15 @@ const COMPATIBILITY_MATRIX = {
     'pisces-pisces': { overall: 88, romantic: 92, friendship: 85, work: 80 }
 };
 
-// Element compatibility analysis
-const ELEMENT_COMPATIBILITY = {
+// Element compatibility analysis - keys for i18n lookup
+const ELEMENT_COMPATIBILITY_KEYS = [
+    'fire-fire', 'fire-earth', 'fire-air', 'fire-water',
+    'earth-earth', 'earth-air', 'earth-water',
+    'air-air', 'air-water', 'water-water'
+];
+
+// Fallback English text for element compatibility
+const ELEMENT_COMPATIBILITY_FALLBACK = {
     'fire-fire': 'Dynamic and passionate! Both signs bring intensity and enthusiasm to the relationship.',
     'fire-earth': 'Challenging but rewarding. Fire can learn stability, earth can learn spontaneity.',
     'fire-air': 'Excellent synergy! Air fuels fire, creating dynamic and exciting energy.',
@@ -261,57 +268,42 @@ const ELEMENT_COMPATIBILITY = {
     'water-water': 'Deeply intuitive! Both understand emotions and empathy naturally.'
 };
 
-// Detailed compatibility analysis data
-const COMPATIBILITY_ANALYSIS = {
+// Detailed compatibility analysis data (English fallback)
+const COMPATIBILITY_ANALYSIS_FALLBACK = {
     'aries-leo': {
         strengths: 'Both are passionate, ambitious fire signs that fuel each other\'s energy. You share a zest for life, adventure, and taking risks. Natural leaders, you support each other\'s goals with enthusiasm and loyalty.',
         cautions: 'Both love being in the spotlight. Competition for attention or control could be an issue. Try to find ways to celebrate each other\'s wins.',
-        advice: 'Channel your combined fire energy into shared adventures. Be mindful of ego clashes and practice admiring each other genuinely.',
-        romantic: 'Passionate and exciting romance. Natural chemistry and mutual admiration.',
-        friendship: 'Outstanding friends who support each other\'s ambitions without jealousy.',
-        work: 'Dynamic partners who can accomplish great things together through determination.'
+        advice: 'Channel your combined fire energy into shared adventures. Be mindful of ego clashes and practice admiring each other genuinely.'
     },
     'aries-sagittarius': {
         strengths: 'Perfect match! Both fire signs crave adventure, freedom, and new experiences. You understand each other\'s need for independence and excitement naturally.',
         cautions: 'Both can be impulsive and impatient. Recklessness could lead to problems if not checked.',
-        advice: 'Your shared enthusiasm is your superpower. Balance spontaneity with some planning to ensure success.',
-        romantic: 'Thrilling romance filled with adventures and passionate connection.',
-        friendship: 'Best friends who are always up for the next adventure together.',
-        work: 'Energetic team that thrives on challenges and new projects.'
+        advice: 'Your shared enthusiasm is your superpower. Balance spontaneity with some planning to ensure success.'
     },
     'taurus-capricorn': {
         strengths: 'Both practical earth signs value hard work, loyalty, and building something lasting. You understand each other\'s need for security and material stability.',
         cautions: 'Both can be stubborn and overly focused on work. Remember to enjoy life together.',
-        advice: 'Create goals together and build wealth as a team. Schedule time for romance despite busy schedules.',
-        romantic: 'Steadfast and reliable love that deepens over time.',
-        friendship: 'Trustworthy friends you can count on completely.',
-        work: 'Highly productive team that builds sustainable success.'
+        advice: 'Create goals together and build wealth as a team. Schedule time for romance despite busy schedules.'
     },
     'gemini-libra': {
         strengths: 'Fellow air signs who speak the same language! Excellent communication, shared intellectual interests, and natural harmony make this a delightful pairing.',
         cautions: 'Both can be indecisive or overly analytical. Balance thinking with doing.',
-        advice: 'Use your communication skills to explore ideas together. Keep conversations flowing and decisions moving forward.',
-        romantic: 'Charming romance based on intellectual connection and witty banter.',
-        friendship: 'Perfect companions who enjoy deep conversations and shared interests.',
-        work: 'Excellent collaborators with great creative synergy.'
+        advice: 'Use your communication skills to explore ideas together. Keep conversations flowing and decisions moving forward.'
     },
     'cancer-scorpio': {
         strengths: 'Deep water sign connection! Both understand emotional depths and intuition. Intense loyalty, natural empathy, and authentic understanding create powerful bonds.',
         cautions: 'Both can be secretive or overly protective. Trust and open communication are essential.',
-        advice: 'Create safe emotional space for each other. Allow vulnerability without judgment.',
-        romantic: 'Deeply intimate and transformative romance with intense connection.',
-        friendship: 'Soul-level friendship with unconditional support and understanding.',
-        work: 'Intuitive team that works well with emotional intelligence.'
+        advice: 'Create safe emotional space for each other. Allow vulnerability without judgment.'
     },
     'default': {
         strengths: 'Every pairing has unique strengths waiting to be discovered. Focus on your shared values and what attracts you to each other.',
         cautions: 'Different signs have different needs. Be patient in understanding each other\'s perspectives.',
-        advice: 'Celebrate your differences while building on common ground. Communication is key to any successful relationship.',
-        romantic: 'Every relationship has the potential to be special with effort and understanding.',
-        friendship: 'Different perspectives can create interesting and enriching friendships.',
-        work: 'Diverse strengths can complement each other in professional settings.'
+        advice: 'Celebrate your differences while building on common ground. Communication is key to any successful relationship.'
     }
 };
+
+// i18n key map for specific pair analyses
+const ANALYSIS_PAIR_KEYS = ['aries-leo', 'aries-sagittarius', 'taurus-capricorn', 'gemini-libra', 'cancer-scorpio'];
 
 // Get compatibility data
 function getCompatibility(zodiac1, zodiac2) {
@@ -362,28 +354,49 @@ function getElement(zodiac) {
     return ZODIACS[zodiac] ? ZODIACS[zodiac].element : 'earth';
 }
 
-// Get element compatibility description
+// Get element compatibility description (i18n-aware)
 function getElementCompatibilityDescription(element1, element2) {
     const pair1 = `${element1}-${element2}`;
     const pair2 = `${element2}-${element1}`;
+    const key = ELEMENT_COMPATIBILITY_FALLBACK[pair1] ? pair1 : pair2;
+    const i18nKey = `element.${key.replace('-', '_')}`;
 
-    if (ELEMENT_COMPATIBILITY[pair1]) {
-        return ELEMENT_COMPATIBILITY[pair1];
+    if (window.i18n && typeof i18n.t === 'function') {
+        const val = i18n.t(i18nKey);
+        if (val && val !== i18nKey) return val;
     }
-    return ELEMENT_COMPATIBILITY[pair2] || 'Unique combination of elements!';
+    return ELEMENT_COMPATIBILITY_FALLBACK[key] || ELEMENT_COMPATIBILITY_FALLBACK[pair2] || 'Unique combination of elements!';
 }
 
-// Get analysis data
+// Get analysis data (i18n-aware)
 function getAnalysisData(zodiac1, zodiac2) {
     const key1 = `${zodiac1}-${zodiac2}`;
     const key2 = `${zodiac2}-${zodiac1}`;
 
-    if (COMPATIBILITY_ANALYSIS[key1]) {
-        return COMPATIBILITY_ANALYSIS[key1];
-    } else if (COMPATIBILITY_ANALYSIS[key2]) {
-        return COMPATIBILITY_ANALYSIS[key2];
+    // Determine which pair key to use
+    let pairKey = 'default';
+    if (ANALYSIS_PAIR_KEYS.includes(key1)) {
+        pairKey = key1;
+    } else if (ANALYSIS_PAIR_KEYS.includes(key2)) {
+        pairKey = key2;
     }
-    return COMPATIBILITY_ANALYSIS['default'];
+
+    const i18nPrefix = `analysis.${pairKey.replace('-', '_')}`;
+
+    if (window.i18n && typeof i18n.t === 'function') {
+        const s = i18n.t(`${i18nPrefix}.strengths`);
+        const c = i18n.t(`${i18nPrefix}.cautions`);
+        const a = i18n.t(`${i18nPrefix}.advice`);
+
+        // Check if i18n returned actual translations (not raw keys)
+        if (s && s !== `${i18nPrefix}.strengths`) {
+            return { strengths: s, cautions: c, advice: a };
+        }
+    }
+
+    // Fallback to English
+    const fallback = COMPATIBILITY_ANALYSIS_FALLBACK[pairKey] || COMPATIBILITY_ANALYSIS_FALLBACK['default'];
+    return fallback;
 }
 
 // Generate daily horoscope based on date seed

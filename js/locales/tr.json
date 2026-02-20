@@ -44,5 +44,49 @@
         "emotionalMatch": "Duygusal Uyum",
         "growthPotential": "Gelişim Potansiyeli",
         "close": "Kapat"
+    },
+    "element": {
+        "fire_fire": "Dinamik ve tutkulu! Her iki burç da ilişkiye yoğunluk ve coşku getirir.",
+        "fire_earth": "Zorlu ama ödüllendirici. Ateş istikrar öğrenebilir, toprak kendiliğindenlik öğrenebilir.",
+        "fire_air": "Mükemmel sinerji! Hava ateşi körükler, dinamik ve heyecan verici enerji yaratır.",
+        "fire_water": "Karmaşık dinamikler. Ateş suyu buharlaştırır ama buhar birlikte güçlü olabilir.",
+        "earth_earth": "Sağlam temel! Her iki burç da istikrar, sadakat ve güvenliğe değer verir.",
+        "earth_air": "Farklı ritimler. Toprak sağlam, hava özgür ruhludur.",
+        "earth_water": "Güzel uyum! Toprak suyu besler, büyüme ve anlayış yaratır.",
+        "air_air": "Entelektüel bağlantı! Her ikisi de iletişimi ve zihinsel uyarılmayı sever.",
+        "air_water": "İlginç zıtlık. Hava mantıksal, su duygusaldır.",
+        "water_water": "Derinden sezgisel! Her ikisi de duyguları ve empatiyi doğal olarak anlar."
+    },
+    "analysis": {
+        "aries_leo": {
+            "strengths": "Her ikisi de birbirlerinin enerjisini besleyen tutkulu, hırslı ateş burçlarıdır. Yaşam tutkusu, macera ve risk almayı paylaşırsınız. Doğal liderler olarak birbirinizin hedeflerini coşku ve sadakatle desteklersiniz.",
+            "cautions": "Her ikisi de ilgi odağı olmayı sever. İlgi veya kontrol rekabeti sorun olabilir. Birbirinizin başarılarını kutlamanın yollarını bulun.",
+            "advice": "Birleşik ateş enerjinizi ortak maceralara yönlendirin. Ego çatışmalarına dikkat edin ve birbirinizi içtenlikle takdir etmeyi pratik edin."
+        },
+        "aries_sagittarius": {
+            "strengths": "Mükemmel eşleşme! Her iki ateş burcu da macera, özgürlük ve yeni deneyimler ister. Birbirinizin bağımsızlık ve heyecan ihtiyacını doğal olarak anlarsınız.",
+            "cautions": "Her ikisi de dürtüsel ve sabırsız olabilir. Pervasızlık kontrol edilmezse sorunlara yol açabilir.",
+            "advice": "Paylaşılan coşkunuz süper gücünüzdür. Başarıyı garantilemek için kendiliğindenliği biraz planlamayla dengeleyin."
+        },
+        "taurus_capricorn": {
+            "strengths": "Her iki pratik toprak burcu da çalışkanlığa, sadakate ve kalıcı bir şey inşa etmeye değer verir. Birbirinizin güvenlik ve maddi istikrar ihtiyacını anlarsınız.",
+            "cautions": "Her ikisi de inatçı ve aşırı iş odaklı olabilir. Birlikte hayatın tadını çıkarmayı unutmayın.",
+            "advice": "Birlikte hedefler koyun ve bir takım olarak zenginlik oluşturun. Yoğun programlara rağmen romantizm için zaman ayırın."
+        },
+        "gemini_libra": {
+            "strengths": "Aynı dili konuşan hava burçları! Mükemmel iletişim, paylaşılan entelektüel ilgi alanları ve doğal uyum bu eşleşmeyi keyifli kılar.",
+            "cautions": "Her ikisi de kararsız veya aşırı analitik olabilir. Düşünmek ve yapmak arasında denge kurun.",
+            "advice": "İletişim becerilerinizi kullanarak birlikte fikirleri keşfedin. Sohbetleri devam ettirin ve kararları ileriye taşıyın."
+        },
+        "cancer_scorpio": {
+            "strengths": "Derin su burcu bağlantısı! Her ikisi de duygusal derinliği ve sezgiyi anlar. Yoğun sadakat, doğal empati ve otantik anlayış güçlü bağlar oluşturur.",
+            "cautions": "Her ikisi de ketum veya aşırı korumacı olabilir. Güven ve açık iletişim esastır.",
+            "advice": "Birbiriniz için güvenli duygusal alan yaratın. Yargılamadan savunmasızlığa izin verin."
+        },
+        "default": {
+            "strengths": "Her eşleşmenin keşfedilmeyi bekleyen benzersiz güçlü yanları vardır. Paylaşılan değerlerinize ve birbirinize sizi çeken şeylere odaklanın.",
+            "cautions": "Farklı burçların farklı ihtiyaçları vardır. Birbirinizin bakış açılarını anlamada sabırlı olun.",
+            "advice": "Ortak noktalar üzerine inşa ederken farklılıklarınızı kutlayın. İletişim, başarılı her ilişkinin anahtarıdır."
+        }
     }
 }

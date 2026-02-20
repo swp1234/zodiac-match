@@ -44,5 +44,49 @@
         "emotionalMatch": "Compatibilité Émotionnelle",
         "growthPotential": "Potentiel de Croissance",
         "close": "Fermer"
+    },
+    "element": {
+        "fire_fire": "Dynamique et passionné ! Les deux signes apportent intensité et enthousiasme à la relation.",
+        "fire_earth": "Stimulant mais enrichissant. Le feu peut apprendre la stabilité, la terre peut apprendre la spontanéité.",
+        "fire_air": "Excellente synergie ! L'air attise le feu, créant une énergie dynamique et excitante.",
+        "fire_water": "Dynamiques complexes. Le feu évapore l'eau, mais la vapeur ensemble peut être puissante.",
+        "earth_earth": "Base solide ! Les deux signes valorisent la stabilité, la loyauté et la sécurité.",
+        "earth_air": "Rythmes différents. La terre est ancrée, l'air est libre d'esprit.",
+        "earth_water": "Belle harmonie ! La terre nourrit l'eau, créant croissance et compréhension.",
+        "air_air": "Connexion intellectuelle ! Les deux aiment la communication et la stimulation mentale.",
+        "air_water": "Contraste intéressant. L'air est logique, l'eau est émotionnelle.",
+        "water_water": "Profondément intuitif ! Les deux comprennent les émotions et l'empathie naturellement."
+    },
+    "analysis": {
+        "aries_leo": {
+            "strengths": "Tous deux sont des signes de feu passionnés et ambitieux qui alimentent l'énergie de l'autre. Vous partagez un goût pour la vie, l'aventure et la prise de risques. Leaders naturels, vous soutenez les objectifs de chacun avec enthousiasme et loyauté.",
+            "cautions": "Tous deux aiment être sous les projecteurs. La compétition pour l'attention ou le contrôle pourrait poser problème. Trouvez des moyens de célébrer les victoires de l'autre.",
+            "advice": "Canalisez votre énergie de feu combinée dans des aventures partagées. Soyez attentif aux conflits d'ego et pratiquez l'admiration sincère mutuelle."
+        },
+        "aries_sagittarius": {
+            "strengths": "Combinaison parfaite ! Les deux signes de feu aspirent à l'aventure, à la liberté et aux nouvelles expériences. Vous comprenez naturellement le besoin d'indépendance et d'excitation de l'autre.",
+            "cautions": "Tous deux peuvent être impulsifs et impatients. L'imprudence pourrait mener à des problèmes si elle n'est pas maîtrisée.",
+            "advice": "Votre enthousiasme partagé est votre superpouvoir. Équilibrez la spontanéité avec un peu de planification pour assurer le succès."
+        },
+        "taurus_capricorn": {
+            "strengths": "Les deux signes de terre pratiques valorisent le travail acharné, la loyauté et la construction de quelque chose de durable. Vous comprenez mutuellement le besoin de sécurité et de stabilité matérielle.",
+            "cautions": "Tous deux peuvent être têtus et trop concentrés sur le travail. N'oubliez pas de profiter de la vie ensemble.",
+            "advice": "Créez des objectifs ensemble et construisez la richesse en équipe. Planifiez du temps pour la romance malgré les emplois du temps chargés."
+        },
+        "gemini_libra": {
+            "strengths": "Des signes d'air qui parlent la même langue ! Excellente communication, intérêts intellectuels partagés et harmonie naturelle font de cette combinaison un plaisir.",
+            "cautions": "Tous deux peuvent être indécis ou trop analytiques. Trouvez l'équilibre entre réfléchir et agir.",
+            "advice": "Utilisez vos compétences en communication pour explorer des idées ensemble. Maintenez les conversations fluides et faites avancer les décisions."
+        },
+        "cancer_scorpio": {
+            "strengths": "Connexion profonde des signes d'eau ! Les deux comprennent les profondeurs émotionnelles et l'intuition. La loyauté intense, l'empathie naturelle et la compréhension authentique créent des liens puissants.",
+            "cautions": "Tous deux peuvent être secrets ou surprotecteurs. La confiance et la communication ouverte sont essentielles.",
+            "advice": "Créez un espace émotionnel sûr l'un pour l'autre. Permettez la vulnérabilité sans jugement."
+        },
+        "default": {
+            "strengths": "Chaque combinaison a des forces uniques qui attendent d'être découvertes. Concentrez-vous sur vos valeurs partagées et ce qui vous attire l'un vers l'autre.",
+            "cautions": "Différents signes ont différents besoins. Soyez patient pour comprendre les perspectives de l'autre.",
+            "advice": "Célébrez vos différences tout en construisant sur vos points communs. La communication est la clé de toute relation réussie."
+        }
     }
 }
