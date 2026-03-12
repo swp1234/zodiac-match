@@ -88,5 +88,13 @@
             "cautions": "Signos diferentes têm necessidades diferentes. Seja paciente ao compreender a perspectiva do outro.",
             "advice": "Celebre suas diferenças enquanto constrói sobre o que têm em comum. Comunicação é a chave para qualquer relacionamento bem-sucedido."
         }
-    }
+    },
+  "error": {
+    "storage": "Algumas funções podem ser limitadas no modo privado.",
+    "data": "Erro ao carregar dados. Atualize a página.",
+    "canvas": "Problema de renderização. Tente novamente.",
+    "audio": "Áudio indisponível. Você pode continuar.",
+    "network": "Verifique sua conexão e tente novamente.",
+    "general": "Algo deu errado. Atualize ou tente novamente."
+  }
 }

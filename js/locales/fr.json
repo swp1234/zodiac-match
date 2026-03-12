@@ -88,5 +88,13 @@
             "cautions": "Différents signes ont différents besoins. Soyez patient pour comprendre les perspectives de l'autre.",
             "advice": "Célébrez vos différences tout en construisant sur vos points communs. La communication est la clé de toute relation réussie."
         }
-    }
+    },
+  "error": {
+    "storage": "Certaines fonctions peuvent être limitées en mode privé.",
+    "data": "Erreur de chargement. Veuillez rafraîchir la page.",
+    "canvas": "Problème de rendu graphique. Veuillez réessayer.",
+    "audio": "Audio indisponible. Vous pouvez continuer.",
+    "network": "Vérifiez votre connexion et réessayez.",
+    "general": "Un problème est survenu. Rafraîchissez ou réessayez."
+  }
 }

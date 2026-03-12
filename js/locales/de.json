@@ -88,5 +88,13 @@
             "cautions": "Verschiedene Zeichen haben verschiedene Bedürfnisse. Seien Sie geduldig beim Verstehen der Perspektive des anderen.",
             "advice": "Feiern Sie Ihre Unterschiede, während Sie Gemeinsamkeiten aufbauen. Kommunikation ist der Schlüssel zu jeder erfolgreichen Beziehung."
         }
-    }
+    },
+  "error": {
+    "storage": "Einige Funktionen sind im privaten Modus eingeschränkt.",
+    "data": "Fehler beim Laden. Bitte Seite aktualisieren.",
+    "canvas": "Grafikfehler. Bitte erneut versuchen.",
+    "audio": "Audio nicht verfügbar. Sie können fortfahren.",
+    "network": "Bitte Verbindung prüfen und erneut versuchen.",
+    "general": "Etwas ist schiefgelaufen. Bitte aktualisieren oder erneut versuchen."
+  }
 }
