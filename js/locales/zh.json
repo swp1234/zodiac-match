@@ -43,7 +43,15 @@
         "communicationStyle": "沟通方式",
         "emotionalMatch": "情感契合度",
         "growthPotential": "成长潜力",
-        "close": "关闭"
+        "close": "关闭",
+        "moreTests": "推荐测试",
+        "percentileStat": "只有<strong>{percent}%</strong>的情侣拥有相同的星座组合"
+    },
+    "related": {
+        "numerology": "数字命理",
+        "bloodType": "血型配对",
+        "nameMatch": "姓名配对",
+        "dailyTarot": "每日塔罗"
     },
     "element": {
         "fire_fire": "充满活力和激情！两个星座都为关系带来强烈和热情。",

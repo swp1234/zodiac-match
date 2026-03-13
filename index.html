@@ -447,6 +447,32 @@
                     <!-- Share Button -->
                     <button id="share-btn" class="share-btn" data-i18n="results.shareCard">카드 공유</button>
 
+                    <!-- Percentile Stat -->
+                    <p class="percentile-stat" id="percentile-stat"></p>
+
+                    <!-- Related Tests -->
+                    <div class="related-tests">
+                        <h3 data-i18n="results.moreTests">More Tests</h3>
+                        <div class="related-grid">
+                            <a href="/numerology/" class="related-card" style="--card-color: #9b59b6">
+                                <span class="related-emoji">&#x1F522;</span>
+                                <span class="related-name" data-i18n="related.numerology">Numerology</span>
+                            </a>
+                            <a href="/blood-type/" class="related-card" style="--card-color: #e74c3c">
+                                <span class="related-emoji">&#x1FA78;</span>
+                                <span class="related-name" data-i18n="related.bloodType">Blood Type</span>
+                            </a>
+                            <a href="/name-match/" class="related-card" style="--card-color: #ff6b9d">
+                                <span class="related-emoji">&#x1F495;</span>
+                                <span class="related-name" data-i18n="related.nameMatch">Name Match</span>
+                            </a>
+                            <a href="/daily-tarot/" class="related-card" style="--card-color: #f39c12">
+                                <span class="related-emoji">&#x1F52E;</span>
+                                <span class="related-name" data-i18n="related.dailyTarot">Daily Tarot</span>
+                            </a>
+                        </div>
+                    </div>
+
                     <!-- Back Button -->
                     <button id="back-btn" class="secondary-btn" data-i18n="results.backToTest">다시 테스트</button>
                 </div>
@@ -503,18 +529,6 @@
             navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration failed:', err));
         }
     </script>
-
-    <!-- SEO Internal Links -->
-    <section class="related-games" style="margin:20px auto;padding:16px;max-width:480px;background:rgba(255,255,255,0.05);border-radius:12px;">
-      <p style="font-size:13px;color:#aaa;margin:0 0 8px 0;font-weight:600;">More Free Tests</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <a href="/daily-tarot/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">🔮 Daily Tarot</a>
-        <a href="/fortune-cookie/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">🥠 Fortune Cookie</a>
-        <a href="/numerology/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">🔢 Numerology</a>
-        <a href="/name-match/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">💑 Name Match</a>
-        <a href="/love-frequency/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">💓 Love Frequency</a>
-      </div>
-    </section>
 
     <!-- Scripts -->
     <script src="js/i18n.js" defer></script>

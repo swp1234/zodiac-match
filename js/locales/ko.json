@@ -43,7 +43,15 @@
         "communicationStyle": "의사소통 방식",
         "emotionalMatch": "감정적 궁합",
         "growthPotential": "성장 가능성",
-        "close": "닫기"
+        "close": "닫기",
+        "moreTests": "추천 테스트",
+        "percentileStat": "커플 중 <strong>{percent}%</strong>만이 이 별자리 조합을 공유합니다"
+    },
+    "related": {
+        "numerology": "수비학",
+        "bloodType": "혈액형 궁합",
+        "nameMatch": "이름 궁합",
+        "dailyTarot": "오늘의 타로"
     },
     "element": {
         "fire_fire": "역동적이고 열정적입니다! 두 별자리 모두 관계에 강렬함과 열정을 불어넣습니다.",

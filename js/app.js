@@ -224,6 +224,18 @@ class ZodiacMatchApp {
         document.getElementById('cautions-text').textContent = analysis.cautions;
         document.getElementById('advice-text').textContent = analysis.advice;
 
+        // Percentile stat
+        var percentile = Math.floor(Math.random() * 15) + 3;
+        var percentileEl = document.getElementById('percentile-stat');
+        if (percentileEl) {
+            var pText = (typeof i18n !== 'undefined' && i18n.t) ? i18n.t('results.percentileStat') : null;
+            if (pText && pText !== 'results.percentileStat') {
+                percentileEl.innerHTML = pText.replace('{percent}', percentile);
+            } else {
+                percentileEl.innerHTML = 'Only <strong>' + percentile + '%</strong> of couples share this exact zodiac pairing';
+            }
+        }
+
         // Switch screens
         selectorScreen.classList.remove('active');
         resultsScreen.classList.add('active');

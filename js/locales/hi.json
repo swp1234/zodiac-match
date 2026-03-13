@@ -43,7 +43,15 @@
         "communicationStyle": "संचार शैली",
         "emotionalMatch": "भावनात्मक संगति",
         "growthPotential": "विकास की क्षमता",
-        "close": "बंद करें"
+        "close": "बंद करें",
+        "moreTests": "और परीक्षण",
+        "percentileStat": "केवल <strong>{percent}%</strong> जोड़े इस राशि संयोजन को साझा करते हैं"
+    },
+    "related": {
+        "numerology": "अंक ज्योतिष",
+        "bloodType": "रक्त प्रकार",
+        "nameMatch": "नाम मिलान",
+        "dailyTarot": "दैनिक टैरो"
     },
     "element": {
         "fire_fire": "गतिशील और जुनूनी! दोनों राशियां संबंध में तीव्रता और उत्साह लाती हैं।",

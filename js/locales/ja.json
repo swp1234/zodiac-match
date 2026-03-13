@@ -43,7 +43,15 @@
         "communicationStyle": "コミュニケーションスタイル",
         "emotionalMatch": "感情的相性",
         "growthPotential": "成長の可能性",
-        "close": "閉じる"
+        "close": "閉じる",
+        "moreTests": "おすすめテスト",
+        "percentileStat": "カップルの<strong>{percent}%</strong>だけがこの星座の組み合わせを共有しています"
+    },
+    "related": {
+        "numerology": "数秘術",
+        "bloodType": "血液型相性",
+        "nameMatch": "名前相性",
+        "dailyTarot": "今日のタロット"
     },
     "element": {
         "fire_fire": "ダイナミックで情熱的！両方の星座が関係に強烈さと熱意をもたらします。",

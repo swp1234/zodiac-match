@@ -43,7 +43,15 @@
         "communicationStyle": "Стиль общения",
         "emotionalMatch": "Эмоциональная совместимость",
         "growthPotential": "Потенциал роста",
-        "close": "Закрыть"
+        "close": "Закрыть",
+        "moreTests": "Другие тесты",
+        "percentileStat": "Только <strong>{percent}%</strong> пар имеют такую же комбинацию знаков зодиака"
+    },
+    "related": {
+        "numerology": "Нумерология",
+        "bloodType": "Группа крови",
+        "nameMatch": "Совместимость имён",
+        "dailyTarot": "Ежедневное Таро"
     },
     "element": {
         "fire_fire": "Динамично и страстно! Оба знака привносят интенсивность и энтузиазм в отношения.",

@@ -43,7 +43,15 @@
         "communicationStyle": "İletişim Tarzı",
         "emotionalMatch": "Duygusal Uyum",
         "growthPotential": "Gelişim Potansiyeli",
-        "close": "Kapat"
+        "close": "Kapat",
+        "moreTests": "Daha Fazla Test",
+        "percentileStat": "Ciftlerin yalnizca <strong>{percent}%</strong>'i bu burc kombinasyonunu paylasiyor"
+    },
+    "related": {
+        "numerology": "Numeroloji",
+        "bloodType": "Kan Grubu",
+        "nameMatch": "Isim Uyumu",
+        "dailyTarot": "Gunluk Tarot"
     },
     "element": {
         "fire_fire": "Dinamik ve tutkulu! Her iki burç da ilişkiye yoğunluk ve coşku getirir.",

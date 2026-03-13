@@ -43,7 +43,15 @@
         "communicationStyle": "Kommunikationsstil",
         "emotionalMatch": "Emotionale Übereinstimmung",
         "growthPotential": "Wachstumspotential",
-        "close": "Schließen"
+        "close": "Schließen",
+        "moreTests": "Weitere Tests",
+        "percentileStat": "Nur <strong>{percent}%</strong> der Paare teilen diese Sternzeichen-Kombination"
+    },
+    "related": {
+        "numerology": "Numerologie",
+        "bloodType": "Blutgruppe",
+        "nameMatch": "Namenskompatibilitat",
+        "dailyTarot": "Tagliches Tarot"
     },
     "element": {
         "fire_fire": "Dynamisch und leidenschaftlich! Beide Zeichen bringen Intensität und Begeisterung in die Beziehung.",

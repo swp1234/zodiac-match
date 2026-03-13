@@ -43,7 +43,15 @@
         "communicationStyle": "Communication Style",
         "emotionalMatch": "Emotional Match",
         "growthPotential": "Growth Potential",
-        "close": "Close"
+        "close": "Close",
+        "moreTests": "More Tests",
+        "percentileStat": "Only <strong>{percent}%</strong> of couples share this exact zodiac pairing"
+    },
+    "related": {
+        "numerology": "Numerology",
+        "bloodType": "Blood Type",
+        "nameMatch": "Name Match",
+        "dailyTarot": "Daily Tarot"
     },
     "element": {
         "fire_fire": "Dynamic and passionate! Both signs bring intensity and enthusiasm to the relationship.",

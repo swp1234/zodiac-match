@@ -43,7 +43,15 @@
         "communicationStyle": "Gaya Komunikasi",
         "emotionalMatch": "Keselarasan Emosional",
         "growthPotential": "Potensi Pertumbuhan",
-        "close": "Tutup"
+        "close": "Tutup",
+        "moreTests": "Tes Lainnya",
+        "percentileStat": "Hanya <strong>{percent}%</strong> pasangan yang memiliki kombinasi zodiak yang sama"
+    },
+    "related": {
+        "numerology": "Numerologi",
+        "bloodType": "Golongan Darah",
+        "nameMatch": "Kecocokan Nama",
+        "dailyTarot": "Tarot Harian"
     },
     "element": {
         "fire_fire": "Dinamis dan penuh gairah! Kedua zodiak membawa intensitas dan antusiasme ke dalam hubungan.",

@@ -43,7 +43,15 @@
         "communicationStyle": "Estilo de Comunicación",
         "emotionalMatch": "Compatibilidad Emocional",
         "growthPotential": "Potencial de Crecimiento",
-        "close": "Cerrar"
+        "close": "Cerrar",
+        "moreTests": "Mas Tests",
+        "percentileStat": "Solo el <strong>{percent}%</strong> de las parejas comparten esta combinacion zodiacal"
+    },
+    "related": {
+        "numerology": "Numerologia",
+        "bloodType": "Tipo de Sangre",
+        "nameMatch": "Compatibilidad de Nombres",
+        "dailyTarot": "Tarot Diario"
     },
     "element": {
         "fire_fire": "¡Dinámico y apasionado! Ambos signos aportan intensidad y entusiasmo a la relación.",
