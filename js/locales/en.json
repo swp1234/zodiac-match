@@ -1,11 +1,12 @@
 {
     "meta": {
-        "title": "Zodiac Compatibility Test - Love, Friendship & Work | DopaBrain",
-        "description": "Free zodiac compatibility test! Check your love, friendship, and work compatibility with all 12 zodiac signs. AI-powered analysis."
+        "title": "Zodiac Compatibility Test - Free Astrology Love Match | DopaBrain",
+        "description": "Check your zodiac compatibility for love, friendship, and work across all 12 signs! AI-powered deep analysis, element matching, and detailed scores. Free test."
     },
     "app": {
-        "title": "Zodiac Match Test",
-        "subtitle": "Discover your compatibility with someone special"
+        "title": "Zodiac Compatibility Test - Free Astrology Love Match",
+        "subtitle": "Discover your compatibility with someone special",
+        "start": "Check Compatibility - Free"
     },
     "selector": {
         "myZodiac": "My Zodiac",
@@ -97,12 +98,26 @@
             "advice": "Celebrate your differences while building on common ground. Communication is key to any successful relationship."
         }
     },
-  "error": {
-    "storage": "Some features may be limited in private mode. You can continue.",
-    "data": "Data loading error. Please refresh the page.",
-    "canvas": "Graphics rendering issue. Please try again.",
-    "audio": "Audio unavailable. You can still continue.",
-    "network": "Please check your connection and try again.",
-    "general": "Something went wrong. Please refresh or try again."
-  }
+    "error": {
+        "storage": "Some features may be limited in private mode. You can continue.",
+        "data": "Data loading error. Please refresh the page.",
+        "canvas": "Graphics rendering issue. Please try again.",
+        "audio": "Audio unavailable. You can still continue.",
+        "network": "Please check your connection and try again.",
+        "general": "Something went wrong. Please refresh or try again."
+    },
+    "engage": {
+        "result1": "95%+ Match -- Soulmate Connection Found!",
+        "result2": "75-94% Match -- Strong Cosmic Chemistry",
+        "result3": "50-74% Match -- Growing Potential Together",
+        "result4": "Below 50% -- Opposites Can Attract Too!",
+        "socialProof": "5,280+ zodiac matches checked"
+    },
+    "about": {
+        "toggle": "About the Zodiac Compatibility Test",
+        "heading1": "How the Zodiac Compatibility Test Works",
+        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
+        "heading2": "Understanding Zodiac Compatibility",
+        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
+    }
 }

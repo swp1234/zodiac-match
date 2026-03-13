@@ -97,12 +97,26 @@
             "advice": "Rayakan perbedaan kalian sambil membangun kesamaan. Komunikasi adalah kunci untuk setiap hubungan yang sukses."
         }
     },
-  "error": {
-    "storage": "Beberapa fitur mungkin terbatas dalam mode privat.",
-    "data": "Kesalahan memuat data. Silakan muat ulang.",
-    "canvas": "Masalah rendering grafis. Silakan coba lagi.",
-    "audio": "Audio tidak tersedia. Anda dapat melanjutkan.",
-    "network": "Periksa koneksi Anda dan coba lagi.",
-    "general": "Terjadi kesalahan. Muat ulang atau coba lagi."
-  }
+    "error": {
+        "storage": "Beberapa fitur mungkin terbatas dalam mode privat.",
+        "data": "Kesalahan memuat data. Silakan muat ulang.",
+        "canvas": "Masalah rendering grafis. Silakan coba lagi.",
+        "audio": "Audio tidak tersedia. Anda dapat melanjutkan.",
+        "network": "Periksa koneksi Anda dan coba lagi.",
+        "general": "Terjadi kesalahan. Muat ulang atau coba lagi."
+    },
+    "engage": {
+        "result1": "95%+ Match -- Soulmate Connection Found!",
+        "result2": "75-94% Match -- Strong Cosmic Chemistry",
+        "result3": "50-74% Match -- Growing Potential Together",
+        "result4": "Below 50% -- Opposites Can Attract Too!",
+        "socialProof": "5,280+ zodiac matches checked"
+    },
+    "about": {
+        "toggle": "About the Zodiac Compatibility Test",
+        "heading1": "How the Zodiac Compatibility Test Works",
+        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
+        "heading2": "Understanding Zodiac Compatibility",
+        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
+    }
 }

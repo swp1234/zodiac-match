@@ -97,12 +97,26 @@
             "advice": "在建立共同点的同时庆祝你们的差异。沟通是任何成功关系的关键。"
         }
     },
-  "error": {
-    "storage": "隐私模式下部分功能可能受限。",
-    "data": "数据加载错误，请刷新页面。",
-    "canvas": "图形渲染问题，请重试。",
-    "audio": "音频不可用，可继续使用。",
-    "network": "请检查网络连接后重试。",
-    "general": "出现问题，请刷新或重试。"
-  }
+    "error": {
+        "storage": "隐私模式下部分功能可能受限。",
+        "data": "数据加载错误，请刷新页面。",
+        "canvas": "图形渲染问题，请重试。",
+        "audio": "音频不可用，可继续使用。",
+        "network": "请检查网络连接后重试。",
+        "general": "出现问题，请刷新或重试。"
+    },
+    "engage": {
+        "result1": "95%+ Match -- Soulmate Connection Found!",
+        "result2": "75-94% Match -- Strong Cosmic Chemistry",
+        "result3": "50-74% Match -- Growing Potential Together",
+        "result4": "Below 50% -- Opposites Can Attract Too!",
+        "socialProof": "5,280+ zodiac matches checked"
+    },
+    "about": {
+        "toggle": "About the Zodiac Compatibility Test",
+        "heading1": "How the Zodiac Compatibility Test Works",
+        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
+        "heading2": "Understanding Zodiac Compatibility",
+        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
+    }
 }

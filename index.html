@@ -70,8 +70,55 @@
     }
 }
     </script>
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dopabrain.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 3, "name": "Fortune Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 4, "name": "Zodiac Compatibility Test", "item": "https://dopabrain.com/zodiac-match/" }
+        ]
+    }
+    </script>
+    <!-- FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a zodiac compatibility test?",
+                "acceptedAnswer": { "@type": "Answer", "text": "A zodiac compatibility test analyzes the astrological relationship between two zodiac signs across romantic, friendship, and work dimensions. It uses element matching (Fire, Earth, Air, Water), modality analysis, and traditional astrological principles to calculate compatibility scores." }
+            },
+            {
+                "@type": "Question",
+                "name": "How accurate is zodiac compatibility?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Zodiac compatibility is based on centuries-old astrological traditions and can offer fun insights into interpersonal dynamics. While no test can predict real relationships, many people find the element and modality analysis surprisingly resonant with their experiences." }
+            },
+            {
+                "@type": "Question",
+                "name": "What zodiac signs are most compatible?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Generally, signs of the same element tend to be highly compatible: Fire signs (Aries, Leo, Sagittarius), Earth signs (Taurus, Virgo, Capricorn), Air signs (Gemini, Libra, Aquarius), and Water signs (Cancer, Scorpio, Pisces). However, opposite signs can also create powerful attractions." }
+            },
+            {
+                "@type": "Question",
+                "name": "Does this test include AI analysis?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes! Beyond the basic compatibility scores, the test offers an AI-powered deep analysis feature that examines relationship dynamics, communication styles, emotional compatibility, and growth potential for your specific zodiac pairing." }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I check compatibility for friendship and work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! The test provides separate scores for romantic compatibility, friendship compatibility, and work compatibility. Each dimension is analyzed independently, so signs that struggle romantically might excel as business partners or best friends." }
+            }
+        ]
+    }
+    </script>
 
-    <title data-i18n="meta.title">Zodiac Compatibility Test - Free Astrology Match | DopaBrain</title>
+    <title data-i18n="meta.title">Zodiac Compatibility Test - Free Astrology Love Match | DopaBrain</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -106,7 +153,7 @@
         <!-- Header -->
         <header class="app-header">
             <div class="header-content">
-                <h1 data-i18n="app.title">별자리 궁합 테스트</h1>
+                <h1 data-i18n="app.title">Zodiac Compatibility Test - Free Astrology Love Match</h1>
                 <p class="subtitle" data-i18n="app.subtitle">나와 상대방의 궁합을 알아보세요</p>
             </div>
             <div class="header-controls">
@@ -142,6 +189,19 @@
             <!-- Screen: Selector -->
             <div id="selector-screen" class="screen active">
                 <div class="selector-container">
+                    <!-- Result Preview Carousel -->
+                    <div class="result-carousel" aria-live="polite">
+                        <div class="carousel-track">
+                            <div class="carousel-item" data-i18n="engage.result1">95%+ Match -- Soulmate Connection Found!</div>
+                            <div class="carousel-item" data-i18n="engage.result2">75-94% Match -- Strong Cosmic Chemistry</div>
+                            <div class="carousel-item" data-i18n="engage.result3">50-74% Match -- Growing Potential Together</div>
+                            <div class="carousel-item" data-i18n="engage.result4">Below 50% -- Opposites Can Attract Too!</div>
+                        </div>
+                    </div>
+
+                    <!-- Social Proof Badge -->
+                    <div class="social-proof-badge" data-i18n="engage.socialProof">5,280+ zodiac matches checked</div>
+
                     <h2 data-i18n="selector.myZodiac">내 별자리</h2>
 
                     <!-- My Zodiac Selection -->
@@ -357,7 +417,7 @@
                     </div>
 
                     <!-- Check Compatibility Button -->
-                    <button id="check-btn" class="primary-btn" data-i18n="selector.check">궁합 확인</button>
+                    <button id="check-btn" class="primary-btn btn-pulse" data-i18n="selector.check">Check Compatibility - Free</button>
                 </div>
             </div>
 
@@ -519,6 +579,19 @@
             </script>
         </div>
     </div>
+
+    <!-- About Section -->
+    <section class="about-section collapsible-section" id="about-section">
+      <details>
+        <summary data-i18n="about.toggle">About the Zodiac Compatibility Test</summary>
+        <div class="about-content">
+          <h2 data-i18n="about.heading1">How the Zodiac Compatibility Test Works</h2>
+          <p data-i18n="about.text1">Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.</p>
+          <h2 data-i18n="about.heading2">Understanding Zodiac Compatibility</h2>
+          <p data-i18n="about.text2">Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics.</p>
+        </div>
+      </details>
+    </section>
 
     <!-- Canvas for image generation (hidden) -->
     <canvas id="share-canvas" style="display:none;"></canvas>
