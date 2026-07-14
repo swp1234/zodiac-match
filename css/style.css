@@ -210,6 +210,19 @@ body {
     display: block !important;
 }
 
+.ad-result {
+    min-height: 120px;
+    margin: 1.25rem 0;
+    border: 1px dashed rgba(165, 94, 199, 0.28);
+    border-radius: 12px;
+    background: rgba(142, 68, 173, 0.08);
+}
+
+.ad-result .adsbygoogle {
+    min-height: 100px;
+    width: 100%;
+}
+
 /* Content Area */
 .app-content {
     flex: 1;

@@ -1,6 +1,6 @@
 // Service Worker for Zodiac Match App
 
-const CACHE_NAME = 'zodiac-match-v2';
+const CACHE_NAME = 'zodiac-match-v3';
 const urlsToCache = [
     './',
     './index.html',

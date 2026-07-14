@@ -5,6 +5,9 @@ class ZodiacMatchApp {
         this.myZodiac = null;
         this.theirZodiac = null;
         this.selectedZodiacs = { my: null, their: null };
+        this.entryParams = new URLSearchParams(window.location.search || '');
+        this.entrySurface = this.entryParams.get('surface') || this.entryParams.get('utm_content') || 'direct';
+        this.resultAdLoaded = false;
         this.init();
     }
 
@@ -27,6 +30,52 @@ class ZodiacMatchApp {
         this.setupEventListeners();
         this.setupStarfield();
         this.hideAppLoader();
+        this.trackEvent('session_ready');
+        this.maybeQuickStart();
+    }
+
+    trackEvent(name, params = {}) {
+        if (typeof gtag === 'function') {
+            gtag('event', name, {
+                event_category: 'zodiac_match',
+                entry_surface: this.entrySurface,
+                ...params
+            });
+        }
+    }
+
+    isParamEnabled(name) {
+        const value = (this.entryParams.get(name) || '').toLowerCase();
+        return ['1', 'true', 'yes', 'on'].includes(value);
+    }
+
+    maybeQuickStart() {
+        if (!this.isParamEnabled('quick')) return;
+
+        const my = this.entryParams.get('my') || 'leo';
+        const their = this.entryParams.get('their') || 'sagittarius';
+        if (!ZODIACS[my] || !ZODIACS[their]) return;
+
+        this.selectedZodiacs.my = my;
+        this.selectedZodiacs.their = their;
+        this.updateSelectedButtons();
+        this.updateCheckButton();
+        this.trackEvent('zodiac_quick_start', {
+            my_zodiac: my,
+            their_zodiac: their
+        });
+
+        window.setTimeout(() => this.showResults({ trigger: 'quick_start' }), 300);
+    }
+
+    updateSelectedButtons() {
+        document.querySelectorAll('.zodiac-btn').forEach((button, index) => {
+            const zodiac = button.getAttribute('data-zodiac');
+            const selected = index < 12
+                ? zodiac === this.selectedZodiacs.my
+                : zodiac === this.selectedZodiacs.their;
+            button.classList.toggle('selected', selected);
+        });
     }
 
     hideAppLoader() {
@@ -85,7 +134,7 @@ class ZodiacMatchApp {
                 if (!engageFired) {
                     engageFired = true;
                     if (typeof gtag === 'function') {
-                        gtag('event', 'engagement', { event_category: 'zodiac_match', event_label: 'first_interaction' });
+                        this.trackEvent('engagement', { event_label: 'first_interaction' });
                     }
                 }
                 const zodiac = btn.getAttribute('data-zodiac');
@@ -109,6 +158,10 @@ class ZodiacMatchApp {
                 }
 
                 this.updateCheckButton();
+                this.trackEvent('zodiac_select', {
+                    selected_side: index < 12 ? 'my' : 'their',
+                    zodiac
+                });
             });
         });
 
@@ -116,7 +169,7 @@ class ZodiacMatchApp {
         const checkBtn = document.getElementById('check-btn');
         checkBtn.addEventListener('click', () => {
             if (this.selectedZodiacs.my && this.selectedZodiacs.their) {
-                this.showResults();
+                this.showResults({ trigger: 'manual' });
             }
         });
 
@@ -197,7 +250,7 @@ class ZodiacMatchApp {
         resultsScreen.classList.remove('active');
     }
 
-    showResults() {
+    showResults(options = {}) {
         const selectorScreen = document.getElementById('selector-screen');
         const resultsScreen = document.getElementById('results-screen');
 
@@ -239,9 +292,43 @@ class ZodiacMatchApp {
         // Switch screens
         selectorScreen.classList.remove('active');
         resultsScreen.classList.add('active');
+        this.loadResultAd(options.trigger || 'manual', compatibility);
+        this.trackEvent('result_view', {
+            trigger: options.trigger || 'manual',
+            my_zodiac: this.selectedZodiacs.my,
+            their_zodiac: this.selectedZodiacs.their,
+            score: compatibility.overall
+        });
+        this.trackEvent('zodiac_match_result_view', {
+            trigger: options.trigger || 'manual',
+            my_zodiac: this.selectedZodiacs.my,
+            their_zodiac: this.selectedZodiacs.their,
+            score: compatibility.overall
+        });
 
         // Scroll to top
         window.scrollTo(0, 0);
+    }
+
+    loadResultAd(trigger, compatibility) {
+        if (this.resultAdLoaded) return;
+
+        const adContainer = document.getElementById('result-ad');
+        const adNode = adContainer?.querySelector('.adsbygoogle');
+        if (!adContainer || !adNode || window.location.protocol === 'file:') return;
+
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            this.resultAdLoaded = true;
+            adContainer.dataset.loaded = 'true';
+            this.trackEvent('zodiac_match_result_ad_impression', {
+                trigger,
+                ad_slot: adNode.getAttribute('data-ad-slot') || 'auto',
+                score: compatibility?.overall || 0
+            });
+        } catch (error) {
+            console.warn('Zodiac result ad failed to load:', error);
+        }
     }
 
     updateZodiacDisplay(side) {

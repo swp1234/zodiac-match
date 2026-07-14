@@ -9,6 +9,14 @@ class I18n {
     }
 
     detectLanguage() {
+        try {
+            const params = new URLSearchParams(window.location.search || '');
+            const urlLang = params.get('lang');
+            if (urlLang && this.supportedLanguages.includes(urlLang)) {
+                return urlLang;
+            }
+        } catch (error) {}
+
         // Check localStorage
         const saved = localStorage.getItem('zodiac-match-lang');
         if (saved && this.supportedLanguages.includes(saved)) {
@@ -33,6 +41,11 @@ class I18n {
 
     async loadTranslations(lang) {
         try {
+            const isFileProtocol = typeof window !== 'undefined' && window.location?.protocol === 'file:';
+            if (isFileProtocol) {
+                this.translations = {};
+                return;
+            }
             const response = await fetch(`js/locales/${lang}.json`);
             if (response.ok) {
                 this.translations = await response.json();
@@ -44,7 +57,10 @@ class I18n {
                 }
             }
         } catch (error) {
-            console.error(`Error loading ${lang} translations:`, error);
+            const isFileProtocol = typeof window !== 'undefined' && window.location?.protocol === 'file:';
+            if (!isFileProtocol) {
+                console.warn(`Error loading ${lang} translations:`, error);
+            }
         }
     }
 

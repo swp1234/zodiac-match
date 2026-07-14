@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Check your zodiac compatibility for love, friendship, and work across all 12 signs. Get AI-powered deep analysis and element matching. Try free!">
-    <meta name="dateModified" content="2026-06-19">
+    <meta name="dateModified" content="2026-07-15">
     <meta name="keywords" content="별자리 궁합, 별자리 궁합 테스트, 12별자리, 연애 궁합, 우정 궁합, 직장 궁합, zodiac compatibility, 星座 相性">
     <meta name="robots" content="max-image-preview:large">
     <meta name="theme-color" content="#0f0f23">
@@ -182,7 +182,9 @@
         <div class="ad-container">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="1234567890" data-ad-format="horizontal"></ins>
             <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
+                if (window.location.protocol !== 'file:') {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                }
             </script>
         </div>
 
@@ -503,6 +505,15 @@
                         </div>
                     </div>
 
+                    <div class="ad-container ad-result" id="result-ad" data-ad-surface="zodiac_match_result_ad" data-loaded="false" aria-label="Sponsored">
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-3600813755953882"
+                             data-ad-slot="auto"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                    </div>
+
                     <!-- Premium Analysis Button -->
                     <button id="premium-btn" class="premium-btn" data-i18n="results.deepAnalysis">AI 심층 분석 보기</button>
 
@@ -577,7 +588,9 @@
         <div class="ad-container">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="9876543210" data-ad-format="horizontal"></ins>
             <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
+                if (window.location.protocol !== 'file:') {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                }
             </script>
         </div>
     </div>
@@ -600,7 +613,7 @@
 
     <!-- Service Worker Registration -->
     <script>
-        if ('serviceWorker' in navigator) {
+        if ('serviceWorker' in navigator && window.location.protocol !== 'file:') {
             navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration failed:', err));
         }
     </script>
