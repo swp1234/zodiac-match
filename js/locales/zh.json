@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "星座配对测试 - 12星座恋爱·友谊·工作配对 | DopaBrain",
-        "description": "????12???????????????????????????????"
+        "description": "免费查看12星座在恋爱、友谊和工作中的配对，比较元素、分数与关系反思提示。"
     },
     "app": {
         "title": "星座配对测试",
@@ -36,7 +36,7 @@
         "strengths": "优势",
         "cautions": "注意事项",
         "advice": "建议",
-        "deepAnalysis": "??????",
+        "deepAnalysis": "详细关系说明",
         "shareCard": "分享卡片",
         "backToTest": "重新测试",
         "relationshipDynamics": "关系动力",

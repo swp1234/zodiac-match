@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Burç Uyum Testi - Aşk, Dostluk ve İş Uyumu | DopaBrain",
-        "description": "A?k, dostluk ve i? i?in ?cretsiz bur? uyum testi. 12 burcun elementlerini, puanlar?n? ve ili?ki notlar?n? kar??la?t?r?n."
+        "description": "Aşk, dostluk ve iş için ücretsiz burç uyum testi. 12 burcun elementlerini, puanlarını ve ilişki notlarını karşılaştırın."
     },
     "app": {
         "title": "Burç Uyum Testi",
@@ -36,7 +36,7 @@
         "strengths": "Güçlü Yönler",
         "cautions": "Dikkat Edilmesi Gerekenler",
         "advice": "Tavsiye",
-        "deepAnalysis": "Ayr?nt?l? ili?ki notlar?",
+        "deepAnalysis": "Ayrıntılı ilişki notları",
         "shareCard": "Kartı Paylaş",
         "backToTest": "Yeniden Test Et",
         "relationshipDynamics": "İlişki Dinamikleri",
