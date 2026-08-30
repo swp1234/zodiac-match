@@ -21,8 +21,8 @@ class ZodiacMatchApp {
                 themeToggle.textContent = savedTheme === 'light' ? '🌙' : '☀️';
             }
 
-            if (window.i18n && typeof i18n.init === 'function') {
-                await i18n.init();
+            if (typeof i18n !== 'undefined' && i18n.ready) {
+                await i18n.ready;
             }
         } catch (e) {
             console.warn('i18n init failed:', e);
