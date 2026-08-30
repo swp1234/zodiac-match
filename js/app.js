@@ -311,24 +311,7 @@ class ZodiacMatchApp {
     }
 
     loadResultAd(trigger, compatibility) {
-        if (this.resultAdLoaded) return;
-
-        const adContainer = document.getElementById('result-ad');
-        const adNode = adContainer?.querySelector('.adsbygoogle');
-        if (!adContainer || !adNode || window.location.protocol === 'file:') return;
-
-        try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-            this.resultAdLoaded = true;
-            adContainer.dataset.loaded = 'true';
-            this.trackEvent('zodiac_match_result_ad_impression', {
-                trigger,
-                ad_slot: adNode.getAttribute('data-ad-slot') || 'auto',
-                score: compatibility?.overall || 0
-            });
-        } catch (error) {
-            console.warn('Zodiac result ad failed to load:', error);
-        }
+        // Auto Ads owns placement and paid-impression measurement.
     }
 
     updateZodiacDisplay(side) {
