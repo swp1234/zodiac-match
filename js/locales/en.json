@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Zodiac Compatibility Test - Free Astrology Love Match | DopaBrain",
-        "description": "Check your zodiac compatibility for love, friendship, and work across all 12 signs! AI-powered deep analysis, element matching, and detailed scores. Free test."
+        "description": "Check zodiac compatibility for love, friendship, and work across all 12 signs. Compare elements, scores, and relationship reflection prompts for free."
     },
     "app": {
         "title": "Zodiac Compatibility Test - Free Astrology Love Match",
@@ -37,7 +37,7 @@
         "strengths": "Strengths",
         "cautions": "Cautions",
         "advice": "Advice",
-        "deepAnalysis": "View AI Deep Analysis",
+        "deepAnalysis": "Detailed Relationship Notes",
         "shareCard": "Share Card",
         "backToTest": "Test Again",
         "relationshipDynamics": "Relationship Dynamics",

@@ -356,21 +356,15 @@ class ZodiacMatchApp {
         const resultsScreen = document.getElementById('results-screen');
         const premiumScreen = document.getElementById('premium-screen');
 
-        // Simulate showing ad - in real app, you'd show actual ad
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'view_item', {
-                'value': 1,
-                'currency': 'KRW',
-                'items': [{
-                    'id': 'premium_analysis',
-                    'quantity': 1
-                }]
+            gtag('event', 'zodiac_detail_notes_view', {
+                'event_category': 'engagement'
             });
         }
 
         const analysis = getAnalysisData(this.selectedZodiacs.my, this.selectedZodiacs.their);
 
-        // Generate premium content
+        // Generate deterministic notes from the selected signs and elements.
         const premiumDynamics = this.generatePremiumContent('dynamics', this.selectedZodiacs.my, this.selectedZodiacs.their);
         const premiumCommunication = this.generatePremiumContent('communication', this.selectedZodiacs.my, this.selectedZodiacs.their);
         const premiumEmotional = this.generatePremiumContent('emotional', this.selectedZodiacs.my, this.selectedZodiacs.their);

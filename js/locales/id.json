@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Tes Kompatibilitas Zodiak - Cinta, Persahabatan & Karir | DopaBrain",
-        "description": "Tes kompatibilitas zodiak gratis! Cek kecocokan cinta, persahabatan, dan karir untuk semua 12 zodiak. Dengan analisis AI."
+        "description": "Tes kompatibilitas zodiak gratis untuk cinta, persahabatan, dan karier. Bandingkan elemen, skor, dan catatan refleksi untuk 12 zodiak."
     },
     "app": {
         "title": "Tes Kompatibilitas Zodiak",
@@ -36,7 +36,7 @@
         "strengths": "Kekuatan",
         "cautions": "Peringatan",
         "advice": "Saran",
-        "deepAnalysis": "Lihat Analisis Mendalam AI",
+        "deepAnalysis": "Catatan hubungan terperinci",
         "shareCard": "Bagikan Kartu",
         "backToTest": "Tes Lagi",
         "relationshipDynamics": "Dinamika Hubungan",

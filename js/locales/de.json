@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Sternzeichen-Kompatibilitätstest - Liebe, Freundschaft & Beruf | DopaBrain",
-        "description": "Kostenloser Sternzeichen-Kompatibilitätstest! Prüfen Sie die Kompatibilität in Liebe, Freundschaft und Beruf für alle 12 Sternzeichen."
+        "description": "Kostenloser Sternzeichen-Kompatibilit?tstest f?r Liebe, Freundschaft und Beruf. Vergleichen Sie Elemente, Werte und Hinweise f?r alle 12 Sternzeichen."
     },
     "app": {
         "title": "Sternzeichen-Kompatibilitätstest",
@@ -36,7 +36,7 @@
         "strengths": "Stärken",
         "cautions": "Vorsichtsmaßnahmen",
         "advice": "Ratschlag",
-        "deepAnalysis": "KI-Tiefenanalyse anzeigen",
+        "deepAnalysis": "Detaillierte Beziehungsnotizen",
         "shareCard": "Karte teilen",
         "backToTest": "Erneut testen",
         "relationshipDynamics": "Beziehungsdynamik",

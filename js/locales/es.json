@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "Test de Compatibilidad de Signos - Amor, Amistad y Trabajo | DopaBrain",
-        "description": "¡Test de compatibilidad de signos gratis! Descubre tu compatibilidad en amor, amistad y trabajo con los 12 signos del zodiaco."
+        "description": "Test gratuito de compatibilidad zodiacal para amor, amistad y trabajo. Compara elementos, puntuaciones y notas para los 12 signos."
     },
     "app": {
         "title": "Prueba de Compatibilidad de Signos",
@@ -36,7 +36,7 @@
         "strengths": "Fortalezas",
         "cautions": "Precauciones",
         "advice": "Consejo",
-        "deepAnalysis": "Ver Análisis Profundo de IA",
+        "deepAnalysis": "Notas detalladas de la relaci?n",
         "shareCard": "Compartir Tarjeta",
         "backToTest": "Probar de Nuevo",
         "relationshipDynamics": "Dinámicas de Relación",
