@@ -1,122 +1,13 @@
 {
-    "meta": {
-        "title": "星座相性テスト - 12星座の恋愛・友情・仕事相性 | DopaBrain",
-        "description": "恋愛・友情・仕事の無料星座相性テスト。12星座のエレメント、スコア、関係を振り返るメモを比較できます。"
-    },
-    "app": {
-        "title": "星座相性テスト",
-        "subtitle": "あなたと相手の相性を調べましょう"
-    },
-    "selector": {
-        "myZodiac": "私の星座",
-        "theirZodiac": "相手の星座",
-        "check": "相性を確認"
-    },
-    "zodiac": {
-        "aries": "牡羊座",
-        "taurus": "牡牛座",
-        "gemini": "双子座",
-        "cancer": "蟹座",
-        "leo": "獅子座",
-        "virgo": "乙女座",
-        "libra": "天秤座",
-        "scorpio": "蠍座",
-        "sagittarius": "射手座",
-        "capricorn": "山羊座",
-        "aquarius": "水瓶座",
-        "pisces": "魚座"
-    },
-    "results": {
-        "overallScore": "総合相性",
-        "romantic": "恋愛相性",
-        "friendship": "友情相性",
-        "work": "仕事相性",
-        "elementCompat": "エレメント相性",
-        "analysis": "詳細分析",
-        "strengths": "長所",
-        "cautions": "注意点",
-        "advice": "アドバイス",
-        "deepAnalysis": "詳細な関係メモ",
-        "shareCard": "カードを共有",
-        "backToTest": "もう一度テスト",
-        "relationshipDynamics": "関係のダイナミクス",
-        "communicationStyle": "コミュニケーションスタイル",
-        "emotionalMatch": "感情的相性",
-        "growthPotential": "成長の可能性",
-        "close": "閉じる",
-        "moreTests": "おすすめテスト",
-        "percentileStat": "カップルの<strong>{percent}%</strong>だけがこの星座の組み合わせを共有しています"
-    },
-    "related": {
-        "numerology": "数秘術",
-        "bloodType": "血液型相性",
-        "nameMatch": "名前相性",
-        "dailyTarot": "今日のタロット"
-    },
-    "element": {
-        "fire_fire": "ダイナミックで情熱的！両方の星座が関係に強烈さと熱意をもたらします。",
-        "fire_earth": "挑戦的ですがやりがいがあります。火は安定性を、土は自発性を学べます。",
-        "fire_air": "優れたシナジー！風が火をあおり、ダイナミックでエキサイティングなエネルギーを生み出します。",
-        "fire_water": "複雑なダイナミクス。火は水を蒸発させますが、蒸気は一緒になると強力です。",
-        "earth_earth": "しっかりした土台！両方の星座は安定性、忠誠心、安全を重視します。",
-        "earth_air": "異なるリズム。土は地に足がつき、風は自由奔放です。",
-        "earth_water": "美しい調和！土が水を育み、成長と理解を生み出します。",
-        "air_air": "知的なつながり！両方ともコミュニケーションと精神的刺激を愛します。",
-        "air_water": "興味深いコントラスト。風は論理的で、水は感情的です。",
-        "water_water": "深い直感！両方とも感情と共感を自然に理解します。"
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "両方とも情熱的で野心的な火の星座で、お互いのエネルギーを高め合います。人生への情熱、冒険、リスクを共有します。生まれながらのリーダーとして、熱意と忠誠心でお互いの目標を応援します。",
-            "cautions": "両方とも注目されるのが好きです。注目や主導権の争いが問題になる可能性があります。お互いの成功を祝う方法を見つけてください。",
-            "advice": "結合した火のエネルギーを共有の冒険に注いでください。自尊心の衝突に注意し、お互いを心から尊敬する練習をしてください。"
-        },
-        "aries_sagittarius": {
-            "strengths": "完璧な組み合わせ！両方の火の星座が冒険、自由、新しい経験を切望します。お互いの独立性と興奮への欲求を自然に理解します。",
-            "cautions": "両方とも衝動的で忍耐力がないことがあります。無鉄砲さはチェックされないと問題につながります。",
-            "advice": "共有する熱意はあなたたちのスーパーパワーです。成功を確実にするために、自発性と計画のバランスを取ってください。"
-        },
-        "taurus_capricorn": {
-            "strengths": "両方とも実用的な土の星座で、勤勉さ、忠誠心、永続的なものを築くことを重視します。お互いの安定と物質的安定への必要性を理解します。",
-            "cautions": "両方とも頑固で仕事に集中しすぎることがあります。一緒に人生を楽しむことを忘れないでください。",
-            "advice": "一緒に目標を立て、チームとして富を築きましょう。忙しいスケジュールでもロマンスの時間を確保しましょう。"
-        },
-        "gemini_libra": {
-            "strengths": "同じ風の星座で同じ言語を話します！優れたコミュニケーション、共有する知的関心、自然な調和がこの組み合わせを素晴らしくします。",
-            "cautions": "両方とも優柔不断または分析的すぎることがあります。考えることと行動することのバランスを取ってください。",
-            "advice": "コミュニケーション能力を活用して一緒にアイデアを探求してください。会話を続け、決断を前に進めてください。"
-        },
-        "cancer_scorpio": {
-            "strengths": "深い水の星座のつながり！両方とも感情の深さと直感を理解します。強烈な忠誠心、自然な共感、本物の理解が強力な絆を作ります。",
-            "cautions": "両方とも秘密主義または過度に保護的になることがあります。信頼とオープンなコミュニケーションが不可欠です。",
-            "advice": "お互いのために安全な感情的空間を作ってください。判断なしに脆弱性を許可してください。"
-        },
-        "default": {
-            "strengths": "すべての組み合わせには発見を待つユニークな強みがあります。共有する価値観とお互いに惹かれる点に焦点を当ててください。",
-            "cautions": "異なる星座は異なるニーズを持っています。お互いの視点を理解するのに忍耐強くなってください。",
-            "advice": "違いを祝いながら共通点を築いてください。コミュニケーションが成功した関係の鍵です。"
-        }
-    },
-    "error": {
-        "storage": "プライベートモードでは一部機能が制限されます。",
-        "data": "データ読み込みエラー。ページを更新してください。",
-        "canvas": "グラフィック描画の問題。もう一度お試しください。",
-        "audio": "音声が利用できません。続行できます。",
-        "network": "接続を確認して再試行してください。",
-        "general": "問題が発生しました。更新するか再試行してください。"
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"星座ペア会話カード｜文化であり点数ではない","description":"2つの太陽星座を選び、根拠の限界が見える非公開・点数なしの会話カードを使えます。"},
+  "app":{"eyebrow":"西洋占星術の文化 · 関係科学ではありません","title":"星座ペア会話カード","subtitle":"2つの太陽星座の象徴を、相性点数ではなく実際の会話の問いに変えましょう。"},
+  "boundary":{"title":"関係データで分かったこと","body":"スウェーデンの66,063件の婚姻を調べた研究では、占星術上好ましい組み合わせほど結婚が多い、または離婚リスクが低いという一貫した証拠は見つかりませんでした。","source":"公開研究を読む"},
+  "selection":{"title":"2つの太陽星座を選ぶ","desc":"選択はこのブラウザ内だけに残ります。星座、生年月日、ペア結果を分析に送信しません。","first":"1つ目の星座","second":"2つ目の星座","placeholder":"星座を選ぶ","open":"会話カードを開く"},
+  "zodiac":{"aries":"牡羊座","taurus":"牡牛座","gemini":"双子座","cancer":"蟹座","leo":"獅子座","virgo":"乙女座","libra":"天秤座","scorpio":"蠍座","sagittarius":"射手座","capricorn":"山羊座","aquarius":"水瓶座","pisces":"魚座"},
+  "elements":{"fire":"火","earth":"地","air":"風","water":"水"},
+  "result":{"label":"文化的な象徴 · 判定ではありません","pair_title":"{first} × {second}","elements":"伝統的な元素：{first} × {second}","boundary":"点数で、2人がうまく話せるか、安心できるか、長く続くかは分かりません。実際の経験を使いましょう。","prompt1_title":"期待","prompt1_body":"それぞれが尊重されたと感じるために何が必要で、それを明確に伝えましたか？","prompt2_title":"対立","prompt2_body":"意見が違うとき、会話を安全で具体的に保つ行動は何ですか？","prompt3_title":"修復","prompt3_body":"誤解の後に、それぞれができる小さな行動は何ですか？","evidence_title":"根拠の限界","evidence_body":"大規模登録研究で太陽星座の組み合わせは結婚相手の選択や離婚を一貫して予測しませんでした。別の文化間研究でも、太陽星座が測定された性格を予測する根拠はほとんどありませんでした。","source_relationship":"結婚・離婚研究","source_personality":"性格研究"},
+  "common":{"back":"別の組み合わせを選ぶ"},
+  "share":{"button":"質問カードを共有","title":"星座ペア会話カード","text":"星座文化を、相性点数なしで実際の関係の問いに変えましょう。","success":"選んだ星座を含めずに共有しました。","copied":"選んだ星座を含めずにリンクをコピーしました。","error":"共有できませんでした。ページのアドレスをコピーしてください。"},
+  "related":{"title":"実際に測れる課題へ","reaction":"反応速度テスト","reaction_desc":"5ラウンド測定","iq":"10問パズル","iq_desc":"制限時間なし","blood":"血液型カルチャーカード","blood_desc":"俗説と根拠を比較"},
+  "footer":{"privacy":"プライバシー","home":"DopaBrainホーム"},"accessibility":{"skip":"メインコンテンツへ移動"}
 }

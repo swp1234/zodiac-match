@@ -1,123 +1,13 @@
 {
-    "meta": {
-        "title": "Zodiac Compatibility Test - Free Astrology Love Match | DopaBrain",
-        "description": "Check zodiac compatibility for love, friendship, and work across all 12 signs. Compare elements, scores, and relationship reflection prompts for free."
-    },
-    "app": {
-        "title": "Zodiac Compatibility Test - Free Astrology Love Match",
-        "subtitle": "Discover your compatibility with someone special",
-        "start": "Check Compatibility - Free"
-    },
-    "selector": {
-        "myZodiac": "My Zodiac",
-        "theirZodiac": "Their Zodiac",
-        "check": "Check Compatibility"
-    },
-    "zodiac": {
-        "aries": "Aries",
-        "taurus": "Taurus",
-        "gemini": "Gemini",
-        "cancer": "Cancer",
-        "leo": "Leo",
-        "virgo": "Virgo",
-        "libra": "Libra",
-        "scorpio": "Scorpio",
-        "sagittarius": "Sagittarius",
-        "capricorn": "Capricorn",
-        "aquarius": "Aquarius",
-        "pisces": "Pisces"
-    },
-    "results": {
-        "overallScore": "Overall Score",
-        "romantic": "Romantic",
-        "friendship": "Friendship",
-        "work": "Work",
-        "elementCompat": "Element Compatibility",
-        "analysis": "Detailed Analysis",
-        "strengths": "Strengths",
-        "cautions": "Cautions",
-        "advice": "Advice",
-        "deepAnalysis": "Detailed Relationship Notes",
-        "shareCard": "Share Card",
-        "backToTest": "Test Again",
-        "relationshipDynamics": "Relationship Dynamics",
-        "communicationStyle": "Communication Style",
-        "emotionalMatch": "Emotional Match",
-        "growthPotential": "Growth Potential",
-        "close": "Close",
-        "moreTests": "More Tests",
-        "percentileStat": "Only <strong>{percent}%</strong> of couples share this exact zodiac pairing"
-    },
-    "related": {
-        "numerology": "Numerology",
-        "bloodType": "Blood Type",
-        "nameMatch": "Name Match",
-        "dailyTarot": "Daily Tarot"
-    },
-    "element": {
-        "fire_fire": "Dynamic and passionate! Both signs bring intensity and enthusiasm to the relationship.",
-        "fire_earth": "Challenging but rewarding. Fire can learn stability, earth can learn spontaneity.",
-        "fire_air": "Excellent synergy! Air fuels fire, creating dynamic and exciting energy.",
-        "fire_water": "Complex dynamics. Fire evaporates water, but steam can be powerful together.",
-        "earth_earth": "Solid foundation! Both signs value stability, loyalty, and security.",
-        "earth_air": "Different rhythms. Earth is grounded, air is free-spirited.",
-        "earth_water": "Beautiful harmony! Earth nurtures water, creating growth and understanding.",
-        "air_air": "Intellectual connection! Both love communication and mental stimulation.",
-        "air_water": "Interesting contrast. Air is logical, water is emotional.",
-        "water_water": "Deeply intuitive! Both understand emotions and empathy naturally."
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "Both are passionate, ambitious fire signs that fuel each other's energy. You share a zest for life, adventure, and taking risks. Natural leaders, you support each other's goals with enthusiasm and loyalty.",
-            "cautions": "Both love being in the spotlight. Competition for attention or control could be an issue. Try to find ways to celebrate each other's wins.",
-            "advice": "Channel your combined fire energy into shared adventures. Be mindful of ego clashes and practice admiring each other genuinely."
-        },
-        "aries_sagittarius": {
-            "strengths": "Perfect match! Both fire signs crave adventure, freedom, and new experiences. You understand each other's need for independence and excitement naturally.",
-            "cautions": "Both can be impulsive and impatient. Recklessness could lead to problems if not checked.",
-            "advice": "Your shared enthusiasm is your superpower. Balance spontaneity with some planning to ensure success."
-        },
-        "taurus_capricorn": {
-            "strengths": "Both practical earth signs value hard work, loyalty, and building something lasting. You understand each other's need for security and material stability.",
-            "cautions": "Both can be stubborn and overly focused on work. Remember to enjoy life together.",
-            "advice": "Create goals together and build wealth as a team. Schedule time for romance despite busy schedules."
-        },
-        "gemini_libra": {
-            "strengths": "Fellow air signs who speak the same language! Excellent communication, shared intellectual interests, and natural harmony make this a delightful pairing.",
-            "cautions": "Both can be indecisive or overly analytical. Balance thinking with doing.",
-            "advice": "Use your communication skills to explore ideas together. Keep conversations flowing and decisions moving forward."
-        },
-        "cancer_scorpio": {
-            "strengths": "Deep water sign connection! Both understand emotional depths and intuition. Intense loyalty, natural empathy, and authentic understanding create powerful bonds.",
-            "cautions": "Both can be secretive or overly protective. Trust and open communication are essential.",
-            "advice": "Create safe emotional space for each other. Allow vulnerability without judgment."
-        },
-        "default": {
-            "strengths": "Every pairing has unique strengths waiting to be discovered. Focus on your shared values and what attracts you to each other.",
-            "cautions": "Different signs have different needs. Be patient in understanding each other's perspectives.",
-            "advice": "Celebrate your differences while building on common ground. Communication is key to any successful relationship."
-        }
-    },
-    "error": {
-        "storage": "Some features may be limited in private mode. You can continue.",
-        "data": "Data loading error. Please refresh the page.",
-        "canvas": "Graphics rendering issue. Please try again.",
-        "audio": "Audio unavailable. You can still continue.",
-        "network": "Please check your connection and try again.",
-        "general": "Something went wrong. Please refresh or try again."
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"Zodiac Pair Conversation Cards | Culture, Not a Score","description":"Choose two sun signs for a private, score-free conversation card with the evidence boundary visible."},
+  "app":{"eyebrow":"Western astrology folklore · not relationship science","title":"Zodiac Pair Conversation Cards","subtitle":"Choose two sun signs and turn the symbols into questions—without a compatibility score."},
+  "boundary":{"title":"What relationship data found","body":"A Swedish register study of 66,063 marriages found no consistent evidence that astrologically favored pairs married more often or had a lower divorce risk.","source":"Read the open study"},
+  "selection":{"title":"Choose two sun signs","desc":"Your choices stay in this browser. We do not send signs, birth dates or pair results to analytics.","first":"First sign","second":"Second sign","placeholder":"Choose a sign","open":"Open conversation card"},
+  "zodiac":{"aries":"Aries","taurus":"Taurus","gemini":"Gemini","cancer":"Cancer","leo":"Leo","virgo":"Virgo","libra":"Libra","scorpio":"Scorpio","sagittarius":"Sagittarius","capricorn":"Capricorn","aquarius":"Aquarius","pisces":"Pisces"},
+  "elements":{"fire":"Fire","earth":"Earth","air":"Air","water":"Water"},
+  "result":{"label":"Cultural symbols, not a verdict","pair_title":"{first} × {second}","elements":"Traditional elements: {first} × {second}","boundary":"No score can tell whether two people will communicate well, feel safe, or stay together. Use your real experiences instead.","prompt1_title":"Expectations","prompt1_body":"What does each person need to feel respected, and have you said it clearly?","prompt2_title":"Tension","prompt2_body":"When you disagree, what behavior helps the conversation stay safe and specific?","prompt3_title":"Repair","prompt3_body":"What is one small action each person can take after a misunderstanding?","evidence_title":"Evidence boundary","evidence_body":"Sun-sign pairings did not consistently predict marriage choice or divorce in the large register study. A separate cross-cultural study found little support for sun signs predicting measured personality.","source_relationship":"Marriage and divorce study","source_personality":"Personality study"},
+  "common":{"back":"Choose another pair"},
+  "share":{"button":"Share the question card","title":"Zodiac Pair Conversation Cards","text":"Turn zodiac folklore into real relationship questions—without a compatibility score.","success":"Shared without including either sign.","copied":"Link copied without including either sign.","error":"Sharing was not available. Please copy the page address."},
+  "related":{"title":"Continue with a measurable activity","reaction":"Reaction Time","reaction_desc":"Measure five rounds","iq":"10-Puzzle Challenge","iq_desc":"Solve without a timer","blood":"Blood Type Culture Cards","blood_desc":"Compare folklore with evidence"},
+  "footer":{"privacy":"Privacy","home":"DopaBrain home"},"accessibility":{"skip":"Skip to the main content"}
 }

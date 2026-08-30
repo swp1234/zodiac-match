@@ -1,122 +1,13 @@
 {
-    "meta": {
-        "title": "Tes Kompatibilitas Zodiak - Cinta, Persahabatan & Karir | DopaBrain",
-        "description": "Tes kompatibilitas zodiak gratis untuk cinta, persahabatan, dan karier. Bandingkan elemen, skor, dan catatan refleksi untuk 12 zodiak."
-    },
-    "app": {
-        "title": "Tes Kompatibilitas Zodiak",
-        "subtitle": "Temukan kompatibilitas Anda dengan seseorang yang istimewa"
-    },
-    "selector": {
-        "myZodiac": "Zodiak Saya",
-        "theirZodiac": "Zodiak Mereka",
-        "check": "Periksa Kompatibilitas"
-    },
-    "zodiac": {
-        "aries": "Aries",
-        "taurus": "Taurus",
-        "gemini": "Gemini",
-        "cancer": "Cancer",
-        "leo": "Leo",
-        "virgo": "Virgo",
-        "libra": "Libra",
-        "scorpio": "Scorpio",
-        "sagittarius": "Sagittarius",
-        "capricorn": "Capricorn",
-        "aquarius": "Aquarius",
-        "pisces": "Pisces"
-    },
-    "results": {
-        "overallScore": "Skor Keseluruhan",
-        "romantic": "Romantis",
-        "friendship": "Persahabatan",
-        "work": "Pekerjaan",
-        "elementCompat": "Kompatibilitas Elemen",
-        "analysis": "Analisis Terperinci",
-        "strengths": "Kekuatan",
-        "cautions": "Peringatan",
-        "advice": "Saran",
-        "deepAnalysis": "Catatan hubungan terperinci",
-        "shareCard": "Bagikan Kartu",
-        "backToTest": "Tes Lagi",
-        "relationshipDynamics": "Dinamika Hubungan",
-        "communicationStyle": "Gaya Komunikasi",
-        "emotionalMatch": "Keselarasan Emosional",
-        "growthPotential": "Potensi Pertumbuhan",
-        "close": "Tutup",
-        "moreTests": "Tes Lainnya",
-        "percentileStat": "Hanya <strong>{percent}%</strong> pasangan yang memiliki kombinasi zodiak yang sama"
-    },
-    "related": {
-        "numerology": "Numerologi",
-        "bloodType": "Golongan Darah",
-        "nameMatch": "Kecocokan Nama",
-        "dailyTarot": "Tarot Harian"
-    },
-    "element": {
-        "fire_fire": "Dinamis dan penuh gairah! Kedua zodiak membawa intensitas dan antusiasme ke dalam hubungan.",
-        "fire_earth": "Menantang tapi menguntungkan. Api bisa belajar stabilitas, bumi bisa belajar spontanitas.",
-        "fire_air": "Sinergi luar biasa! Udara menyulut api, menciptakan energi yang dinamis dan menarik.",
-        "fire_water": "Dinamika kompleks. Api menguapkan air, tapi uap bersama bisa sangat kuat.",
-        "earth_earth": "Fondasi kokoh! Kedua zodiak menghargai stabilitas, kesetiaan, dan keamanan.",
-        "earth_air": "Ritme berbeda. Bumi itu stabil, udara itu bebas.",
-        "earth_water": "Harmoni indah! Bumi memelihara air, menciptakan pertumbuhan dan pemahaman.",
-        "air_air": "Koneksi intelektual! Keduanya menyukai komunikasi dan stimulasi mental.",
-        "air_water": "Kontras menarik. Udara itu logis, air itu emosional.",
-        "water_water": "Sangat intuitif! Keduanya memahami emosi dan empati secara alami."
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "Keduanya adalah zodiak api yang penuh gairah dan ambisius yang saling memicu energi. Kalian berbagi semangat hidup, petualangan, dan keberanian mengambil risiko. Pemimpin alami, kalian mendukung tujuan satu sama lain dengan antusiasme dan kesetiaan.",
-            "cautions": "Keduanya suka menjadi pusat perhatian. Persaingan untuk perhatian atau kendali bisa menjadi masalah. Cari cara untuk merayakan keberhasilan satu sama lain.",
-            "advice": "Salurkan energi api gabungan kalian ke dalam petualangan bersama. Waspadai benturan ego dan berlatihlah untuk saling mengagumi dengan tulus."
-        },
-        "aries_sagittarius": {
-            "strengths": "Pasangan sempurna! Kedua zodiak api mendambakan petualangan, kebebasan, dan pengalaman baru. Kalian secara alami memahami kebutuhan satu sama lain akan kemandirian dan kegembiraan.",
-            "cautions": "Keduanya bisa impulsif dan tidak sabar. Kecerobohan bisa menyebabkan masalah jika tidak dikontrol.",
-            "advice": "Antusiasme bersama kalian adalah kekuatan super kalian. Seimbangkan spontanitas dengan perencanaan untuk memastikan keberhasilan."
-        },
-        "taurus_capricorn": {
-            "strengths": "Kedua zodiak bumi yang praktis menghargai kerja keras, kesetiaan, dan membangun sesuatu yang langgeng. Kalian memahami kebutuhan satu sama lain akan keamanan dan stabilitas material.",
-            "cautions": "Keduanya bisa keras kepala dan terlalu fokus pada pekerjaan. Ingatlah untuk menikmati hidup bersama.",
-            "advice": "Buat tujuan bersama dan bangun kekayaan sebagai tim. Jadwalkan waktu untuk romansa meski jadwal padat."
-        },
-        "gemini_libra": {
-            "strengths": "Zodiak udara yang berbicara bahasa yang sama! Komunikasi luar biasa, minat intelektual bersama, dan harmoni alami membuat pasangan ini menyenangkan.",
-            "cautions": "Keduanya bisa ragu-ragu atau terlalu analitis. Seimbangkan berpikir dengan bertindak.",
-            "advice": "Gunakan kemampuan komunikasi kalian untuk menjelajahi ide bersama. Jaga percakapan tetap mengalir dan keputusan tetap bergerak maju."
-        },
-        "cancer_scorpio": {
-            "strengths": "Koneksi zodiak air yang dalam! Keduanya memahami kedalaman emosional dan intuisi. Kesetiaan kuat, empati alami, dan pemahaman otentik menciptakan ikatan yang kuat.",
-            "cautions": "Keduanya bisa tertutup atau terlalu protektif. Kepercayaan dan komunikasi terbuka sangat penting.",
-            "advice": "Ciptakan ruang emosional yang aman untuk satu sama lain. Izinkan kerentanan tanpa penghakiman."
-        },
-        "default": {
-            "strengths": "Setiap pasangan memiliki kekuatan unik yang menunggu untuk ditemukan. Fokus pada nilai-nilai bersama dan apa yang menarik kalian satu sama lain.",
-            "cautions": "Zodiak yang berbeda memiliki kebutuhan yang berbeda. Bersabarlah dalam memahami perspektif satu sama lain.",
-            "advice": "Rayakan perbedaan kalian sambil membangun kesamaan. Komunikasi adalah kunci untuk setiap hubungan yang sukses."
-        }
-    },
-    "error": {
-        "storage": "Beberapa fitur mungkin terbatas dalam mode privat.",
-        "data": "Kesalahan memuat data. Silakan muat ulang.",
-        "canvas": "Masalah rendering grafis. Silakan coba lagi.",
-        "audio": "Audio tidak tersedia. Anda dapat melanjutkan.",
-        "network": "Periksa koneksi Anda dan coba lagi.",
-        "general": "Terjadi kesalahan. Muat ulang atau coba lagi."
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"Kartu Percakapan Zodiak | Budaya, bukan skor","description":"Pilih dua zodiak untuk kartu percakapan privat tanpa skor, dengan batas bukti yang terlihat."},
+  "app":{"eyebrow":"Cerita astrologi Barat · bukan ilmu hubungan","title":"Kartu Percakapan Zodiak","subtitle":"Ubah dua simbol zodiak menjadi pertanyaan nyata, tanpa skor kecocokan."},
+  "boundary":{"title":"Apa temuan data hubungan","body":"Studi register Swedia atas 66.063 pernikahan tidak menemukan bukti konsisten bahwa pasangan yang dianggap cocok oleh astrologi lebih sering menikah atau lebih jarang bercerai.","source":"Baca studi terbuka"},
+  "selection":{"title":"Pilih dua zodiak","desc":"Pilihanmu hanya berada di browser ini. Zodiak, tanggal lahir, dan hasil pasangan tidak dikirim ke Analytics.","first":"Zodiak pertama","second":"Zodiak kedua","placeholder":"Pilih zodiak","open":"Buka kartu percakapan"},
+  "zodiac":{"aries":"Aries","taurus":"Taurus","gemini":"Gemini","cancer":"Cancer","leo":"Leo","virgo":"Virgo","libra":"Libra","scorpio":"Scorpio","sagittarius":"Sagittarius","capricorn":"Capricorn","aquarius":"Aquarius","pisces":"Pisces"},
+  "elements":{"fire":"Api","earth":"Tanah","air":"Udara","water":"Air"},
+  "result":{"label":"Simbol budaya, bukan keputusan","pair_title":"{first} × {second}","elements":"Elemen tradisional: {first} × {second}","boundary":"Skor tidak dapat memastikan dua orang akan berkomunikasi dengan baik, merasa aman, atau tetap bersama. Gunakan pengalaman nyata.","prompt1_title":"Harapan","prompt1_body":"Apa yang dibutuhkan tiap orang agar merasa dihormati, dan sudahkah disampaikan dengan jelas?","prompt2_title":"Ketegangan","prompt2_body":"Saat berbeda pendapat, perilaku apa yang menjaga percakapan tetap aman dan spesifik?","prompt3_title":"Perbaikan","prompt3_body":"Tindakan kecil apa yang dapat dilakukan masing-masing setelah kesalahpahaman?","evidence_title":"Batas bukti","evidence_body":"Pasangan zodiak tidak secara konsisten memprediksi pernikahan atau perceraian dalam studi besar. Studi lintas budaya lain juga menemukan sedikit dukungan untuk prediksi kepribadian.","source_relationship":"Studi pernikahan dan perceraian","source_personality":"Studi kepribadian"},
+  "common":{"back":"Pilih pasangan lain"},
+  "share":{"button":"Bagikan kartu pertanyaan","title":"Kartu Percakapan Zodiak","text":"Ubah cerita zodiak menjadi pertanyaan hubungan nyata, tanpa skor kecocokan.","success":"Dibagikan tanpa menyertakan zodiak pilihan.","copied":"Tautan disalin tanpa menyertakan zodiak pilihan.","error":"Tidak dapat membagikan. Salin alamat halaman."},
+  "related":{"title":"Lanjutkan dengan aktivitas terukur","reaction":"Waktu reaksi","reaction_desc":"Ukur lima ronde","iq":"Tantangan 10 teka-teki","iq_desc":"Selesaikan tanpa waktu","blood":"Kartu Budaya Golongan Darah","blood_desc":"Bandingkan cerita dengan bukti"},
+  "footer":{"privacy":"Privasi","home":"Beranda DopaBrain"},"accessibility":{"skip":"Lewati ke konten utama"}
 }

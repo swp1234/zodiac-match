@@ -1,515 +1,178 @@
-// Zodiac Match - Main Application
+(() => {
+  "use strict";
 
-class ZodiacMatchApp {
+  const SIGNS = [
+    ["aries", "♈", "fire"], ["taurus", "♉", "earth"], ["gemini", "♊", "air"], ["cancer", "♋", "water"],
+    ["leo", "♌", "fire"], ["virgo", "♍", "earth"], ["libra", "♎", "air"], ["scorpio", "♏", "water"],
+    ["sagittarius", "♐", "fire"], ["capricorn", "♑", "earth"], ["aquarius", "♒", "air"], ["pisces", "♓", "water"],
+  ];
+  const SIGN_MAP = new Map(SIGNS.map(([id, icon, element]) => [id, { icon, element }]));
+  const ALLOWED_SURFACES = new Set(["direct", "zh_zodiac_guide_primary"]);
+  const ALLOWED_TARGETS = new Set(["reaction_test", "iq_test", "blood_type_culture"]);
+
+  class ZodiacPairCards {
     constructor() {
-        this.myZodiac = null;
-        this.theirZodiac = null;
-        this.selectedZodiacs = { my: null, their: null };
-        this.entryParams = new URLSearchParams(window.location.search || '');
-        this.entrySurface = this.entryParams.get('surface') || this.entryParams.get('utm_content') || 'direct';
-        this.resultAdLoaded = false;
-        this.init();
+      this.first = document.getElementById("first-sign");
+      this.second = document.getElementById("second-sign");
+      this.openButton = document.getElementById("open-card");
+      this.selection = document.getElementById("selection-screen");
+      this.result = document.getElementById("result-screen");
+      this.shareStatus = document.getElementById("share-status");
+      this.started = false;
+      this.opened = false;
+      this.surface = this.getSurface();
+      this.populateSigns();
+      this.attachEvents();
+      this.updateRelatedLinks();
+      this.track("zodiac_pair_view", { content_language: this.language(), entry_surface: this.surface });
+      if (new URLSearchParams(location.search).get("start") === "1") requestAnimationFrame(() => this.selection.scrollIntoView({ block: "start" }));
     }
 
-    async init() {
-        try {
-            // Initialize theme
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            const themeToggle = document.getElementById('theme-toggle');
-            if (themeToggle) {
-                themeToggle.textContent = savedTheme === 'light' ? '🌙' : '☀️';
-            }
+    language() { return window.i18n?.getCurrentLanguage?.() || document.documentElement.lang || "en"; }
+    getSurface() {
+      const value = new URLSearchParams(location.search).get("surface") || "direct";
+      return ALLOWED_SURFACES.has(value) ? value : "direct";
+    }
+    track(name, params = {}) {
+      if (typeof window.gtag === "function") window.gtag("event", name, { event_category: "zodiac_pair", ...params });
+    }
+    t(key) { return window.i18n.t(key); }
+    format(key, values) {
+      return Object.entries(values).reduce((text, [name, value]) => text.replaceAll(`{${name}}`, value), this.t(key));
+    }
 
-            if (typeof i18n !== 'undefined' && i18n.ready) {
-                await i18n.ready;
-            }
-        } catch (e) {
-            console.warn('i18n init failed:', e);
+    populateSigns() {
+      const selected = [this.first.value, this.second.value];
+      [this.first, this.second].forEach((select, index) => {
+        select.replaceChildren();
+        const placeholder = document.createElement("option");
+        placeholder.value = "";
+        placeholder.textContent = this.t("selection.placeholder");
+        select.appendChild(placeholder);
+        for (const [id, icon] of SIGNS) {
+          const option = document.createElement("option");
+          option.value = id;
+          option.textContent = `${icon} ${this.t(`zodiac.${id}`)}`;
+          select.appendChild(option);
         }
-        this.setupEventListeners();
-        this.setupStarfield();
-        this.hideAppLoader();
-        this.trackEvent('session_ready');
-        this.maybeQuickStart();
+        select.value = selected[index] || "";
+      });
+      this.syncButton();
     }
 
-    trackEvent(name, params = {}) {
-        if (typeof gtag === 'function') {
-            gtag('event', name, {
-                event_category: 'zodiac_match',
-                entry_surface: this.entrySurface,
-                ...params
-            });
+    attachEvents() {
+      [this.first, this.second].forEach(select => select.addEventListener("change", () => this.onChoice()));
+      this.openButton.addEventListener("click", () => this.openCard());
+      document.getElementById("back-button").addEventListener("click", () => this.restart());
+      document.getElementById("share-button").addEventListener("click", () => this.share());
+      document.querySelectorAll("#related-links [data-target-slug]").forEach((link, index) => link.addEventListener("click", () => {
+        const target = link.dataset.targetSlug;
+        if (ALLOWED_TARGETS.has(target)) this.track("zodiac_pair_related_click", { target_slug: target, target_rank: index + 1 });
+      }));
+      this.setupLanguageSelector();
+    }
+
+    onChoice() {
+      this.syncButton();
+      if (!this.started && (this.first.value || this.second.value)) {
+        this.started = true;
+        this.track("zodiac_pair_start", { content_language: this.language(), entry_surface: this.surface });
+      }
+    }
+    syncButton() { this.openButton.disabled = !(this.first.value && this.second.value); }
+
+    openCard() {
+      if (!SIGN_MAP.has(this.first.value) || !SIGN_MAP.has(this.second.value)) return;
+      this.renderCard();
+      this.selection.hidden = true;
+      this.result.hidden = false;
+      this.shareStatus.textContent = "";
+      if (!this.opened) {
+        this.opened = true;
+        this.track("zodiac_pair_open", { content_language: this.language(), entry_surface: this.surface });
+      }
+      this.result.scrollIntoView({ block: "start" });
+      document.getElementById("back-button").focus({ preventScroll: true });
+    }
+
+    renderCard() {
+      const firstName = this.t(`zodiac.${this.first.value}`);
+      const secondName = this.t(`zodiac.${this.second.value}`);
+      const firstElement = this.t(`elements.${SIGN_MAP.get(this.first.value).element}`);
+      const secondElement = this.t(`elements.${SIGN_MAP.get(this.second.value).element}`);
+      document.getElementById("pair-title").textContent = this.format("result.pair_title", { first: firstName, second: secondName });
+      document.getElementById("pair-elements").textContent = this.format("result.elements", { first: firstElement, second: secondElement });
+    }
+
+    restart() {
+      this.result.hidden = true;
+      this.selection.hidden = false;
+      this.shareStatus.textContent = "";
+      this.track("zodiac_pair_restart");
+      this.selection.scrollIntoView({ block: "start" });
+      this.first.focus({ preventScroll: true });
+    }
+
+    updateRelatedLinks() {
+      document.querySelectorAll("#related-links a").forEach(link => {
+        const url = new URL(link.href, location.origin);
+        url.searchParams.set("lang", this.language());
+        link.href = url.pathname + url.search;
+      });
+    }
+
+    setupLanguageSelector() {
+      const toggle = document.getElementById("lang-toggle");
+      const menu = document.getElementById("lang-menu");
+      toggle.addEventListener("click", () => {
+        const open = menu.hasAttribute("hidden");
+        menu.toggleAttribute("hidden");
+        toggle.setAttribute("aria-expanded", String(open));
+      });
+      menu.querySelectorAll("[data-lang]").forEach(button => button.addEventListener("click", async () => {
+        await window.i18n.setLanguage(button.dataset.lang);
+        menu.setAttribute("hidden", "");
+        toggle.setAttribute("aria-expanded", "false");
+        this.populateSigns();
+        this.updateRelatedLinks();
+        if (!this.result.hidden) this.renderCard();
+      }));
+      document.addEventListener("click", event => {
+        if (toggle.contains(event.target) || menu.contains(event.target)) return;
+        menu.setAttribute("hidden", "");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    shareUrl() {
+      const url = new URL(location.origin + location.pathname);
+      url.searchParams.set("lang", this.language());
+      return url.toString();
+    }
+    async share() {
+      const data = { title: this.t("share.title"), text: this.t("share.text"), url: this.shareUrl() };
+      try {
+        if (navigator.share) {
+          await navigator.share(data);
+          this.track("zodiac_pair_share", { method: "native" });
+          this.shareStatus.textContent = this.t("share.success");
+          return;
         }
+        await navigator.clipboard.writeText(`${data.text} ${data.url}`);
+        this.track("zodiac_pair_share", { method: "clipboard" });
+        this.shareStatus.textContent = this.t("share.copied");
+      } catch (error) {
+        if (error?.name !== "AbortError") this.shareStatus.textContent = this.t("share.error");
+      }
     }
+  }
 
-    isParamEnabled(name) {
-        const value = (this.entryParams.get(name) || '').toLowerCase();
-        return ['1', 'true', 'yes', 'on'].includes(value);
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      await window.i18n.ready;
+      window.zodiacPairCards = new ZodiacPairCards();
+    } finally {
+      document.getElementById("app-loader")?.remove();
     }
-
-    maybeQuickStart() {
-        if (!this.isParamEnabled('quick')) return;
-
-        const my = this.entryParams.get('my') || 'leo';
-        const their = this.entryParams.get('their') || 'sagittarius';
-        if (!ZODIACS[my] || !ZODIACS[their]) return;
-
-        this.selectedZodiacs.my = my;
-        this.selectedZodiacs.their = their;
-        this.updateSelectedButtons();
-        this.updateCheckButton();
-        this.trackEvent('zodiac_quick_start', {
-            my_zodiac: my,
-            their_zodiac: their
-        });
-
-        window.setTimeout(() => this.showResults({ trigger: 'quick_start' }), 300);
-    }
-
-    updateSelectedButtons() {
-        document.querySelectorAll('.zodiac-btn').forEach((button, index) => {
-            const zodiac = button.getAttribute('data-zodiac');
-            const selected = index < 12
-                ? zodiac === this.selectedZodiacs.my
-                : zodiac === this.selectedZodiacs.their;
-            button.classList.toggle('selected', selected);
-        });
-    }
-
-    hideAppLoader() {
-        const loader = document.getElementById('app-loader');
-        if (loader) {
-            loader.classList.add('hidden');
-            setTimeout(() => loader.remove(), 400);
-        }
-    }
-
-    setupEventListeners() {
-        // Theme toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => {
-                const current = document.documentElement.getAttribute('data-theme') || 'dark';
-                const next = current === 'light' ? 'dark' : 'light';
-                document.documentElement.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
-                themeToggle.textContent = next === 'light' ? '🌙' : '☀️';
-            });
-        }
-
-        // Language selector
-        const langToggle = document.getElementById('lang-toggle');
-        const langMenu = document.getElementById('lang-menu');
-        const langOptions = document.querySelectorAll('.lang-option');
-
-        langToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            langMenu.classList.toggle('hidden');
-        });
-
-        langOptions.forEach(option => {
-            option.addEventListener('click', (e) => {
-                const lang = e.target.getAttribute('data-lang');
-                i18n.setLanguage(lang);
-                langMenu.classList.add('hidden');
-            });
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.header-controls')) {
-                langMenu.classList.add('hidden');
-            }
-        });
-
-        // Zodiac selector buttons
-        const zodiacBtns = document.querySelectorAll('.zodiac-btn');
-        let isMySideActive = true;
-
-        let engageFired = false;
-        zodiacBtns.forEach((btn, index) => {
-            btn.addEventListener('click', (e) => {
-                // GA4 engagement on first interaction
-                if (!engageFired) {
-                    engageFired = true;
-                    if (typeof gtag === 'function') {
-                        this.trackEvent('engagement', { event_label: 'first_interaction' });
-                    }
-                }
-                const zodiac = btn.getAttribute('data-zodiac');
-
-                if (index < 12) {
-                    // First column (my zodiac)
-                    document.querySelectorAll('.zodiac-btn').forEach((b, i) => {
-                        if (i < 12) b.classList.remove('selected');
-                    });
-                    btn.classList.add('selected');
-                    this.selectedZodiacs.my = zodiac;
-                    isMySideActive = true;
-                } else {
-                    // Second column (their zodiac)
-                    document.querySelectorAll('.zodiac-btn').forEach((b, i) => {
-                        if (i >= 12) b.classList.remove('selected');
-                    });
-                    btn.classList.add('selected');
-                    this.selectedZodiacs.their = zodiac;
-                    isMySideActive = false;
-                }
-
-                this.updateCheckButton();
-                this.trackEvent('zodiac_select', {
-                    selected_side: index < 12 ? 'my' : 'their',
-                    zodiac
-                });
-            });
-        });
-
-        // Check compatibility button
-        const checkBtn = document.getElementById('check-btn');
-        checkBtn.addEventListener('click', () => {
-            if (this.selectedZodiacs.my && this.selectedZodiacs.their) {
-                this.showResults({ trigger: 'manual' });
-            }
-        });
-
-        // Results screen buttons
-        const backBtn = document.getElementById('back-btn');
-        backBtn.addEventListener('click', () => {
-            this.showSelector();
-        });
-
-        const premiumBtn = document.getElementById('premium-btn');
-        premiumBtn.addEventListener('click', () => {
-            this.showPremiumAnalysis();
-        });
-
-        const closePremiumBtn = document.getElementById('close-premium');
-        const closePremiumBtn2 = document.getElementById('close-premium-btn');
-        closePremiumBtn.addEventListener('click', () => {
-            this.hidePremiumAnalysis();
-        });
-        closePremiumBtn2.addEventListener('click', () => {
-            this.hidePremiumAnalysis();
-        });
-
-        const shareBtn = document.getElementById('share-btn');
-        shareBtn.addEventListener('click', () => {
-            this.generateAndShareCard();
-        });
-    }
-
-    setupStarfield() {
-        const starfield = document.getElementById('starfield');
-        const starCount = 50;
-
-        for (let i = 0; i < starCount; i++) {
-            const star = document.createElement('div');
-            star.style.position = 'absolute';
-            star.style.width = Math.random() * 2 + 'px';
-            star.style.height = star.style.width;
-            star.style.backgroundColor = '#ffffff';
-            star.style.borderRadius = '50%';
-            star.style.left = Math.random() * 100 + '%';
-            star.style.top = Math.random() * 100 + '%';
-            star.style.opacity = Math.random() * 0.5 + 0.3;
-            star.style.animation = `twinkle ${Math.random() * 3 + 2}s ease-in-out infinite`;
-            star.style.animationDelay = Math.random() * 3 + 's';
-
-            starfield.appendChild(star);
-        }
-
-        // Add CSS animation if not exists
-        if (!document.querySelector('style[data-stars]')) {
-            const style = document.createElement('style');
-            style.setAttribute('data-stars', 'true');
-            style.textContent = `
-                @keyframes twinkle {
-                    0%, 100% { opacity: 0.3; }
-                    50% { opacity: 0.8; }
-                }
-            `;
-            document.head.appendChild(style);
-        }
-    }
-
-    updateCheckButton() {
-        const checkBtn = document.getElementById('check-btn');
-        if (this.selectedZodiacs.my && this.selectedZodiacs.their) {
-            checkBtn.disabled = false;
-        } else {
-            checkBtn.disabled = true;
-        }
-    }
-
-    showSelector() {
-        const selectorScreen = document.getElementById('selector-screen');
-        const resultsScreen = document.getElementById('results-screen');
-
-        selectorScreen.classList.add('active');
-        resultsScreen.classList.remove('active');
-    }
-
-    showResults(options = {}) {
-        const selectorScreen = document.getElementById('selector-screen');
-        const resultsScreen = document.getElementById('results-screen');
-
-        // Get compatibility data
-        const compatibility = getCompatibility(this.selectedZodiacs.my, this.selectedZodiacs.their);
-        const analysis = getAnalysisData(this.selectedZodiacs.my, this.selectedZodiacs.their);
-        const element1 = getElement(this.selectedZodiacs.my);
-        const element2 = getElement(this.selectedZodiacs.their);
-        const elementDesc = getElementCompatibilityDescription(element1, element2);
-
-        // Update zodiac displays
-        this.updateZodiacDisplay('my');
-        this.updateZodiacDisplay('their');
-
-        // Update scores with animation
-        this.animateScore('overall-gauge', 'overall-score', compatibility.overall);
-        this.animateScore('romantic-gauge', 'romantic-score', compatibility.romantic);
-        this.animateScore('friendship-gauge', 'friendship-score', compatibility.friendship);
-        this.animateScore('work-gauge', 'work-score', compatibility.work);
-
-        // Update analysis text
-        document.getElementById('element-text').textContent = elementDesc;
-        document.getElementById('strengths-text').textContent = analysis.strengths;
-        document.getElementById('cautions-text').textContent = analysis.cautions;
-        document.getElementById('advice-text').textContent = analysis.advice;
-
-        // Percentile stat
-        var percentile = Math.floor(Math.random() * 15) + 3;
-        var percentileEl = document.getElementById('percentile-stat');
-        if (percentileEl) {
-            var pText = (typeof i18n !== 'undefined' && i18n.t) ? i18n.t('results.percentileStat') : null;
-            if (pText && pText !== 'results.percentileStat') {
-                percentileEl.innerHTML = pText.replace('{percent}', percentile);
-            } else {
-                percentileEl.innerHTML = 'Only <strong>' + percentile + '%</strong> of couples share this exact zodiac pairing';
-            }
-        }
-
-        // Switch screens
-        selectorScreen.classList.remove('active');
-        resultsScreen.classList.add('active');
-        this.loadResultAd(options.trigger || 'manual', compatibility);
-        this.trackEvent('result_view', {
-            trigger: options.trigger || 'manual',
-            my_zodiac: this.selectedZodiacs.my,
-            their_zodiac: this.selectedZodiacs.their,
-            score: compatibility.overall
-        });
-        this.trackEvent('zodiac_match_result_view', {
-            trigger: options.trigger || 'manual',
-            my_zodiac: this.selectedZodiacs.my,
-            their_zodiac: this.selectedZodiacs.their,
-            score: compatibility.overall
-        });
-
-        // Scroll to top
-        window.scrollTo(0, 0);
-    }
-
-    loadResultAd(trigger, compatibility) {
-        // Auto Ads owns placement and paid-impression measurement.
-    }
-
-    updateZodiacDisplay(side) {
-        const zodiac = side === 'my' ? this.selectedZodiacs.my : this.selectedZodiacs.their;
-        const zodiacData = ZODIACS[zodiac];
-
-        const displayElement = document.getElementById(`${side}-zodiac-display`);
-        const nameElement = document.getElementById(`${side}-zodiac-name`);
-
-        // Update SVG color
-        displayElement.querySelector('circle').style.stroke = zodiacData.color;
-        const paths = displayElement.querySelectorAll('path');
-        paths.forEach(path => {
-            path.style.stroke = zodiacData.color;
-            path.style.fill = zodiacData.color;
-        });
-
-        nameElement.textContent = i18n.t(`zodiac.${zodiac}`);
-    }
-
-    animateScore(gaugeId, scoreId, targetValue) {
-        const gauge = document.getElementById(gaugeId);
-        const scoreText = document.getElementById(scoreId);
-
-        let currentValue = 0;
-        const increment = targetValue / 30;
-        const interval = 30;
-
-        const timer = setInterval(() => {
-            currentValue += increment;
-            if (currentValue >= targetValue) {
-                currentValue = targetValue;
-                clearInterval(timer);
-            }
-
-            gauge.style.width = currentValue + '%';
-            scoreText.textContent = Math.round(currentValue) + '%';
-        }, interval);
-    }
-
-    showPremiumAnalysis() {
-        const resultsScreen = document.getElementById('results-screen');
-        const premiumScreen = document.getElementById('premium-screen');
-
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'zodiac_detail_notes_view', {
-                'event_category': 'engagement'
-            });
-        }
-
-        const analysis = getAnalysisData(this.selectedZodiacs.my, this.selectedZodiacs.their);
-
-        // Generate deterministic notes from the selected signs and elements.
-        const premiumDynamics = this.generatePremiumContent('dynamics', this.selectedZodiacs.my, this.selectedZodiacs.their);
-        const premiumCommunication = this.generatePremiumContent('communication', this.selectedZodiacs.my, this.selectedZodiacs.their);
-        const premiumEmotional = this.generatePremiumContent('emotional', this.selectedZodiacs.my, this.selectedZodiacs.their);
-        const premiumGrowth = this.generatePremiumContent('growth', this.selectedZodiacs.my, this.selectedZodiacs.their);
-
-        document.getElementById('premium-dynamics').textContent = premiumDynamics;
-        document.getElementById('premium-communication').textContent = premiumCommunication;
-        document.getElementById('premium-emotional').textContent = premiumEmotional;
-        document.getElementById('premium-growth').textContent = premiumGrowth;
-
-        resultsScreen.classList.remove('active');
-        premiumScreen.classList.add('active');
-    }
-
-    hidePremiumAnalysis() {
-        const resultsScreen = document.getElementById('results-screen');
-        const premiumScreen = document.getElementById('premium-screen');
-
-        premiumScreen.classList.remove('active');
-        resultsScreen.classList.add('active');
-    }
-
-    generatePremiumContent(type, zodiac1, zodiac2) {
-        const zodiacData1 = ZODIACS[zodiac1];
-        const zodiacData2 = ZODIACS[zodiac2];
-        const compatibility = getCompatibility(zodiac1, zodiac2);
-
-        const contents = {
-            dynamics: `${zodiacData1.name} brings ${zodiacData1.element} energy to the relationship, while ${zodiacData2.name} brings ${zodiacData2.element} energy. With an overall compatibility of ${compatibility.overall}%, your relationship dynamics are influenced by these elemental forces. Your natural roles complement each other, creating a balanced dynamic where each partner's strengths offset the other's weaknesses.`,
-
-            communication: `Communication between you flows with a ${compatibility.romantic}% romantic synchronicity. ${zodiacData1.name} tends to express feelings through ${zodiacData1.element === 'fire' ? 'passionate intensity' : zodiacData1.element === 'air' ? 'intellectual discussion' : zodiacData1.element === 'water' ? 'emotional vulnerability' : 'practical action'}, while ${zodiacData2.name} prefers ${zodiacData2.element === 'fire' ? 'bold directness' : zodiacData2.element === 'air' ? 'thoughtful dialogue' : zodiacData2.element === 'water' ? 'intuitive understanding' : 'honest practicality'}. Learning to bridge these communication styles will deepen your connection.`,
-
-            emotional: `Emotionally, your connection shows ${compatibility.romantic}% romantic compatibility. You share ${zodiacData1.element === zodiacData2.element ? 'the same elemental foundation, giving you natural emotional understanding' : 'complementary emotional needs that can create balance'}. ${zodiacData1.name} ${zodiacData1.element === 'water' ? 'feels deeply' : 'approaches emotions thoughtfully'}, while ${zodiacData2.name} ${zodiacData2.element === 'water' ? 'values emotional depth' : 'appreciates clarity'}. This creates opportunities for meaningful emotional growth together.`,
-
-            growth: `The potential for growth together is substantial. Your ${compatibility.work}% work compatibility suggests you can achieve great things as a team. Both of you have lessons to teach and learn from each other. The key is embracing your differences as opportunities for expansion rather than sources of conflict. Your relationship is a journey of mutual evolution and transformation.`
-        };
-
-        return contents[type] || 'Discover deeper insights about your connection.';
-    }
-
-    generateAndShareCard() {
-        const canvas = document.getElementById('share-canvas');
-        const ctx = canvas.getContext('2d');
-
-        // Set canvas size
-        canvas.width = 600;
-        canvas.height = 800;
-
-        // Background
-        const gradient = ctx.createLinearGradient(0, 0, 0, 800);
-        gradient.addColorStop(0, '#0f0f23');
-        gradient.addColorStop(1, '#1a1a2e');
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, 600, 800);
-
-        // Zodiac names
-        const zodiac1Data = ZODIACS[this.selectedZodiacs.my];
-        const zodiac2Data = ZODIACS[this.selectedZodiacs.their];
-        const compatibility = getCompatibility(this.selectedZodiacs.my, this.selectedZodiacs.their);
-
-        // Title
-        ctx.fillStyle = '#a55ec7';
-        ctx.font = 'bold 36px sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText(i18n.t('app.title'), 300, 80);
-
-        // Zodiac names
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 32px sans-serif';
-        ctx.fillText(i18n.t(`zodiac.${this.selectedZodiacs.my}`), 150, 200);
-
-        // Heart
-        ctx.fillStyle = '#ff4757';
-        ctx.font = 'bold 48px sans-serif';
-        ctx.fillText('💜', 300, 260);
-
-        ctx.fillStyle = '#ffffff';
-        ctx.fillText(i18n.t(`zodiac.${this.selectedZodiacs.their}`), 450, 200);
-
-        // Compatibility score
-        ctx.fillStyle = '#ff8fab';
-        ctx.font = 'bold 64px sans-serif';
-        ctx.fillText(compatibility.overall + '%', 300, 380);
-
-        ctx.fillStyle = '#b0b0b0';
-        ctx.font = '20px sans-serif';
-        ctx.fillText(i18n.t('results.overallScore'), 300, 420);
-
-        // Compatibility types
-        ctx.fillStyle = '#a55ec7';
-        ctx.font = 'bold 18px sans-serif';
-        ctx.textAlign = 'left';
-
-        const types = [
-            [`${i18n.t('results.romantic')}: ${compatibility.romantic}%`, 80],
-            [`${i18n.t('results.friendship')}: ${compatibility.friendship}%`, 480],
-            [`${i18n.t('results.work')}: ${compatibility.work}%`, 580]
-        ];
-
-        types.forEach(([text, y]) => {
-            ctx.fillText(text, 100, y);
-        });
-
-        // Footer
-        ctx.fillStyle = '#8e44ad';
-        ctx.font = '16px sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText('dopabrain.com - Zodiac Match', 300, 750);
-
-        // Convert to image and share
-        canvas.toBlob((blob) => {
-            if (navigator.share && navigator.canShare({ files: [new File([blob], 'zodiac-match.png', { type: 'image/png' })] })) {
-                navigator.share({
-                    title: i18n.t('app.title'),
-                    text: `${i18n.t(`zodiac.${this.selectedZodiacs.my}`)} & ${i18n.t(`zodiac.${this.selectedZodiacs.their}`)} - ${compatibility.overall}% 궁합!`,
-                    files: [new File([blob], 'zodiac-match.png', { type: 'image/png' })]
-                }).catch(err => console.log('Share failed:', err));
-            } else {
-                // Fallback: download image
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'zodiac-match.png';
-                a.click();
-                URL.revokeObjectURL(url);
-            }
-        });
-    }
-}
-
-// GA4 engagement tracking (scroll + timer)
-(function() {
-    let scrollFired = false;
-    window.addEventListener('scroll', function() {
-        if (!scrollFired && window.scrollY > 100) {
-            scrollFired = true;
-            if (typeof gtag === 'function') gtag('event', 'scroll_engagement', { engagement_type: 'scroll' });
-        }
-    }, { passive: true });
-    setTimeout(function() {
-        if (typeof gtag === 'function') gtag('event', 'timer_engagement', { engagement_time_msec: 5000 });
-    }, 5000);
+  });
 })();
-
-// Initialize app when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    const app = new ZodiacMatchApp();
-});

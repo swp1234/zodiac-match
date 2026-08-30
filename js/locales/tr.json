@@ -1,122 +1,13 @@
 {
-    "meta": {
-        "title": "Burç Uyum Testi - Aşk, Dostluk ve İş Uyumu | DopaBrain",
-        "description": "Aşk, dostluk ve iş için ücretsiz burç uyum testi. 12 burcun elementlerini, puanlarını ve ilişki notlarını karşılaştırın."
-    },
-    "app": {
-        "title": "Burç Uyum Testi",
-        "subtitle": "Özel birinin ile uyumunuzu keşfedin"
-    },
-    "selector": {
-        "myZodiac": "Benim Burç",
-        "theirZodiac": "Onun/Onun Burcu",
-        "check": "Uyumu Kontrol Et"
-    },
-    "zodiac": {
-        "aries": "Koç",
-        "taurus": "Boğa",
-        "gemini": "İkizler",
-        "cancer": "Yengeç",
-        "leo": "Aslan",
-        "virgo": "Başak",
-        "libra": "Terazi",
-        "scorpio": "Akrep",
-        "sagittarius": "Yay",
-        "capricorn": "Oğlak",
-        "aquarius": "Kova",
-        "pisces": "Balık"
-    },
-    "results": {
-        "overallScore": "Genel Puan",
-        "romantic": "Romantik",
-        "friendship": "Arkadaşlık",
-        "work": "İş",
-        "elementCompat": "Element Uyumu",
-        "analysis": "Detaylı Analiz",
-        "strengths": "Güçlü Yönler",
-        "cautions": "Dikkat Edilmesi Gerekenler",
-        "advice": "Tavsiye",
-        "deepAnalysis": "Ayrıntılı ilişki notları",
-        "shareCard": "Kartı Paylaş",
-        "backToTest": "Yeniden Test Et",
-        "relationshipDynamics": "İlişki Dinamikleri",
-        "communicationStyle": "İletişim Tarzı",
-        "emotionalMatch": "Duygusal Uyum",
-        "growthPotential": "Gelişim Potansiyeli",
-        "close": "Kapat",
-        "moreTests": "Daha Fazla Test",
-        "percentileStat": "Ciftlerin yalnizca <strong>{percent}%</strong>'i bu burc kombinasyonunu paylasiyor"
-    },
-    "related": {
-        "numerology": "Numeroloji",
-        "bloodType": "Kan Grubu",
-        "nameMatch": "Isim Uyumu",
-        "dailyTarot": "Gunluk Tarot"
-    },
-    "element": {
-        "fire_fire": "Dinamik ve tutkulu! Her iki burç da ilişkiye yoğunluk ve coşku getirir.",
-        "fire_earth": "Zorlu ama ödüllendirici. Ateş istikrar öğrenebilir, toprak kendiliğindenlik öğrenebilir.",
-        "fire_air": "Mükemmel sinerji! Hava ateşi körükler, dinamik ve heyecan verici enerji yaratır.",
-        "fire_water": "Karmaşık dinamikler. Ateş suyu buharlaştırır ama buhar birlikte güçlü olabilir.",
-        "earth_earth": "Sağlam temel! Her iki burç da istikrar, sadakat ve güvenliğe değer verir.",
-        "earth_air": "Farklı ritimler. Toprak sağlam, hava özgür ruhludur.",
-        "earth_water": "Güzel uyum! Toprak suyu besler, büyüme ve anlayış yaratır.",
-        "air_air": "Entelektüel bağlantı! Her ikisi de iletişimi ve zihinsel uyarılmayı sever.",
-        "air_water": "İlginç zıtlık. Hava mantıksal, su duygusaldır.",
-        "water_water": "Derinden sezgisel! Her ikisi de duyguları ve empatiyi doğal olarak anlar."
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "Her ikisi de birbirlerinin enerjisini besleyen tutkulu, hırslı ateş burçlarıdır. Yaşam tutkusu, macera ve risk almayı paylaşırsınız. Doğal liderler olarak birbirinizin hedeflerini coşku ve sadakatle desteklersiniz.",
-            "cautions": "Her ikisi de ilgi odağı olmayı sever. İlgi veya kontrol rekabeti sorun olabilir. Birbirinizin başarılarını kutlamanın yollarını bulun.",
-            "advice": "Birleşik ateş enerjinizi ortak maceralara yönlendirin. Ego çatışmalarına dikkat edin ve birbirinizi içtenlikle takdir etmeyi pratik edin."
-        },
-        "aries_sagittarius": {
-            "strengths": "Mükemmel eşleşme! Her iki ateş burcu da macera, özgürlük ve yeni deneyimler ister. Birbirinizin bağımsızlık ve heyecan ihtiyacını doğal olarak anlarsınız.",
-            "cautions": "Her ikisi de dürtüsel ve sabırsız olabilir. Pervasızlık kontrol edilmezse sorunlara yol açabilir.",
-            "advice": "Paylaşılan coşkunuz süper gücünüzdür. Başarıyı garantilemek için kendiliğindenliği biraz planlamayla dengeleyin."
-        },
-        "taurus_capricorn": {
-            "strengths": "Her iki pratik toprak burcu da çalışkanlığa, sadakate ve kalıcı bir şey inşa etmeye değer verir. Birbirinizin güvenlik ve maddi istikrar ihtiyacını anlarsınız.",
-            "cautions": "Her ikisi de inatçı ve aşırı iş odaklı olabilir. Birlikte hayatın tadını çıkarmayı unutmayın.",
-            "advice": "Birlikte hedefler koyun ve bir takım olarak zenginlik oluşturun. Yoğun programlara rağmen romantizm için zaman ayırın."
-        },
-        "gemini_libra": {
-            "strengths": "Aynı dili konuşan hava burçları! Mükemmel iletişim, paylaşılan entelektüel ilgi alanları ve doğal uyum bu eşleşmeyi keyifli kılar.",
-            "cautions": "Her ikisi de kararsız veya aşırı analitik olabilir. Düşünmek ve yapmak arasında denge kurun.",
-            "advice": "İletişim becerilerinizi kullanarak birlikte fikirleri keşfedin. Sohbetleri devam ettirin ve kararları ileriye taşıyın."
-        },
-        "cancer_scorpio": {
-            "strengths": "Derin su burcu bağlantısı! Her ikisi de duygusal derinliği ve sezgiyi anlar. Yoğun sadakat, doğal empati ve otantik anlayış güçlü bağlar oluşturur.",
-            "cautions": "Her ikisi de ketum veya aşırı korumacı olabilir. Güven ve açık iletişim esastır.",
-            "advice": "Birbiriniz için güvenli duygusal alan yaratın. Yargılamadan savunmasızlığa izin verin."
-        },
-        "default": {
-            "strengths": "Her eşleşmenin keşfedilmeyi bekleyen benzersiz güçlü yanları vardır. Paylaşılan değerlerinize ve birbirinize sizi çeken şeylere odaklanın.",
-            "cautions": "Farklı burçların farklı ihtiyaçları vardır. Birbirinizin bakış açılarını anlamada sabırlı olun.",
-            "advice": "Ortak noktalar üzerine inşa ederken farklılıklarınızı kutlayın. İletişim, başarılı her ilişkinin anahtarıdır."
-        }
-    },
-    "error": {
-        "storage": "Gizli modda bazı özellikler sınırlı olabilir.",
-        "data": "Veri yükleme hatası. Lütfen sayfayı yenileyin.",
-        "canvas": "Grafik oluşturma sorunu. Lütfen tekrar deneyin.",
-        "audio": "Ses kullanılamıyor. Devam edebilirsiniz.",
-        "network": "Bağlantınızı kontrol edip tekrar deneyin.",
-        "general": "Bir şeyler ters gitti. Yenileyip tekrar deneyin."
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"Burç Çifti Sohbet Kartları | Kültür, puan değil","description":"İki güneş burcu seçin; kanıt sınırı görünen, özel ve puansız bir sohbet kartı açın."},
+  "app":{"eyebrow":"Batı astrolojisi söylencesi · ilişki bilimi değil","title":"Burç Çifti Sohbet Kartları","subtitle":"İki burç simgesini uyum puanı olmadan gerçek sorulara dönüştürün."},
+  "boundary":{"title":"İlişki verileri ne buldu?","body":"66.063 evliliği inceleyen İsveç kayıt çalışması, astrolojik açıdan uygun çiftlerin daha sık evlendiğine veya daha düşük boşanma riski taşıdığına dair tutarlı kanıt bulmadı.","source":"Açık çalışmayı oku"},
+  "selection":{"title":"İki güneş burcu seçin","desc":"Seçimleriniz bu tarayıcıda kalır. Burçları, doğum tarihlerini veya çift sonucunu Analytics'e göndermeyiz.","first":"İlk burç","second":"İkinci burç","placeholder":"Burç seçin","open":"Sohbet kartını aç"},
+  "zodiac":{"aries":"Koç","taurus":"Boğa","gemini":"İkizler","cancer":"Yengeç","leo":"Aslan","virgo":"Başak","libra":"Terazi","scorpio":"Akrep","sagittarius":"Yay","capricorn":"Oğlak","aquarius":"Kova","pisces":"Balık"},
+  "elements":{"fire":"Ateş","earth":"Toprak","air":"Hava","water":"Su"},
+  "result":{"label":"Kültürel simgeler, hüküm değil","pair_title":"{first} × {second}","elements":"Geleneksel elementler: {first} × {second}","boundary":"Hiçbir puan iki kişinin iyi iletişim kuracağını, güvende hissedeceğini veya birlikte kalacağını söyleyemez. Gerçek deneyimlerinizi kullanın.","prompt1_title":"Beklentiler","prompt1_body":"Her kişinin saygı gördüğünü hissetmesi için ne gerekiyor ve bunu açıkça söylediniz mi?","prompt2_title":"Gerilim","prompt2_body":"Anlaşmazlıkta hangi davranış konuşmayı güvenli ve somut tutar?","prompt3_title":"Onarım","prompt3_body":"Yanlış anlaşılmadan sonra her kişi hangi küçük adımı atabilir?","evidence_title":"Kanıt sınırı","evidence_body":"Büyük kayıt çalışmasında burç çiftleri evlilik seçimini veya boşanmayı tutarlı biçimde öngörmedi. Başka bir kültürler arası çalışma da ölçülen kişiliği öngörmeye çok az destek buldu.","source_relationship":"Evlilik ve boşanma çalışması","source_personality":"Kişilik çalışması"},
+  "common":{"back":"Başka çift seç"},
+  "share":{"button":"Soru kartını paylaş","title":"Burç Çifti Sohbet Kartları","text":"Burç söylencesini uyum puanı olmadan gerçek ilişki sorularına dönüştürün.","success":"Seçilen burçlar eklenmeden paylaşıldı.","copied":"Seçilen burçlar eklenmeden bağlantı kopyalandı.","error":"Paylaşılamadı. Sayfa adresini kopyalayın."},
+  "related":{"title":"Ölçülebilir bir etkinlikle devam edin","reaction":"Tepki süresi","reaction_desc":"Beş tur ölçün","iq":"10 bulmacalık meydan okuma","iq_desc":"Süre olmadan çözün","blood":"Kan Grubu Kültür Kartları","blood_desc":"Söylenceyi kanıtla karşılaştırın"},
+  "footer":{"privacy":"Gizlilik","home":"DopaBrain ana sayfa"},"accessibility":{"skip":"Ana içeriğe geç"}
 }

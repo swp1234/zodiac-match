@@ -1,122 +1,13 @@
 {
-    "meta": {
-        "title": "Sternzeichen-Kompatibilitätstest - Liebe, Freundschaft & Beruf | DopaBrain",
-        "description": "Kostenloser Sternzeichen-Kompatibilitätstest für Liebe, Freundschaft und Beruf. Vergleichen Sie Elemente, Werte und Hinweise für alle 12 Sternzeichen."
-    },
-    "app": {
-        "title": "Sternzeichen-Kompatibilitätstest",
-        "subtitle": "Entdecken Sie Ihre Kompatibilität mit jemandem Besonderem"
-    },
-    "selector": {
-        "myZodiac": "Mein Sternzeichen",
-        "theirZodiac": "Sein/Ihr Sternzeichen",
-        "check": "Kompatibilität prüfen"
-    },
-    "zodiac": {
-        "aries": "Widder",
-        "taurus": "Stier",
-        "gemini": "Zwillinge",
-        "cancer": "Krebs",
-        "leo": "Löwe",
-        "virgo": "Jungfrau",
-        "libra": "Waage",
-        "scorpio": "Skorpion",
-        "sagittarius": "Schütze",
-        "capricorn": "Steinbock",
-        "aquarius": "Wassermann",
-        "pisces": "Fische"
-    },
-    "results": {
-        "overallScore": "Gesamtpunktzahl",
-        "romantic": "Romantisch",
-        "friendship": "Freundschaft",
-        "work": "Arbeit",
-        "elementCompat": "Elementkompatibilität",
-        "analysis": "Detaillierte Analyse",
-        "strengths": "Stärken",
-        "cautions": "Vorsichtsmaßnahmen",
-        "advice": "Ratschlag",
-        "deepAnalysis": "Detaillierte Beziehungsnotizen",
-        "shareCard": "Karte teilen",
-        "backToTest": "Erneut testen",
-        "relationshipDynamics": "Beziehungsdynamik",
-        "communicationStyle": "Kommunikationsstil",
-        "emotionalMatch": "Emotionale Übereinstimmung",
-        "growthPotential": "Wachstumspotential",
-        "close": "Schließen",
-        "moreTests": "Weitere Tests",
-        "percentileStat": "Nur <strong>{percent}%</strong> der Paare teilen diese Sternzeichen-Kombination"
-    },
-    "related": {
-        "numerology": "Numerologie",
-        "bloodType": "Blutgruppe",
-        "nameMatch": "Namenskompatibilitat",
-        "dailyTarot": "Tagliches Tarot"
-    },
-    "element": {
-        "fire_fire": "Dynamisch und leidenschaftlich! Beide Zeichen bringen Intensität und Begeisterung in die Beziehung.",
-        "fire_earth": "Herausfordernd, aber lohnend. Feuer kann Stabilität lernen, Erde kann Spontanität lernen.",
-        "fire_air": "Ausgezeichnete Synergie! Luft facht Feuer an und erzeugt dynamische und aufregende Energie.",
-        "fire_water": "Komplexe Dynamik. Feuer verdampft Wasser, aber Dampf zusammen kann mächtig sein.",
-        "earth_earth": "Solide Grundlage! Beide Zeichen schätzen Stabilität, Treue und Sicherheit.",
-        "earth_air": "Unterschiedliche Rhythmen. Erde ist geerdet, Luft ist freigeistig.",
-        "earth_water": "Wunderschöne Harmonie! Erde nährt Wasser und schafft Wachstum und Verständnis.",
-        "air_air": "Intellektuelle Verbindung! Beide lieben Kommunikation und geistige Anregung.",
-        "air_water": "Interessanter Kontrast. Luft ist logisch, Wasser ist emotional.",
-        "water_water": "Tief intuitiv! Beide verstehen Emotionen und Empathie natürlich."
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "Beide sind leidenschaftliche, ehrgeizige Feuerzeichen, die sich gegenseitig Energie geben. Sie teilen eine Begeisterung für das Leben, Abenteuer und Risikobereitschaft. Als geborene Führer unterstützen Sie die Ziele des anderen mit Enthusiasmus und Loyalität.",
-            "cautions": "Beide stehen gerne im Rampenlicht. Wettbewerb um Aufmerksamkeit oder Kontrolle könnte ein Problem sein. Finden Sie Wege, die Erfolge des anderen zu feiern.",
-            "advice": "Lenken Sie Ihre gemeinsame Feuerenergie in geteilte Abenteuer. Achten Sie auf Ego-Konflikte und üben Sie aufrichtige gegenseitige Bewunderung."
-        },
-        "aries_sagittarius": {
-            "strengths": "Perfekte Kombination! Beide Feuerzeichen sehnen sich nach Abenteuer, Freiheit und neuen Erfahrungen. Sie verstehen das Bedürfnis des anderen nach Unabhängigkeit und Aufregung ganz natürlich.",
-            "cautions": "Beide können impulsiv und ungeduldig sein. Leichtsinn könnte zu Problemen führen, wenn er nicht kontrolliert wird.",
-            "advice": "Ihr gemeinsamer Enthusiasmus ist Ihre Superkraft. Balancieren Sie Spontanität mit etwas Planung für den Erfolg."
-        },
-        "taurus_capricorn": {
-            "strengths": "Beide praktischen Erdzeichen schätzen harte Arbeit, Treue und den Aufbau von etwas Dauerhaftem. Sie verstehen gegenseitig das Bedürfnis nach Sicherheit und materieller Stabilität.",
-            "cautions": "Beide können stur und zu arbeitsfokussiert sein. Denken Sie daran, das Leben zusammen zu genießen.",
-            "advice": "Setzen Sie gemeinsame Ziele und bauen Sie als Team Wohlstand auf. Planen Sie trotz voller Terminkalender Zeit für Romantik ein."
-        },
-        "gemini_libra": {
-            "strengths": "Luftzeichen, die dieselbe Sprache sprechen! Hervorragende Kommunikation, gemeinsame intellektuelle Interessen und natürliche Harmonie machen dies zu einer wunderbaren Kombination.",
-            "cautions": "Beide können unentschlossen oder zu analytisch sein. Finden Sie ein Gleichgewicht zwischen Denken und Handeln.",
-            "advice": "Nutzen Sie Ihre Kommunikationsfähigkeiten, um gemeinsam Ideen zu erkunden. Halten Sie Gespräche am Laufen und treiben Sie Entscheidungen voran."
-        },
-        "cancer_scorpio": {
-            "strengths": "Tiefe Verbindung der Wasserzeichen! Beide verstehen emotionale Tiefen und Intuition. Intensive Loyalität, natürliche Empathie und authentisches Verständnis schaffen starke Bindungen.",
-            "cautions": "Beide können geheimniskrämerisch oder überfürsorglich sein. Vertrauen und offene Kommunikation sind unerlässlich.",
-            "advice": "Schaffen Sie einen sicheren emotionalen Raum füreinander. Lassen Sie Verletzlichkeit ohne Urteile zu."
-        },
-        "default": {
-            "strengths": "Jede Kombination hat einzigartige Stärken, die darauf warten, entdeckt zu werden. Konzentrieren Sie sich auf gemeinsame Werte und was Sie aneinander anzieht.",
-            "cautions": "Verschiedene Zeichen haben verschiedene Bedürfnisse. Seien Sie geduldig beim Verstehen der Perspektive des anderen.",
-            "advice": "Feiern Sie Ihre Unterschiede, während Sie Gemeinsamkeiten aufbauen. Kommunikation ist der Schlüssel zu jeder erfolgreichen Beziehung."
-        }
-    },
-    "error": {
-        "storage": "Einige Funktionen sind im privaten Modus eingeschränkt.",
-        "data": "Fehler beim Laden. Bitte Seite aktualisieren.",
-        "canvas": "Grafikfehler. Bitte erneut versuchen.",
-        "audio": "Audio nicht verfügbar. Sie können fortfahren.",
-        "network": "Bitte Verbindung prüfen und erneut versuchen.",
-        "general": "Etwas ist schiefgelaufen. Bitte aktualisieren oder erneut versuchen."
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"Sternzeichen-Paarkarten | Kultur statt Punktzahl","description":"Wähle zwei Sonnenzeichen für eine private Gesprächskarte ohne Bewertung und mit sichtbarer Evidenzgrenze."},
+  "app":{"eyebrow":"Westliche Astrologie-Folklore · keine Beziehungswissenschaft","title":"Sternzeichen-Paarkarten","subtitle":"Mach aus zwei Sonnenzeichen echte Fragen – ohne Kompatibilitätswert."},
+  "boundary":{"title":"Was Beziehungsdaten zeigen","body":"Eine schwedische Registerstudie mit 66.063 Ehen fand keine konsistenten Belege dafür, dass astrologisch günstige Paare häufiger heiraten oder sich seltener scheiden lassen.","source":"Offene Studie lesen"},
+  "selection":{"title":"Zwei Sonnenzeichen wählen","desc":"Deine Auswahl bleibt in diesem Browser. Zeichen, Geburtsdaten und Paarergebnisse werden nicht an Analytics gesendet.","first":"Erstes Zeichen","second":"Zweites Zeichen","placeholder":"Zeichen wählen","open":"Gesprächskarte öffnen"},
+  "zodiac":{"aries":"Widder","taurus":"Stier","gemini":"Zwillinge","cancer":"Krebs","leo":"Löwe","virgo":"Jungfrau","libra":"Waage","scorpio":"Skorpion","sagittarius":"Schütze","capricorn":"Steinbock","aquarius":"Wassermann","pisces":"Fische"},
+  "elements":{"fire":"Feuer","earth":"Erde","air":"Luft","water":"Wasser"},
+  "result":{"label":"Kulturelle Symbole, kein Urteil","pair_title":"{first} × {second}","elements":"Traditionelle Elemente: {first} × {second}","boundary":"Keine Punktzahl zeigt, ob zwei Menschen gut kommunizieren, sich sicher fühlen oder zusammenbleiben. Nutzt eure echten Erfahrungen.","prompt1_title":"Erwartungen","prompt1_body":"Was braucht jede Person, um sich respektiert zu fühlen, und wurde es klar gesagt?","prompt2_title":"Spannung","prompt2_body":"Welches Verhalten hält das Gespräch bei Uneinigkeit sicher und konkret?","prompt3_title":"Wiedergutmachung","prompt3_body":"Welche kleine Handlung kann jede Person nach einem Missverständnis tun?","evidence_title":"Evidenzgrenze","evidence_body":"Sonnenzeichen-Paare sagten in der großen Registerstudie weder Partnerwahl noch Scheidung konsistent voraus. Eine kulturvergleichende Studie fand auch kaum Unterstützung für eine Vorhersage gemessener Persönlichkeit.","source_relationship":"Ehe- und Scheidungsstudie","source_personality":"Persönlichkeitsstudie"},
+  "common":{"back":"Anderes Paar wählen"},
+  "share":{"button":"Fragenkarte teilen","title":"Sternzeichen-Paarkarten","text":"Mach aus Sternzeichen-Folklore echte Beziehungsfragen – ohne Kompatibilitätswert.","success":"Ohne die gewählten Zeichen geteilt.","copied":"Link ohne die gewählten Zeichen kopiert.","error":"Teilen war nicht möglich. Bitte kopiere die Seitenadresse."},
+  "related":{"title":"Mit einer messbaren Aktivität weitermachen","reaction":"Reaktionszeit","reaction_desc":"Fünf Runden messen","iq":"10-Rätsel-Challenge","iq_desc":"Ohne Zeitlimit lösen","blood":"Blutgruppen-Kulturkarten","blood_desc":"Folklore mit Evidenz vergleichen"},
+  "footer":{"privacy":"Datenschutz","home":"DopaBrain-Startseite"},"accessibility":{"skip":"Zum Hauptinhalt springen"}
 }

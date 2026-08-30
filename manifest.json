@@ -1,12 +1,12 @@
 {
-    "name": "Zodiac Match - Compatibility Test",
-    "short_name": "Zodiac Match",
-    "description": "Discover your zodiac compatibility with loved ones. Find your perfect match!",
+    "name": "Zodiac Pair Conversation Cards",
+    "short_name": "Zodiac Pair Cards",
+    "description": "Turn two zodiac symbols into score-free relationship questions with visible evidence limits.",
     "start_url": "./index.html",
     "scope": "./",
     "display": "standalone",
-    "background_color": "#0f0f23",
-    "theme_color": "#8e44ad",
+    "background_color": "#100b1d",
+    "theme_color": "#241743",
     "orientation": "portrait-primary",
     "icons": [
         {
@@ -22,28 +22,6 @@
             "purpose": "any"
         }
     ],
-    "screenshots": [
-        {
-            "src": "icon-512.svg",
-            "sizes": "512x512",
-            "type": "image/svg+xml"
-        }
-    ],
-    "categories": ["lifestyle", "entertainment"],
-    "shortcuts": [
-        {
-            "name": "Test Compatibility",
-            "short_name": "Test",
-            "description": "Start a new compatibility test",
-            "url": "./index.html?action=test",
-            "icons": [
-                {
-                    "src": "icon-192.svg",
-                    "sizes": "192x192",
-                    "type": "image/svg+xml"
-                }
-            ]
-        }
-    ],
+    "categories": ["education", "entertainment"],
     "prefer_related_applications": false
 }

@@ -1,122 +1,13 @@
 {
-    "meta": {
-        "title": "星座配对测试 - 12星座恋爱·友谊·工作配对 | DopaBrain",
-        "description": "免费查看12星座在恋爱、友谊和工作中的配对，比较元素、分数与关系反思提示。"
-    },
-    "app": {
-        "title": "星座配对测试",
-        "subtitle": "探索你和另一半的配对指数"
-    },
-    "selector": {
-        "myZodiac": "我的星座",
-        "theirZodiac": "对方的星座",
-        "check": "查看配对"
-    },
-    "zodiac": {
-        "aries": "白羊座",
-        "taurus": "金牛座",
-        "gemini": "双子座",
-        "cancer": "巨蟹座",
-        "leo": "狮子座",
-        "virgo": "处女座",
-        "libra": "天秤座",
-        "scorpio": "天蝎座",
-        "sagittarius": "射手座",
-        "capricorn": "摩羯座",
-        "aquarius": "水瓶座",
-        "pisces": "双鱼座"
-    },
-    "results": {
-        "overallScore": "总体配对",
-        "romantic": "爱情配对",
-        "friendship": "友谊配对",
-        "work": "工作配对",
-        "elementCompat": "元素配对",
-        "analysis": "详细分析",
-        "strengths": "优势",
-        "cautions": "注意事项",
-        "advice": "建议",
-        "deepAnalysis": "详细关系说明",
-        "shareCard": "分享卡片",
-        "backToTest": "重新测试",
-        "relationshipDynamics": "关系动力",
-        "communicationStyle": "沟通方式",
-        "emotionalMatch": "情感契合度",
-        "growthPotential": "成长潜力",
-        "close": "关闭",
-        "moreTests": "推荐测试",
-        "percentileStat": "只有<strong>{percent}%</strong>的情侣拥有相同的星座组合"
-    },
-    "related": {
-        "numerology": "数字命理",
-        "bloodType": "血型配对",
-        "nameMatch": "姓名配对",
-        "dailyTarot": "每日塔罗"
-    },
-    "element": {
-        "fire_fire": "充满活力和激情！两个星座都为关系带来强烈和热情。",
-        "fire_earth": "充满挑战但值得。火可以学习稳定，土可以学习自发性。",
-        "fire_air": "优秀的协同效应！风助火势，创造出充满活力和令人兴奋的能量。",
-        "fire_water": "复杂的动态关系。火蒸发水，但蒸汽在一起可以很强大。",
-        "earth_earth": "坚实的基础！两个星座都重视稳定、忠诚和安全。",
-        "earth_air": "不同的节奏。土是踏实的，风是自由奔放的。",
-        "earth_water": "美丽的和谐！土滋养水，创造成长和理解。",
-        "air_air": "智力连接！两者都热爱交流和精神刺激。",
-        "air_water": "有趣的对比。风是逻辑的，水是感性的。",
-        "water_water": "深度直觉！两者都自然地理解情感和共鸣。"
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "两者都是热情、有野心的火象星座，互相激发能量。你们共同拥有对生活的热情、冒险和冒险精神。作为天生的领导者，你们以热情和忠诚支持彼此的目标。",
-            "cautions": "两者都喜欢成为焦点。争夺关注或控制可能成为问题。尝试找到庆祝彼此成就的方式。",
-            "advice": "将你们结合的火焰能量注入共同冒险中。注意自尊心冲突，真诚地欣赏彼此。"
-        },
-        "aries_sagittarius": {
-            "strengths": "完美搭配！两个火象星座都渴望冒险、自由和新体验。你们自然地理解彼此对独立和刺激的需求。",
-            "cautions": "两者都可能冲动和缺乏耐心。如果不加控制，鲁莽可能导致问题。",
-            "advice": "你们共同的热情是你们的超能力。用一些计划来平衡自发性以确保成功。"
-        },
-        "taurus_capricorn": {
-            "strengths": "两者都是实际的土象星座，重视勤奋、忠诚和建设持久的事物。你们理解彼此对安全和物质稳定的需求。",
-            "cautions": "两者都可能固执和过于专注于工作。记得一起享受生活。",
-            "advice": "一起制定目标并作为团队积累财富。即使日程繁忙也要安排浪漫时间。"
-        },
-        "gemini_libra": {
-            "strengths": "同属风象星座，说着同样的语言！出色的沟通、共同的智力兴趣和自然的和谐使这成为一个令人愉快的组合。",
-            "cautions": "两者都可能优柔不断或过度分析。在思考和行动之间找到平衡。",
-            "advice": "利用你们的沟通技巧一起探索想法。保持对话流畅并推动决策前进。"
-        },
-        "cancer_scorpio": {
-            "strengths": "深层水象星座连接！两者都理解情感深度和直觉。强烈的忠诚、自然的共情和真实的理解创造了强大的纽带。",
-            "cautions": "两者都可能保密或过度保护。信任和开放的沟通至关重要。",
-            "advice": "为彼此创造安全的情感空间。允许脆弱而不评判。"
-        },
-        "default": {
-            "strengths": "每种配对都有等待被发现的独特优势。关注你们共同的价值观和彼此吸引之处。",
-            "cautions": "不同的星座有不同的需求。在理解彼此观点时要有耐心。",
-            "advice": "在建立共同点的同时庆祝你们的差异。沟通是任何成功关系的关键。"
-        }
-    },
-    "error": {
-        "storage": "隐私模式下部分功能可能受限。",
-        "data": "数据加载错误，请刷新页面。",
-        "canvas": "图形渲染问题，请重试。",
-        "audio": "音频不可用，可继续使用。",
-        "network": "请检查网络连接后重试。",
-        "general": "出现问题，请刷新或重试。"
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"星座配对对话卡｜文化话题，不是分数","description":"选择两个太阳星座，用不打分的私密对话卡探索文化象征，同时查看证据边界。"},
+  "app":{"eyebrow":"西方占星文化 · 不是关系科学","title":"星座配对对话卡","subtitle":"选择两个太阳星座，把文化象征变成真实问题，不生成兼容度分数。"},
+  "boundary":{"title":"关系数据发现了什么","body":"一项研究分析了66,063段瑞典婚姻，没有发现占星学所谓的有利配对更常结婚或离婚风险更低的一致证据。","source":"阅读开放研究"},
+  "selection":{"title":"选择两个太阳星座","desc":"选择只保留在本浏览器中。我们不会向分析系统发送星座、出生日期或配对结果。","first":"第一个星座","second":"第二个星座","placeholder":"选择星座","open":"打开对话卡"},
+  "zodiac":{"aries":"白羊座","taurus":"金牛座","gemini":"双子座","cancer":"巨蟹座","leo":"狮子座","virgo":"处女座","libra":"天秤座","scorpio":"天蝎座","sagittarius":"射手座","capricorn":"摩羯座","aquarius":"水瓶座","pisces":"双鱼座"},
+  "elements":{"fire":"火象","earth":"土象","air":"风象","water":"水象"},
+  "result":{"label":"文化象征，不是判决","pair_title":"{first} × {second}","elements":"传统元素：{first} × {second}","boundary":"任何分数都不能判断两个人能否良好沟通、感到安全或长久相处。请以真实经历为准。","prompt1_title":"期待","prompt1_body":"每个人需要什么才会感到被尊重？你们是否清楚说过？","prompt2_title":"分歧","prompt2_body":"意见不同时，什么行为能让对话保持安全、具体？","prompt3_title":"修复","prompt3_body":"发生误解后，每个人可以做的一件小事是什么？","evidence_title":"证据边界","evidence_body":"大型登记研究中，太阳星座配对并未一致预测结婚选择或离婚。另一项跨文化研究也很少支持太阳星座预测测量到的人格。","source_relationship":"婚姻与离婚研究","source_personality":"人格研究"},
+  "common":{"back":"选择另一组"},
+  "share":{"button":"分享问题卡","title":"星座配对对话卡","text":"把星座文化变成真实的关系问题，不使用兼容度分数。","success":"已分享，未包含任何星座选择。","copied":"已复制链接，未包含任何星座选择。","error":"无法分享，请复制页面地址。"},
+  "related":{"title":"继续可实际测量的活动","reaction":"反应速度","reaction_desc":"测量五轮","iq":"10题谜题挑战","iq_desc":"不限时完成","blood":"血型文化卡","blood_desc":"对照民间说法与证据"},
+  "footer":{"privacy":"隐私","home":"DopaBrain首页"},"accessibility":{"skip":"跳到主要内容"}
 }

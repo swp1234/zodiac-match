@@ -1,13 +1,13 @@
 // Service Worker for Zodiac Match App
 
-const CACHE_NAME = 'zodiac-match-v5';
+const CACHE_NAME = 'zodiac-pair-cards-v6';
+const APP_ROOT = new URL('./', self.location.href);
 const urlsToCache = [
     './',
     './index.html',
     './manifest.json',
     './css/style.css',
     './js/i18n.js',
-    './js/zodiac-data.js',
     './js/app.js',
     './js/locales/ko.json',
     './js/locales/en.json',
@@ -58,8 +58,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     if (event.request.method !== 'GET') return;
 
-    // Skip external requests (ads, analytics, etc.)
-    if (!event.request.url.startsWith(self.location.origin)) return;
+    const requestUrl = new URL(event.request.url);
+    if (requestUrl.origin !== self.location.origin || !requestUrl.pathname.startsWith(APP_ROOT.pathname)) return;
 
     event.respondWith(
         fetch(event.request)

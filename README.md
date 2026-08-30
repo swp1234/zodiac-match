@@ -1,22 +1,14 @@
-# Zodiac Match
+# Zodiac Pair Conversation Cards
 
-Static astrology compatibility experience deployed at <https://dopabrain.com/zodiac-match/>.
+A compact, score-free entertainment tool that turns two western sun-sign symbols into concrete relationship questions.
 
-## Current contract
+## Contract
 
-- Compare two of the 12 zodiac signs across romantic, friendship, and work themes.
-- Scores and text come from local compatibility tables and traditional element associations.
-- Detailed relationship notes are deterministic reflection prompts, not AI output or scientific assessment.
-- Supports result-card sharing, PWA behavior, responsive layouts, and 12 locales.
-- No rewarded-ad unlock, registration, or payment gate.
+- Two local sign choices; no compatibility score, percentile, prediction, rating, AI, premium or ad gate.
+- Sign choices and pair results stay in browser memory and never enter analytics or shared URLs.
+- All shell, sign, element and result copy is localized in 12 locale files.
+- One Auto Ads loader and an app-scoped service worker.
+- Stage analytics only: view, first choice, first card open, restart, successful share and allowlisted related click.
+- Visible sources cover large-scale marriage/divorce evidence and cross-cultural personality evidence.
 
-## Structure
-
-- `index.html`: page structure, metadata, FAQ, and structured data.
-- `js/app.js`: selection flow, result rendering, sharing, and analytics events.
-- `js/zodiac-data.js`: compatibility tables and reflection copy.
-- `js/i18n.js`, `js/locales/`: locale loading and translations.
-- `css/style.css`: responsive presentation.
-- `manifest.json`, `sw.js`: install and offline support.
-
-The app has no build step. Serve the repository root over HTTP for local checks; do not open `index.html` directly because locale files are fetched at runtime.
+Run the repository-level zodiac pair verifier and quality gate before deployment.

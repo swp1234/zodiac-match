@@ -1,122 +1,13 @@
 {
-    "meta": {
-        "title": "Test de Compatibilidad de Signos - Amor, Amistad y Trabajo | DopaBrain",
-        "description": "Test gratuito de compatibilidad zodiacal para amor, amistad y trabajo. Compara elementos, puntuaciones y notas para los 12 signos."
-    },
-    "app": {
-        "title": "Prueba de Compatibilidad de Signos",
-        "subtitle": "Descubre tu compatibilidad con alguien especial"
-    },
-    "selector": {
-        "myZodiac": "Mi Signo",
-        "theirZodiac": "Su Signo",
-        "check": "Ver Compatibilidad"
-    },
-    "zodiac": {
-        "aries": "Aries",
-        "taurus": "Tauro",
-        "gemini": "Géminis",
-        "cancer": "Cáncer",
-        "leo": "Leo",
-        "virgo": "Virgo",
-        "libra": "Libra",
-        "scorpio": "Escorpio",
-        "sagittarius": "Sagitario",
-        "capricorn": "Capricornio",
-        "aquarius": "Acuario",
-        "pisces": "Piscis"
-    },
-    "results": {
-        "overallScore": "Puntuación General",
-        "romantic": "Romántica",
-        "friendship": "Amistad",
-        "work": "Trabajo",
-        "elementCompat": "Compatibilidad de Elementos",
-        "analysis": "Análisis Detallado",
-        "strengths": "Fortalezas",
-        "cautions": "Precauciones",
-        "advice": "Consejo",
-        "deepAnalysis": "Notas detalladas de la relación",
-        "shareCard": "Compartir Tarjeta",
-        "backToTest": "Probar de Nuevo",
-        "relationshipDynamics": "Dinámicas de Relación",
-        "communicationStyle": "Estilo de Comunicación",
-        "emotionalMatch": "Compatibilidad Emocional",
-        "growthPotential": "Potencial de Crecimiento",
-        "close": "Cerrar",
-        "moreTests": "Mas Tests",
-        "percentileStat": "Solo el <strong>{percent}%</strong> de las parejas comparten esta combinacion zodiacal"
-    },
-    "related": {
-        "numerology": "Numerologia",
-        "bloodType": "Tipo de Sangre",
-        "nameMatch": "Compatibilidad de Nombres",
-        "dailyTarot": "Tarot Diario"
-    },
-    "element": {
-        "fire_fire": "¡Dinámico y apasionado! Ambos signos aportan intensidad y entusiasmo a la relación.",
-        "fire_earth": "Desafiante pero gratificante. El fuego puede aprender estabilidad, la tierra puede aprender espontaneidad.",
-        "fire_air": "¡Excelente sinergia! El aire aviva el fuego, creando energía dinámica y emocionante.",
-        "fire_water": "Dinámicas complejas. El fuego evapora el agua, pero el vapor juntos puede ser poderoso.",
-        "earth_earth": "¡Base sólida! Ambos signos valoran la estabilidad, la lealtad y la seguridad.",
-        "earth_air": "Ritmos diferentes. La tierra es estable, el aire es libre.",
-        "earth_water": "¡Hermosa armonía! La tierra nutre el agua, creando crecimiento y comprensión.",
-        "air_air": "¡Conexión intelectual! Ambos aman la comunicación y la estimulación mental.",
-        "air_water": "Contraste interesante. El aire es lógico, el agua es emocional.",
-        "water_water": "¡Profundamente intuitivo! Ambos entienden las emociones y la empatía naturalmente."
-    },
-    "analysis": {
-        "aries_leo": {
-            "strengths": "Ambos son signos de fuego apasionados y ambiciosos que alimentan la energía del otro. Comparten pasión por la vida, la aventura y los riesgos. Líderes naturales, se apoyan mutuamente con entusiasmo y lealtad.",
-            "cautions": "Ambos aman ser el centro de atención. La competencia por la atención o el control puede ser un problema. Encuentra maneras de celebrar los logros del otro.",
-            "advice": "Canaliza tu energía de fuego combinada en aventuras compartidas. Ten cuidado con los choques de ego y practica admirar al otro genuinamente."
-        },
-        "aries_sagittarius": {
-            "strengths": "¡Combinación perfecta! Ambos signos de fuego anhelan aventura, libertad y nuevas experiencias. Entienden naturalmente la necesidad de independencia y emoción del otro.",
-            "cautions": "Ambos pueden ser impulsivos e impacientes. La imprudencia podría causar problemas si no se controla.",
-            "advice": "Su entusiasmo compartido es su superpoder. Equilibra la espontaneidad con algo de planificación para asegurar el éxito."
-        },
-        "taurus_capricorn": {
-            "strengths": "Ambos signos de tierra prácticos valoran el trabajo duro, la lealtad y construir algo duradero. Entienden mutuamente la necesidad de seguridad y estabilidad material.",
-            "cautions": "Ambos pueden ser tercos y demasiado centrados en el trabajo. Recuerden disfrutar la vida juntos.",
-            "advice": "Creen metas juntos y construyan riqueza como equipo. Programen tiempo para el romance a pesar de las agendas ocupadas."
-        },
-        "gemini_libra": {
-            "strengths": "¡Signos de aire que hablan el mismo idioma! Excelente comunicación, intereses intelectuales compartidos y armonía natural hacen de esta una combinación encantadora.",
-            "cautions": "Ambos pueden ser indecisos o demasiado analíticos. Equilibra el pensar con el hacer.",
-            "advice": "Usa tus habilidades de comunicación para explorar ideas juntos. Mantén las conversaciones fluyendo y las decisiones avanzando."
-        },
-        "cancer_scorpio": {
-            "strengths": "¡Conexión profunda de signos de agua! Ambos entienden las profundidades emocionales y la intuición. Lealtad intensa, empatía natural y comprensión auténtica crean vínculos poderosos.",
-            "cautions": "Ambos pueden ser reservados o sobreprotectores. La confianza y la comunicación abierta son esenciales.",
-            "advice": "Creen un espacio emocional seguro para el otro. Permitan la vulnerabilidad sin juicio."
-        },
-        "default": {
-            "strengths": "Cada combinación tiene fortalezas únicas esperando ser descubiertas. Concéntrate en tus valores compartidos y en lo que te atrae del otro.",
-            "cautions": "Diferentes signos tienen diferentes necesidades. Sé paciente al comprender las perspectivas del otro.",
-            "advice": "Celebra tus diferencias mientras construyes sobre lo que tienen en común. La comunicación es clave para cualquier relación exitosa."
-        }
-    },
-    "error": {
-        "storage": "Algunas funciones pueden estar limitadas en modo privado.",
-        "data": "Error al cargar datos. Actualice la página.",
-        "canvas": "Problema de renderizado. Inténtelo de nuevo.",
-        "audio": "Audio no disponible. Puede continuar.",
-        "network": "Verifique su conexión e inténtelo de nuevo.",
-        "general": "Algo salió mal. Actualice o inténtelo de nuevo."
-    },
-    "engage": {
-        "result1": "95%+ Match -- Soulmate Connection Found!",
-        "result2": "75-94% Match -- Strong Cosmic Chemistry",
-        "result3": "50-74% Match -- Growing Potential Together",
-        "result4": "Below 50% -- Opposites Can Attract Too!",
-        "socialProof": "5,280+ zodiac matches checked"
-    },
-    "about": {
-        "toggle": "About the Zodiac Compatibility Test",
-        "heading1": "How the Zodiac Compatibility Test Works",
-        "text1": "Select your zodiac sign and your partner's sign to receive a comprehensive compatibility analysis. The test evaluates romantic, friendship, and work compatibility using element matching, modality analysis, and traditional astrological principles.",
-        "heading2": "Understanding Zodiac Compatibility",
-        "text2": "Zodiac compatibility is based on the relationships between the 12 astrological signs, their ruling elements (Fire, Earth, Air, Water), and their modalities (Cardinal, Fixed, Mutable). While no test can predict relationships, astrology offers fun insights into interpersonal dynamics."
-    }
+  "meta":{"title":"Tarjetas de diálogo zodiacal | Cultura, no puntuación","description":"Elige dos signos solares para una tarjeta privada sin puntuación y con el límite de la evidencia visible."},
+  "app":{"eyebrow":"Folclore astrológico occidental · no es ciencia de relaciones","title":"Tarjetas de diálogo zodiacal","subtitle":"Convierte dos signos solares en preguntas reales, sin una puntuación de compatibilidad."},
+  "boundary":{"title":"Qué encontraron los datos","body":"Un estudio de registros suecos con 66.063 matrimonios no halló evidencia consistente de que las parejas favorecidas por la astrología se casaran más o tuvieran menor riesgo de divorcio.","source":"Leer el estudio abierto"},
+  "selection":{"title":"Elige dos signos solares","desc":"Tus elecciones se quedan en este navegador. No enviamos signos, fechas de nacimiento ni resultados a Analytics.","first":"Primer signo","second":"Segundo signo","placeholder":"Elegir un signo","open":"Abrir tarjeta de diálogo"},
+  "zodiac":{"aries":"Aries","taurus":"Tauro","gemini":"Géminis","cancer":"Cáncer","leo":"Leo","virgo":"Virgo","libra":"Libra","scorpio":"Escorpio","sagittarius":"Sagitario","capricorn":"Capricornio","aquarius":"Acuario","pisces":"Piscis"},
+  "elements":{"fire":"Fuego","earth":"Tierra","air":"Aire","water":"Agua"},
+  "result":{"label":"Símbolos culturales, no un veredicto","pair_title":"{first} × {second}","elements":"Elementos tradicionales: {first} × {second}","boundary":"Ninguna puntuación dice si dos personas se comunicarán bien, se sentirán seguras o seguirán juntas. Usa experiencias reales.","prompt1_title":"Expectativas","prompt1_body":"¿Qué necesita cada persona para sentirse respetada y lo han dicho con claridad?","prompt2_title":"Tensión","prompt2_body":"Cuando discrepan, ¿qué conducta mantiene la conversación segura y concreta?","prompt3_title":"Reparación","prompt3_body":"¿Qué pequeña acción puede hacer cada persona después de un malentendido?","evidence_title":"Límite de la evidencia","evidence_body":"Las parejas de signos no predijeron de forma consistente el matrimonio ni el divorcio en el estudio amplio. Otro estudio intercultural encontró poco apoyo para predecir la personalidad medida.","source_relationship":"Estudio de matrimonio y divorcio","source_personality":"Estudio de personalidad"},
+  "common":{"back":"Elegir otra pareja"},
+  "share":{"button":"Compartir tarjeta de preguntas","title":"Tarjetas de diálogo zodiacal","text":"Convierte el folclore zodiacal en preguntas reales de relación, sin puntuación.","success":"Compartido sin incluir los signos elegidos.","copied":"Enlace copiado sin incluir los signos elegidos.","error":"No se pudo compartir. Copia la dirección de la página."},
+  "related":{"title":"Continúa con una actividad medible","reaction":"Tiempo de reacción","reaction_desc":"Mide cinco rondas","iq":"Reto de 10 acertijos","iq_desc":"Resuelve sin cronómetro","blood":"Tarjetas culturales del tipo de sangre","blood_desc":"Compara folclore y evidencia"},
+  "footer":{"privacy":"Privacidad","home":"Inicio de DopaBrain"},"accessibility":{"skip":"Saltar al contenido principal"}
 }
