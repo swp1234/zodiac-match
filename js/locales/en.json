@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"Zodiac Pair Conversation Cards | Culture, Not a Score","description":"Choose two sun signs for a private, score-free conversation card with the evidence boundary visible."},
-  "app":{"eyebrow":"Western astrology folklore · not relationship science","title":"Zodiac Pair Conversation Cards","subtitle":"Choose two sun signs and turn the symbols into questions—without a compatibility score."},
-  "boundary":{"title":"What relationship data found","body":"A Swedish register study of 66,063 marriages found no consistent evidence that astrologically favored pairs married more often or had a lower divorce risk.","source":"Read the open study"},
-  "selection":{"title":"Choose two sun signs","desc":"Your choices stay in this browser. We do not send signs, birth dates or pair results to analytics.","first":"First sign","second":"Second sign","placeholder":"Choose a sign","open":"Open conversation card"},
-  "zodiac":{"aries":"Aries","taurus":"Taurus","gemini":"Gemini","cancer":"Cancer","leo":"Leo","virgo":"Virgo","libra":"Libra","scorpio":"Scorpio","sagittarius":"Sagittarius","capricorn":"Capricorn","aquarius":"Aquarius","pisces":"Pisces"},
-  "elements":{"fire":"Fire","earth":"Earth","air":"Air","water":"Water"},
-  "result":{"label":"Cultural symbols, not a verdict","pair_title":"{first} × {second}","elements":"Traditional elements: {first} × {second}","boundary":"No score can tell whether two people will communicate well, feel safe, or stay together. Use your real experiences instead.","prompt1_title":"Expectations","prompt1_body":"What does each person need to feel respected, and have you said it clearly?","prompt2_title":"Tension","prompt2_body":"When you disagree, what behavior helps the conversation stay safe and specific?","prompt3_title":"Repair","prompt3_body":"What is one small action each person can take after a misunderstanding?","evidence_title":"Evidence boundary","evidence_body":"Sun-sign pairings did not consistently predict marriage choice or divorce in the large register study. A separate cross-cultural study found little support for sun signs predicting measured personality.","source_relationship":"Marriage and divorce study","source_personality":"Personality study"},
-  "common":{"back":"Choose another pair"},
-  "share":{"button":"Share the question card","title":"Zodiac Pair Conversation Cards","text":"Turn zodiac folklore into real relationship questions—without a compatibility score.","success":"Shared without including either sign.","copied":"Link copied without including either sign.","error":"Sharing was not available. Please copy the page address."},
-  "related":{"title":"Continue with a measurable activity","reaction":"Reaction Time","reaction_desc":"Measure five rounds","iq":"10-Puzzle Challenge","iq_desc":"Solve without a timer","blood":"Blood Type Culture Cards","blood_desc":"Compare folklore with evidence"},
-  "footer":{"privacy":"Privacy","home":"DopaBrain home"},"accessibility":{"skip":"Skip to the main content"}
+  "meta": {
+    "title": "Zodiac Pair Conversation Cards | Culture, Not a Score",
+    "description": "Choose two sun signs for a private, score-free conversation card with the evidence boundary visible."
+  },
+  "app": {
+    "eyebrow": "Western astrology folklore · not relationship science",
+    "title": "Zodiac Pair Conversation Cards",
+    "subtitle": "Choose two sun signs and turn the symbols into questions—without a compatibility score."
+  },
+  "boundary": {
+    "title": "What relationship data found",
+    "body": "A Swedish register study of 66,063 marriages found no consistent evidence that astrologically favored pairs married more often or had a lower divorce risk.",
+    "source": "Read the open study"
+  },
+  "selection": {
+    "title": "Choose two sun signs",
+    "desc": "Your choices stay in this browser. We do not send signs, birth dates or pair results to analytics.",
+    "first": "First sign",
+    "second": "Second sign",
+    "placeholder": "Choose a sign",
+    "open": "Open conversation card"
+  },
+  "zodiac": {
+    "aries": "Aries",
+    "taurus": "Taurus",
+    "gemini": "Gemini",
+    "cancer": "Cancer",
+    "leo": "Leo",
+    "virgo": "Virgo",
+    "libra": "Libra",
+    "scorpio": "Scorpio",
+    "sagittarius": "Sagittarius",
+    "capricorn": "Capricorn",
+    "aquarius": "Aquarius",
+    "pisces": "Pisces"
+  },
+  "elements": {
+    "fire": "Fire",
+    "earth": "Earth",
+    "air": "Air",
+    "water": "Water"
+  },
+  "result": {
+    "label": "Cultural symbols, not a verdict",
+    "pair_title": "{first} × {second}",
+    "elements": "Traditional elements: {first} × {second}",
+    "boundary": "No score can tell whether two people will communicate well, feel safe, or stay together. Use your real experiences instead.",
+    "prompt1_title": "Expectations",
+    "prompt1_body": "What does each person need to feel respected, and have you said it clearly?",
+    "prompt2_title": "Tension",
+    "prompt2_body": "When you disagree, what behavior helps the conversation stay safe and specific?",
+    "prompt3_title": "Repair",
+    "prompt3_body": "What is one small action each person can take after a misunderstanding?",
+    "evidence_title": "Evidence boundary",
+    "evidence_body": "Sun-sign pairings did not consistently predict marriage choice or divorce in the large register study. A separate cross-cultural study found little support for sun signs predicting measured personality.",
+    "source_relationship": "Marriage and divorce study",
+    "source_personality": "Personality study"
+  },
+  "common": {
+    "back": "Choose another pair"
+  },
+  "share": {
+    "button": "Share the question card",
+    "title": "Zodiac Pair Conversation Cards",
+    "text": "Turn zodiac folklore into real relationship questions—without a compatibility score.",
+    "success": "Shared without including either sign.",
+    "copied": "Link copied without including either sign.",
+    "error": "Sharing was not available. Please copy the page address."
+  },
+  "related": {
+    "title": "Continue with a measurable activity",
+    "iq": "10-Puzzle Challenge",
+    "iq_desc": "Solve without a timer",
+    "tarot": "Daily Tarot",
+    "tarot_desc": "Draw today's card",
+    "attachment": "Attachment Style",
+    "attachment_desc": "Explore relationship patterns"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "home": "DopaBrain home"
+  },
+  "accessibility": {
+    "skip": "Skip to the main content"
+  }
 }

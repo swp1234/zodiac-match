@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"별자리 관계 대화 카드 | 문화, 점수 아님","description":"두 태양궁을 선택하고 근거 경계가 보이는 비공개 무점수 대화 카드를 사용하세요."},
-  "app":{"eyebrow":"서양 점성술 문화 · 관계 과학 아님","title":"별자리 관계 대화 카드","subtitle":"두 태양궁 상징을 궁합 점수 대신 실제 대화 질문으로 바꿔보세요."},
-  "boundary":{"title":"관계 데이터가 확인한 것","body":"스웨덴의 혼인 66,063건을 분석한 연구는 점성술상 유리한 조합이 더 자주 결혼하거나 이혼 위험이 낮다는 일관된 근거를 찾지 못했습니다.","source":"공개 연구 읽기"},
-  "selection":{"title":"두 태양궁을 선택하세요","desc":"선택은 이 브라우저에만 남습니다. 별자리, 생년월일, 조합 결과를 분석 도구로 보내지 않습니다.","first":"첫 번째 별자리","second":"두 번째 별자리","placeholder":"별자리 선택","open":"대화 카드 열기"},
-  "zodiac":{"aries":"양자리","taurus":"황소자리","gemini":"쌍둥이자리","cancer":"게자리","leo":"사자자리","virgo":"처녀자리","libra":"천칭자리","scorpio":"전갈자리","sagittarius":"궁수자리","capricorn":"염소자리","aquarius":"물병자리","pisces":"물고기자리"},
-  "elements":{"fire":"불","earth":"흙","air":"공기","water":"물"},
-  "result":{"label":"문화적 상징 · 관계 판정 아님","pair_title":"{first} × {second}","elements":"전통 원소: {first} × {second}","boundary":"어떤 점수도 두 사람이 잘 소통하고, 안전함을 느끼고, 관계를 유지할지 알려주지 못합니다. 실제 경험을 기준으로 보세요.","prompt1_title":"기대","prompt1_body":"각자가 존중받는다고 느끼려면 무엇이 필요하며, 그것을 분명히 말했나요?","prompt2_title":"갈등","prompt2_body":"의견이 다를 때 대화를 안전하고 구체적으로 유지하는 행동은 무엇인가요?","prompt3_title":"회복","prompt3_body":"오해가 생긴 뒤 각자가 할 수 있는 작은 행동 한 가지는 무엇인가요?","evidence_title":"근거 경계","evidence_body":"대규모 등록 연구에서 태양궁 조합은 배우자 선택이나 이혼을 일관되게 예측하지 못했습니다. 별도 문화권 비교 연구도 태양궁이 측정된 성격을 예측한다는 근거를 거의 찾지 못했습니다.","source_relationship":"혼인·이혼 연구","source_personality":"성격 연구"},
-  "common":{"back":"다른 조합 선택"},
-  "share":{"button":"질문 카드 공유","title":"별자리 관계 대화 카드","text":"별자리 문화를 궁합 점수 없이 실제 관계 질문으로 바꿔보세요.","success":"선택한 별자리를 포함하지 않고 공유했습니다.","copied":"선택한 별자리를 포함하지 않고 링크를 복사했습니다.","error":"공유할 수 없습니다. 페이지 주소를 복사해 주세요."},
-  "related":{"title":"측정 가능한 활동 이어가기","reaction":"반응속도 테스트","reaction_desc":"5라운드 측정","iq":"10문제 퍼즐","iq_desc":"시간 제한 없이 풀기","blood":"혈액형 문화 카드","blood_desc":"속설과 근거 비교"},
-  "footer":{"privacy":"개인정보처리방침","home":"DopaBrain 홈"},"accessibility":{"skip":"본문으로 건너뛰기"}
+  "meta": {
+    "title": "별자리 관계 대화 카드 | 문화, 점수 아님",
+    "description": "두 태양궁을 선택하고 근거 경계가 보이는 비공개 무점수 대화 카드를 사용하세요."
+  },
+  "app": {
+    "eyebrow": "서양 점성술 문화 · 관계 과학 아님",
+    "title": "별자리 관계 대화 카드",
+    "subtitle": "두 태양궁 상징을 궁합 점수 대신 실제 대화 질문으로 바꿔보세요."
+  },
+  "boundary": {
+    "title": "관계 데이터가 확인한 것",
+    "body": "스웨덴의 혼인 66,063건을 분석한 연구는 점성술상 유리한 조합이 더 자주 결혼하거나 이혼 위험이 낮다는 일관된 근거를 찾지 못했습니다.",
+    "source": "공개 연구 읽기"
+  },
+  "selection": {
+    "title": "두 태양궁을 선택하세요",
+    "desc": "선택은 이 브라우저에만 남습니다. 별자리, 생년월일, 조합 결과를 분석 도구로 보내지 않습니다.",
+    "first": "첫 번째 별자리",
+    "second": "두 번째 별자리",
+    "placeholder": "별자리 선택",
+    "open": "대화 카드 열기"
+  },
+  "zodiac": {
+    "aries": "양자리",
+    "taurus": "황소자리",
+    "gemini": "쌍둥이자리",
+    "cancer": "게자리",
+    "leo": "사자자리",
+    "virgo": "처녀자리",
+    "libra": "천칭자리",
+    "scorpio": "전갈자리",
+    "sagittarius": "궁수자리",
+    "capricorn": "염소자리",
+    "aquarius": "물병자리",
+    "pisces": "물고기자리"
+  },
+  "elements": {
+    "fire": "불",
+    "earth": "흙",
+    "air": "공기",
+    "water": "물"
+  },
+  "result": {
+    "label": "문화적 상징 · 관계 판정 아님",
+    "pair_title": "{first} × {second}",
+    "elements": "전통 원소: {first} × {second}",
+    "boundary": "어떤 점수도 두 사람이 잘 소통하고, 안전함을 느끼고, 관계를 유지할지 알려주지 못합니다. 실제 경험을 기준으로 보세요.",
+    "prompt1_title": "기대",
+    "prompt1_body": "각자가 존중받는다고 느끼려면 무엇이 필요하며, 그것을 분명히 말했나요?",
+    "prompt2_title": "갈등",
+    "prompt2_body": "의견이 다를 때 대화를 안전하고 구체적으로 유지하는 행동은 무엇인가요?",
+    "prompt3_title": "회복",
+    "prompt3_body": "오해가 생긴 뒤 각자가 할 수 있는 작은 행동 한 가지는 무엇인가요?",
+    "evidence_title": "근거 경계",
+    "evidence_body": "대규모 등록 연구에서 태양궁 조합은 배우자 선택이나 이혼을 일관되게 예측하지 못했습니다. 별도 문화권 비교 연구도 태양궁이 측정된 성격을 예측한다는 근거를 거의 찾지 못했습니다.",
+    "source_relationship": "혼인·이혼 연구",
+    "source_personality": "성격 연구"
+  },
+  "common": {
+    "back": "다른 조합 선택"
+  },
+  "share": {
+    "button": "질문 카드 공유",
+    "title": "별자리 관계 대화 카드",
+    "text": "별자리 문화를 궁합 점수 없이 실제 관계 질문으로 바꿔보세요.",
+    "success": "선택한 별자리를 포함하지 않고 공유했습니다.",
+    "copied": "선택한 별자리를 포함하지 않고 링크를 복사했습니다.",
+    "error": "공유할 수 없습니다. 페이지 주소를 복사해 주세요."
+  },
+  "related": {
+    "title": "측정 가능한 활동 이어가기",
+    "iq": "10문제 퍼즐",
+    "iq_desc": "시간 제한 없이 풀기",
+    "tarot": "오늘의 타로",
+    "tarot_desc": "오늘의 카드를 뽑아보세요",
+    "attachment": "애착 유형 테스트",
+    "attachment_desc": "관계 심리 패턴 알아보기"
+  },
+  "footer": {
+    "privacy": "개인정보처리방침",
+    "home": "DopaBrain 홈"
+  },
+  "accessibility": {
+    "skip": "본문으로 건너뛰기"
+  }
 }

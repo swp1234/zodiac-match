@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"Sternzeichen-Paarkarten | Kultur statt Punktzahl","description":"Wähle zwei Sonnenzeichen für eine private Gesprächskarte ohne Bewertung und mit sichtbarer Evidenzgrenze."},
-  "app":{"eyebrow":"Westliche Astrologie-Folklore · keine Beziehungswissenschaft","title":"Sternzeichen-Paarkarten","subtitle":"Mach aus zwei Sonnenzeichen echte Fragen – ohne Kompatibilitätswert."},
-  "boundary":{"title":"Was Beziehungsdaten zeigen","body":"Eine schwedische Registerstudie mit 66.063 Ehen fand keine konsistenten Belege dafür, dass astrologisch günstige Paare häufiger heiraten oder sich seltener scheiden lassen.","source":"Offene Studie lesen"},
-  "selection":{"title":"Zwei Sonnenzeichen wählen","desc":"Deine Auswahl bleibt in diesem Browser. Zeichen, Geburtsdaten und Paarergebnisse werden nicht an Analytics gesendet.","first":"Erstes Zeichen","second":"Zweites Zeichen","placeholder":"Zeichen wählen","open":"Gesprächskarte öffnen"},
-  "zodiac":{"aries":"Widder","taurus":"Stier","gemini":"Zwillinge","cancer":"Krebs","leo":"Löwe","virgo":"Jungfrau","libra":"Waage","scorpio":"Skorpion","sagittarius":"Schütze","capricorn":"Steinbock","aquarius":"Wassermann","pisces":"Fische"},
-  "elements":{"fire":"Feuer","earth":"Erde","air":"Luft","water":"Wasser"},
-  "result":{"label":"Kulturelle Symbole, kein Urteil","pair_title":"{first} × {second}","elements":"Traditionelle Elemente: {first} × {second}","boundary":"Keine Punktzahl zeigt, ob zwei Menschen gut kommunizieren, sich sicher fühlen oder zusammenbleiben. Nutzt eure echten Erfahrungen.","prompt1_title":"Erwartungen","prompt1_body":"Was braucht jede Person, um sich respektiert zu fühlen, und wurde es klar gesagt?","prompt2_title":"Spannung","prompt2_body":"Welches Verhalten hält das Gespräch bei Uneinigkeit sicher und konkret?","prompt3_title":"Wiedergutmachung","prompt3_body":"Welche kleine Handlung kann jede Person nach einem Missverständnis tun?","evidence_title":"Evidenzgrenze","evidence_body":"Sonnenzeichen-Paare sagten in der großen Registerstudie weder Partnerwahl noch Scheidung konsistent voraus. Eine kulturvergleichende Studie fand auch kaum Unterstützung für eine Vorhersage gemessener Persönlichkeit.","source_relationship":"Ehe- und Scheidungsstudie","source_personality":"Persönlichkeitsstudie"},
-  "common":{"back":"Anderes Paar wählen"},
-  "share":{"button":"Fragenkarte teilen","title":"Sternzeichen-Paarkarten","text":"Mach aus Sternzeichen-Folklore echte Beziehungsfragen – ohne Kompatibilitätswert.","success":"Ohne die gewählten Zeichen geteilt.","copied":"Link ohne die gewählten Zeichen kopiert.","error":"Teilen war nicht möglich. Bitte kopiere die Seitenadresse."},
-  "related":{"title":"Mit einer messbaren Aktivität weitermachen","reaction":"Reaktionszeit","reaction_desc":"Fünf Runden messen","iq":"10-Rätsel-Challenge","iq_desc":"Ohne Zeitlimit lösen","blood":"Blutgruppen-Kulturkarten","blood_desc":"Folklore mit Evidenz vergleichen"},
-  "footer":{"privacy":"Datenschutz","home":"DopaBrain-Startseite"},"accessibility":{"skip":"Zum Hauptinhalt springen"}
+  "meta": {
+    "title": "Sternzeichen-Paarkarten | Kultur statt Punktzahl",
+    "description": "Wähle zwei Sonnenzeichen für eine private Gesprächskarte ohne Bewertung und mit sichtbarer Evidenzgrenze."
+  },
+  "app": {
+    "eyebrow": "Westliche Astrologie-Folklore · keine Beziehungswissenschaft",
+    "title": "Sternzeichen-Paarkarten",
+    "subtitle": "Mach aus zwei Sonnenzeichen echte Fragen – ohne Kompatibilitätswert."
+  },
+  "boundary": {
+    "title": "Was Beziehungsdaten zeigen",
+    "body": "Eine schwedische Registerstudie mit 66.063 Ehen fand keine konsistenten Belege dafür, dass astrologisch günstige Paare häufiger heiraten oder sich seltener scheiden lassen.",
+    "source": "Offene Studie lesen"
+  },
+  "selection": {
+    "title": "Zwei Sonnenzeichen wählen",
+    "desc": "Deine Auswahl bleibt in diesem Browser. Zeichen, Geburtsdaten und Paarergebnisse werden nicht an Analytics gesendet.",
+    "first": "Erstes Zeichen",
+    "second": "Zweites Zeichen",
+    "placeholder": "Zeichen wählen",
+    "open": "Gesprächskarte öffnen"
+  },
+  "zodiac": {
+    "aries": "Widder",
+    "taurus": "Stier",
+    "gemini": "Zwillinge",
+    "cancer": "Krebs",
+    "leo": "Löwe",
+    "virgo": "Jungfrau",
+    "libra": "Waage",
+    "scorpio": "Skorpion",
+    "sagittarius": "Schütze",
+    "capricorn": "Steinbock",
+    "aquarius": "Wassermann",
+    "pisces": "Fische"
+  },
+  "elements": {
+    "fire": "Feuer",
+    "earth": "Erde",
+    "air": "Luft",
+    "water": "Wasser"
+  },
+  "result": {
+    "label": "Kulturelle Symbole, kein Urteil",
+    "pair_title": "{first} × {second}",
+    "elements": "Traditionelle Elemente: {first} × {second}",
+    "boundary": "Keine Punktzahl zeigt, ob zwei Menschen gut kommunizieren, sich sicher fühlen oder zusammenbleiben. Nutzt eure echten Erfahrungen.",
+    "prompt1_title": "Erwartungen",
+    "prompt1_body": "Was braucht jede Person, um sich respektiert zu fühlen, und wurde es klar gesagt?",
+    "prompt2_title": "Spannung",
+    "prompt2_body": "Welches Verhalten hält das Gespräch bei Uneinigkeit sicher und konkret?",
+    "prompt3_title": "Wiedergutmachung",
+    "prompt3_body": "Welche kleine Handlung kann jede Person nach einem Missverständnis tun?",
+    "evidence_title": "Evidenzgrenze",
+    "evidence_body": "Sonnenzeichen-Paare sagten in der großen Registerstudie weder Partnerwahl noch Scheidung konsistent voraus. Eine kulturvergleichende Studie fand auch kaum Unterstützung für eine Vorhersage gemessener Persönlichkeit.",
+    "source_relationship": "Ehe- und Scheidungsstudie",
+    "source_personality": "Persönlichkeitsstudie"
+  },
+  "common": {
+    "back": "Anderes Paar wählen"
+  },
+  "share": {
+    "button": "Fragenkarte teilen",
+    "title": "Sternzeichen-Paarkarten",
+    "text": "Mach aus Sternzeichen-Folklore echte Beziehungsfragen – ohne Kompatibilitätswert.",
+    "success": "Ohne die gewählten Zeichen geteilt.",
+    "copied": "Link ohne die gewählten Zeichen kopiert.",
+    "error": "Teilen war nicht möglich. Bitte kopiere die Seitenadresse."
+  },
+  "related": {
+    "title": "Mit einer messbaren Aktivität weitermachen",
+    "iq": "10-Rätsel-Challenge",
+    "iq_desc": "Ohne Zeitlimit lösen",
+    "tarot": "Tages-Tarot",
+    "tarot_desc": "Zieh deine heutige Karte",
+    "attachment": "Bindungsstil",
+    "attachment_desc": "Erkunde Beziehungsmuster"
+  },
+  "footer": {
+    "privacy": "Datenschutz",
+    "home": "DopaBrain-Startseite"
+  },
+  "accessibility": {
+    "skip": "Zum Hauptinhalt springen"
+  }
 }

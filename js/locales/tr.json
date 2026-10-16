@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"Burç Çifti Sohbet Kartları | Kültür, puan değil","description":"İki güneş burcu seçin; kanıt sınırı görünen, özel ve puansız bir sohbet kartı açın."},
-  "app":{"eyebrow":"Batı astrolojisi söylencesi · ilişki bilimi değil","title":"Burç Çifti Sohbet Kartları","subtitle":"İki burç simgesini uyum puanı olmadan gerçek sorulara dönüştürün."},
-  "boundary":{"title":"İlişki verileri ne buldu?","body":"66.063 evliliği inceleyen İsveç kayıt çalışması, astrolojik açıdan uygun çiftlerin daha sık evlendiğine veya daha düşük boşanma riski taşıdığına dair tutarlı kanıt bulmadı.","source":"Açık çalışmayı oku"},
-  "selection":{"title":"İki güneş burcu seçin","desc":"Seçimleriniz bu tarayıcıda kalır. Burçları, doğum tarihlerini veya çift sonucunu Analytics'e göndermeyiz.","first":"İlk burç","second":"İkinci burç","placeholder":"Burç seçin","open":"Sohbet kartını aç"},
-  "zodiac":{"aries":"Koç","taurus":"Boğa","gemini":"İkizler","cancer":"Yengeç","leo":"Aslan","virgo":"Başak","libra":"Terazi","scorpio":"Akrep","sagittarius":"Yay","capricorn":"Oğlak","aquarius":"Kova","pisces":"Balık"},
-  "elements":{"fire":"Ateş","earth":"Toprak","air":"Hava","water":"Su"},
-  "result":{"label":"Kültürel simgeler, hüküm değil","pair_title":"{first} × {second}","elements":"Geleneksel elementler: {first} × {second}","boundary":"Hiçbir puan iki kişinin iyi iletişim kuracağını, güvende hissedeceğini veya birlikte kalacağını söyleyemez. Gerçek deneyimlerinizi kullanın.","prompt1_title":"Beklentiler","prompt1_body":"Her kişinin saygı gördüğünü hissetmesi için ne gerekiyor ve bunu açıkça söylediniz mi?","prompt2_title":"Gerilim","prompt2_body":"Anlaşmazlıkta hangi davranış konuşmayı güvenli ve somut tutar?","prompt3_title":"Onarım","prompt3_body":"Yanlış anlaşılmadan sonra her kişi hangi küçük adımı atabilir?","evidence_title":"Kanıt sınırı","evidence_body":"Büyük kayıt çalışmasında burç çiftleri evlilik seçimini veya boşanmayı tutarlı biçimde öngörmedi. Başka bir kültürler arası çalışma da ölçülen kişiliği öngörmeye çok az destek buldu.","source_relationship":"Evlilik ve boşanma çalışması","source_personality":"Kişilik çalışması"},
-  "common":{"back":"Başka çift seç"},
-  "share":{"button":"Soru kartını paylaş","title":"Burç Çifti Sohbet Kartları","text":"Burç söylencesini uyum puanı olmadan gerçek ilişki sorularına dönüştürün.","success":"Seçilen burçlar eklenmeden paylaşıldı.","copied":"Seçilen burçlar eklenmeden bağlantı kopyalandı.","error":"Paylaşılamadı. Sayfa adresini kopyalayın."},
-  "related":{"title":"Ölçülebilir bir etkinlikle devam edin","reaction":"Tepki süresi","reaction_desc":"Beş tur ölçün","iq":"10 bulmacalık meydan okuma","iq_desc":"Süre olmadan çözün","blood":"Kan Grubu Kültür Kartları","blood_desc":"Söylenceyi kanıtla karşılaştırın"},
-  "footer":{"privacy":"Gizlilik","home":"DopaBrain ana sayfa"},"accessibility":{"skip":"Ana içeriğe geç"}
+  "meta": {
+    "title": "Burç Çifti Sohbet Kartları | Kültür, puan değil",
+    "description": "İki güneş burcu seçin; kanıt sınırı görünen, özel ve puansız bir sohbet kartı açın."
+  },
+  "app": {
+    "eyebrow": "Batı astrolojisi söylencesi · ilişki bilimi değil",
+    "title": "Burç Çifti Sohbet Kartları",
+    "subtitle": "İki burç simgesini uyum puanı olmadan gerçek sorulara dönüştürün."
+  },
+  "boundary": {
+    "title": "İlişki verileri ne buldu?",
+    "body": "66.063 evliliği inceleyen İsveç kayıt çalışması, astrolojik açıdan uygun çiftlerin daha sık evlendiğine veya daha düşük boşanma riski taşıdığına dair tutarlı kanıt bulmadı.",
+    "source": "Açık çalışmayı oku"
+  },
+  "selection": {
+    "title": "İki güneş burcu seçin",
+    "desc": "Seçimleriniz bu tarayıcıda kalır. Burçları, doğum tarihlerini veya çift sonucunu Analytics'e göndermeyiz.",
+    "first": "İlk burç",
+    "second": "İkinci burç",
+    "placeholder": "Burç seçin",
+    "open": "Sohbet kartını aç"
+  },
+  "zodiac": {
+    "aries": "Koç",
+    "taurus": "Boğa",
+    "gemini": "İkizler",
+    "cancer": "Yengeç",
+    "leo": "Aslan",
+    "virgo": "Başak",
+    "libra": "Terazi",
+    "scorpio": "Akrep",
+    "sagittarius": "Yay",
+    "capricorn": "Oğlak",
+    "aquarius": "Kova",
+    "pisces": "Balık"
+  },
+  "elements": {
+    "fire": "Ateş",
+    "earth": "Toprak",
+    "air": "Hava",
+    "water": "Su"
+  },
+  "result": {
+    "label": "Kültürel simgeler, hüküm değil",
+    "pair_title": "{first} × {second}",
+    "elements": "Geleneksel elementler: {first} × {second}",
+    "boundary": "Hiçbir puan iki kişinin iyi iletişim kuracağını, güvende hissedeceğini veya birlikte kalacağını söyleyemez. Gerçek deneyimlerinizi kullanın.",
+    "prompt1_title": "Beklentiler",
+    "prompt1_body": "Her kişinin saygı gördüğünü hissetmesi için ne gerekiyor ve bunu açıkça söylediniz mi?",
+    "prompt2_title": "Gerilim",
+    "prompt2_body": "Anlaşmazlıkta hangi davranış konuşmayı güvenli ve somut tutar?",
+    "prompt3_title": "Onarım",
+    "prompt3_body": "Yanlış anlaşılmadan sonra her kişi hangi küçük adımı atabilir?",
+    "evidence_title": "Kanıt sınırı",
+    "evidence_body": "Büyük kayıt çalışmasında burç çiftleri evlilik seçimini veya boşanmayı tutarlı biçimde öngörmedi. Başka bir kültürler arası çalışma da ölçülen kişiliği öngörmeye çok az destek buldu.",
+    "source_relationship": "Evlilik ve boşanma çalışması",
+    "source_personality": "Kişilik çalışması"
+  },
+  "common": {
+    "back": "Başka çift seç"
+  },
+  "share": {
+    "button": "Soru kartını paylaş",
+    "title": "Burç Çifti Sohbet Kartları",
+    "text": "Burç söylencesini uyum puanı olmadan gerçek ilişki sorularına dönüştürün.",
+    "success": "Seçilen burçlar eklenmeden paylaşıldı.",
+    "copied": "Seçilen burçlar eklenmeden bağlantı kopyalandı.",
+    "error": "Paylaşılamadı. Sayfa adresini kopyalayın."
+  },
+  "related": {
+    "title": "Ölçülebilir bir etkinlikle devam edin",
+    "iq": "10 bulmacalık meydan okuma",
+    "iq_desc": "Süre olmadan çözün",
+    "tarot": "Günlük Tarot",
+    "tarot_desc": "Günün kartını çekin",
+    "attachment": "Bağlanma Stili",
+    "attachment_desc": "İlişki kalıplarını keşfedin"
+  },
+  "footer": {
+    "privacy": "Gizlilik",
+    "home": "DopaBrain ana sayfa"
+  },
+  "accessibility": {
+    "skip": "Ana içeriğe geç"
+  }
 }

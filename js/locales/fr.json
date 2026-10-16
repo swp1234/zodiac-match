@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"Cartes de dialogue des signes | Culture, pas un score","description":"Choisissez deux signes solaires pour une carte privée sans score, avec les limites des preuves visibles."},
-  "app":{"eyebrow":"Folklore astrologique occidental · pas une science des relations","title":"Cartes de dialogue des signes","subtitle":"Transformez deux signes solaires en vraies questions, sans score de compatibilité."},
-  "boundary":{"title":"Ce que montrent les données","body":"Une étude suédoise portant sur 66 063 mariages n'a trouvé aucune preuve cohérente que les couples favorisés par l'astrologie se marient plus souvent ou divorcent moins.","source":"Lire l'étude ouverte"},
-  "selection":{"title":"Choisissez deux signes solaires","desc":"Vos choix restent dans ce navigateur. Aucun signe, date de naissance ou résultat de paire n'est envoyé à Analytics.","first":"Premier signe","second":"Deuxième signe","placeholder":"Choisir un signe","open":"Ouvrir la carte de dialogue"},
-  "zodiac":{"aries":"Bélier","taurus":"Taureau","gemini":"Gémeaux","cancer":"Cancer","leo":"Lion","virgo":"Vierge","libra":"Balance","scorpio":"Scorpion","sagittarius":"Sagittaire","capricorn":"Capricorne","aquarius":"Verseau","pisces":"Poissons"},
-  "elements":{"fire":"Feu","earth":"Terre","air":"Air","water":"Eau"},
-  "result":{"label":"Symboles culturels, pas un verdict","pair_title":"{first} × {second}","elements":"Éléments traditionnels : {first} × {second}","boundary":"Aucun score ne dit si deux personnes communiqueront bien, se sentiront en sécurité ou resteront ensemble. Appuyez-vous sur vos expériences.","prompt1_title":"Attentes","prompt1_body":"De quoi chacun a-t-il besoin pour se sentir respecté, et l'avez-vous dit clairement ?","prompt2_title":"Tension","prompt2_body":"En cas de désaccord, quel comportement garde la conversation sûre et précise ?","prompt3_title":"Réparation","prompt3_body":"Quelle petite action chacun peut-il faire après un malentendu ?","evidence_title":"Limite des preuves","evidence_body":"Dans la grande étude, les paires de signes ne prédisaient pas de façon cohérente le choix du conjoint ou le divorce. Une autre étude interculturelle soutient peu la prédiction de la personnalité mesurée.","source_relationship":"Étude mariage et divorce","source_personality":"Étude de personnalité"},
-  "common":{"back":"Choisir une autre paire"},
-  "share":{"button":"Partager la carte de questions","title":"Cartes de dialogue des signes","text":"Transformez le folklore du zodiaque en vraies questions relationnelles, sans score.","success":"Partagé sans inclure les signes choisis.","copied":"Lien copié sans inclure les signes choisis.","error":"Partage indisponible. Copiez l'adresse de la page."},
-  "related":{"title":"Continuer avec une activité mesurable","reaction":"Temps de réaction","reaction_desc":"Mesurer cinq manches","iq":"Défi de 10 énigmes","iq_desc":"Résoudre sans chrono","blood":"Cartes culturelles des groupes sanguins","blood_desc":"Comparer folklore et preuves"},
-  "footer":{"privacy":"Confidentialité","home":"Accueil DopaBrain"},"accessibility":{"skip":"Aller au contenu principal"}
+  "meta": {
+    "title": "Cartes de dialogue des signes | Culture, pas un score",
+    "description": "Choisissez deux signes solaires pour une carte privée sans score, avec les limites des preuves visibles."
+  },
+  "app": {
+    "eyebrow": "Folklore astrologique occidental · pas une science des relations",
+    "title": "Cartes de dialogue des signes",
+    "subtitle": "Transformez deux signes solaires en vraies questions, sans score de compatibilité."
+  },
+  "boundary": {
+    "title": "Ce que montrent les données",
+    "body": "Une étude suédoise portant sur 66 063 mariages n'a trouvé aucune preuve cohérente que les couples favorisés par l'astrologie se marient plus souvent ou divorcent moins.",
+    "source": "Lire l'étude ouverte"
+  },
+  "selection": {
+    "title": "Choisissez deux signes solaires",
+    "desc": "Vos choix restent dans ce navigateur. Aucun signe, date de naissance ou résultat de paire n'est envoyé à Analytics.",
+    "first": "Premier signe",
+    "second": "Deuxième signe",
+    "placeholder": "Choisir un signe",
+    "open": "Ouvrir la carte de dialogue"
+  },
+  "zodiac": {
+    "aries": "Bélier",
+    "taurus": "Taureau",
+    "gemini": "Gémeaux",
+    "cancer": "Cancer",
+    "leo": "Lion",
+    "virgo": "Vierge",
+    "libra": "Balance",
+    "scorpio": "Scorpion",
+    "sagittarius": "Sagittaire",
+    "capricorn": "Capricorne",
+    "aquarius": "Verseau",
+    "pisces": "Poissons"
+  },
+  "elements": {
+    "fire": "Feu",
+    "earth": "Terre",
+    "air": "Air",
+    "water": "Eau"
+  },
+  "result": {
+    "label": "Symboles culturels, pas un verdict",
+    "pair_title": "{first} × {second}",
+    "elements": "Éléments traditionnels : {first} × {second}",
+    "boundary": "Aucun score ne dit si deux personnes communiqueront bien, se sentiront en sécurité ou resteront ensemble. Appuyez-vous sur vos expériences.",
+    "prompt1_title": "Attentes",
+    "prompt1_body": "De quoi chacun a-t-il besoin pour se sentir respecté, et l'avez-vous dit clairement ?",
+    "prompt2_title": "Tension",
+    "prompt2_body": "En cas de désaccord, quel comportement garde la conversation sûre et précise ?",
+    "prompt3_title": "Réparation",
+    "prompt3_body": "Quelle petite action chacun peut-il faire après un malentendu ?",
+    "evidence_title": "Limite des preuves",
+    "evidence_body": "Dans la grande étude, les paires de signes ne prédisaient pas de façon cohérente le choix du conjoint ou le divorce. Une autre étude interculturelle soutient peu la prédiction de la personnalité mesurée.",
+    "source_relationship": "Étude mariage et divorce",
+    "source_personality": "Étude de personnalité"
+  },
+  "common": {
+    "back": "Choisir une autre paire"
+  },
+  "share": {
+    "button": "Partager la carte de questions",
+    "title": "Cartes de dialogue des signes",
+    "text": "Transformez le folklore du zodiaque en vraies questions relationnelles, sans score.",
+    "success": "Partagé sans inclure les signes choisis.",
+    "copied": "Lien copié sans inclure les signes choisis.",
+    "error": "Partage indisponible. Copiez l'adresse de la page."
+  },
+  "related": {
+    "title": "Continuer avec une activité mesurable",
+    "iq": "Défi de 10 énigmes",
+    "iq_desc": "Résoudre sans chrono",
+    "tarot": "Tarot du Jour",
+    "tarot_desc": "Tirez votre carte du jour",
+    "attachment": "Style d'Attachement",
+    "attachment_desc": "Explorez vos schémas relationnels"
+  },
+  "footer": {
+    "privacy": "Confidentialité",
+    "home": "Accueil DopaBrain"
+  },
+  "accessibility": {
+    "skip": "Aller au contenu principal"
+  }
 }

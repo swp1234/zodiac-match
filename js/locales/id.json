@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"Kartu Percakapan Zodiak | Budaya, bukan skor","description":"Pilih dua zodiak untuk kartu percakapan privat tanpa skor, dengan batas bukti yang terlihat."},
-  "app":{"eyebrow":"Cerita astrologi Barat · bukan ilmu hubungan","title":"Kartu Percakapan Zodiak","subtitle":"Ubah dua simbol zodiak menjadi pertanyaan nyata, tanpa skor kecocokan."},
-  "boundary":{"title":"Apa temuan data hubungan","body":"Studi register Swedia atas 66.063 pernikahan tidak menemukan bukti konsisten bahwa pasangan yang dianggap cocok oleh astrologi lebih sering menikah atau lebih jarang bercerai.","source":"Baca studi terbuka"},
-  "selection":{"title":"Pilih dua zodiak","desc":"Pilihanmu hanya berada di browser ini. Zodiak, tanggal lahir, dan hasil pasangan tidak dikirim ke Analytics.","first":"Zodiak pertama","second":"Zodiak kedua","placeholder":"Pilih zodiak","open":"Buka kartu percakapan"},
-  "zodiac":{"aries":"Aries","taurus":"Taurus","gemini":"Gemini","cancer":"Cancer","leo":"Leo","virgo":"Virgo","libra":"Libra","scorpio":"Scorpio","sagittarius":"Sagittarius","capricorn":"Capricorn","aquarius":"Aquarius","pisces":"Pisces"},
-  "elements":{"fire":"Api","earth":"Tanah","air":"Udara","water":"Air"},
-  "result":{"label":"Simbol budaya, bukan keputusan","pair_title":"{first} × {second}","elements":"Elemen tradisional: {first} × {second}","boundary":"Skor tidak dapat memastikan dua orang akan berkomunikasi dengan baik, merasa aman, atau tetap bersama. Gunakan pengalaman nyata.","prompt1_title":"Harapan","prompt1_body":"Apa yang dibutuhkan tiap orang agar merasa dihormati, dan sudahkah disampaikan dengan jelas?","prompt2_title":"Ketegangan","prompt2_body":"Saat berbeda pendapat, perilaku apa yang menjaga percakapan tetap aman dan spesifik?","prompt3_title":"Perbaikan","prompt3_body":"Tindakan kecil apa yang dapat dilakukan masing-masing setelah kesalahpahaman?","evidence_title":"Batas bukti","evidence_body":"Pasangan zodiak tidak secara konsisten memprediksi pernikahan atau perceraian dalam studi besar. Studi lintas budaya lain juga menemukan sedikit dukungan untuk prediksi kepribadian.","source_relationship":"Studi pernikahan dan perceraian","source_personality":"Studi kepribadian"},
-  "common":{"back":"Pilih pasangan lain"},
-  "share":{"button":"Bagikan kartu pertanyaan","title":"Kartu Percakapan Zodiak","text":"Ubah cerita zodiak menjadi pertanyaan hubungan nyata, tanpa skor kecocokan.","success":"Dibagikan tanpa menyertakan zodiak pilihan.","copied":"Tautan disalin tanpa menyertakan zodiak pilihan.","error":"Tidak dapat membagikan. Salin alamat halaman."},
-  "related":{"title":"Lanjutkan dengan aktivitas terukur","reaction":"Waktu reaksi","reaction_desc":"Ukur lima ronde","iq":"Tantangan 10 teka-teki","iq_desc":"Selesaikan tanpa waktu","blood":"Kartu Budaya Golongan Darah","blood_desc":"Bandingkan cerita dengan bukti"},
-  "footer":{"privacy":"Privasi","home":"Beranda DopaBrain"},"accessibility":{"skip":"Lewati ke konten utama"}
+  "meta": {
+    "title": "Kartu Percakapan Zodiak | Budaya, bukan skor",
+    "description": "Pilih dua zodiak untuk kartu percakapan privat tanpa skor, dengan batas bukti yang terlihat."
+  },
+  "app": {
+    "eyebrow": "Cerita astrologi Barat · bukan ilmu hubungan",
+    "title": "Kartu Percakapan Zodiak",
+    "subtitle": "Ubah dua simbol zodiak menjadi pertanyaan nyata, tanpa skor kecocokan."
+  },
+  "boundary": {
+    "title": "Apa temuan data hubungan",
+    "body": "Studi register Swedia atas 66.063 pernikahan tidak menemukan bukti konsisten bahwa pasangan yang dianggap cocok oleh astrologi lebih sering menikah atau lebih jarang bercerai.",
+    "source": "Baca studi terbuka"
+  },
+  "selection": {
+    "title": "Pilih dua zodiak",
+    "desc": "Pilihanmu hanya berada di browser ini. Zodiak, tanggal lahir, dan hasil pasangan tidak dikirim ke Analytics.",
+    "first": "Zodiak pertama",
+    "second": "Zodiak kedua",
+    "placeholder": "Pilih zodiak",
+    "open": "Buka kartu percakapan"
+  },
+  "zodiac": {
+    "aries": "Aries",
+    "taurus": "Taurus",
+    "gemini": "Gemini",
+    "cancer": "Cancer",
+    "leo": "Leo",
+    "virgo": "Virgo",
+    "libra": "Libra",
+    "scorpio": "Scorpio",
+    "sagittarius": "Sagittarius",
+    "capricorn": "Capricorn",
+    "aquarius": "Aquarius",
+    "pisces": "Pisces"
+  },
+  "elements": {
+    "fire": "Api",
+    "earth": "Tanah",
+    "air": "Udara",
+    "water": "Air"
+  },
+  "result": {
+    "label": "Simbol budaya, bukan keputusan",
+    "pair_title": "{first} × {second}",
+    "elements": "Elemen tradisional: {first} × {second}",
+    "boundary": "Skor tidak dapat memastikan dua orang akan berkomunikasi dengan baik, merasa aman, atau tetap bersama. Gunakan pengalaman nyata.",
+    "prompt1_title": "Harapan",
+    "prompt1_body": "Apa yang dibutuhkan tiap orang agar merasa dihormati, dan sudahkah disampaikan dengan jelas?",
+    "prompt2_title": "Ketegangan",
+    "prompt2_body": "Saat berbeda pendapat, perilaku apa yang menjaga percakapan tetap aman dan spesifik?",
+    "prompt3_title": "Perbaikan",
+    "prompt3_body": "Tindakan kecil apa yang dapat dilakukan masing-masing setelah kesalahpahaman?",
+    "evidence_title": "Batas bukti",
+    "evidence_body": "Pasangan zodiak tidak secara konsisten memprediksi pernikahan atau perceraian dalam studi besar. Studi lintas budaya lain juga menemukan sedikit dukungan untuk prediksi kepribadian.",
+    "source_relationship": "Studi pernikahan dan perceraian",
+    "source_personality": "Studi kepribadian"
+  },
+  "common": {
+    "back": "Pilih pasangan lain"
+  },
+  "share": {
+    "button": "Bagikan kartu pertanyaan",
+    "title": "Kartu Percakapan Zodiak",
+    "text": "Ubah cerita zodiak menjadi pertanyaan hubungan nyata, tanpa skor kecocokan.",
+    "success": "Dibagikan tanpa menyertakan zodiak pilihan.",
+    "copied": "Tautan disalin tanpa menyertakan zodiak pilihan.",
+    "error": "Tidak dapat membagikan. Salin alamat halaman."
+  },
+  "related": {
+    "title": "Lanjutkan dengan aktivitas terukur",
+    "iq": "Tantangan 10 teka-teki",
+    "iq_desc": "Selesaikan tanpa waktu",
+    "tarot": "Tarot Harian",
+    "tarot_desc": "Tarik kartu hari ini",
+    "attachment": "Gaya Kelekatan",
+    "attachment_desc": "Pelajari pola hubungan"
+  },
+  "footer": {
+    "privacy": "Privasi",
+    "home": "Beranda DopaBrain"
+  },
+  "accessibility": {
+    "skip": "Lewati ke konten utama"
+  }
 }

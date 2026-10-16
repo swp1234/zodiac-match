@@ -1,13 +1,87 @@
 {
-  "meta":{"title":"星座配对对话卡｜文化话题，不是分数","description":"选择两个太阳星座，用不打分的私密对话卡探索文化象征，同时查看证据边界。"},
-  "app":{"eyebrow":"西方占星文化 · 不是关系科学","title":"星座配对对话卡","subtitle":"选择两个太阳星座，把文化象征变成真实问题，不生成兼容度分数。"},
-  "boundary":{"title":"关系数据发现了什么","body":"一项研究分析了66,063段瑞典婚姻，没有发现占星学所谓的有利配对更常结婚或离婚风险更低的一致证据。","source":"阅读开放研究"},
-  "selection":{"title":"选择两个太阳星座","desc":"选择只保留在本浏览器中。我们不会向分析系统发送星座、出生日期或配对结果。","first":"第一个星座","second":"第二个星座","placeholder":"选择星座","open":"打开对话卡"},
-  "zodiac":{"aries":"白羊座","taurus":"金牛座","gemini":"双子座","cancer":"巨蟹座","leo":"狮子座","virgo":"处女座","libra":"天秤座","scorpio":"天蝎座","sagittarius":"射手座","capricorn":"摩羯座","aquarius":"水瓶座","pisces":"双鱼座"},
-  "elements":{"fire":"火象","earth":"土象","air":"风象","water":"水象"},
-  "result":{"label":"文化象征，不是判决","pair_title":"{first} × {second}","elements":"传统元素：{first} × {second}","boundary":"任何分数都不能判断两个人能否良好沟通、感到安全或长久相处。请以真实经历为准。","prompt1_title":"期待","prompt1_body":"每个人需要什么才会感到被尊重？你们是否清楚说过？","prompt2_title":"分歧","prompt2_body":"意见不同时，什么行为能让对话保持安全、具体？","prompt3_title":"修复","prompt3_body":"发生误解后，每个人可以做的一件小事是什么？","evidence_title":"证据边界","evidence_body":"大型登记研究中，太阳星座配对并未一致预测结婚选择或离婚。另一项跨文化研究也很少支持太阳星座预测测量到的人格。","source_relationship":"婚姻与离婚研究","source_personality":"人格研究"},
-  "common":{"back":"选择另一组"},
-  "share":{"button":"分享问题卡","title":"星座配对对话卡","text":"把星座文化变成真实的关系问题，不使用兼容度分数。","success":"已分享，未包含任何星座选择。","copied":"已复制链接，未包含任何星座选择。","error":"无法分享，请复制页面地址。"},
-  "related":{"title":"继续可实际测量的活动","reaction":"反应速度","reaction_desc":"测量五轮","iq":"10题谜题挑战","iq_desc":"不限时完成","blood":"血型文化卡","blood_desc":"对照民间说法与证据"},
-  "footer":{"privacy":"隐私","home":"DopaBrain首页"},"accessibility":{"skip":"跳到主要内容"}
+  "meta": {
+    "title": "星座配对对话卡｜文化话题，不是分数",
+    "description": "选择两个太阳星座，用不打分的私密对话卡探索文化象征，同时查看证据边界。"
+  },
+  "app": {
+    "eyebrow": "西方占星文化 · 不是关系科学",
+    "title": "星座配对对话卡",
+    "subtitle": "选择两个太阳星座，把文化象征变成真实问题，不生成兼容度分数。"
+  },
+  "boundary": {
+    "title": "关系数据发现了什么",
+    "body": "一项研究分析了66,063段瑞典婚姻，没有发现占星学所谓的有利配对更常结婚或离婚风险更低的一致证据。",
+    "source": "阅读开放研究"
+  },
+  "selection": {
+    "title": "选择两个太阳星座",
+    "desc": "选择只保留在本浏览器中。我们不会向分析系统发送星座、出生日期或配对结果。",
+    "first": "第一个星座",
+    "second": "第二个星座",
+    "placeholder": "选择星座",
+    "open": "打开对话卡"
+  },
+  "zodiac": {
+    "aries": "白羊座",
+    "taurus": "金牛座",
+    "gemini": "双子座",
+    "cancer": "巨蟹座",
+    "leo": "狮子座",
+    "virgo": "处女座",
+    "libra": "天秤座",
+    "scorpio": "天蝎座",
+    "sagittarius": "射手座",
+    "capricorn": "摩羯座",
+    "aquarius": "水瓶座",
+    "pisces": "双鱼座"
+  },
+  "elements": {
+    "fire": "火象",
+    "earth": "土象",
+    "air": "风象",
+    "water": "水象"
+  },
+  "result": {
+    "label": "文化象征，不是判决",
+    "pair_title": "{first} × {second}",
+    "elements": "传统元素：{first} × {second}",
+    "boundary": "任何分数都不能判断两个人能否良好沟通、感到安全或长久相处。请以真实经历为准。",
+    "prompt1_title": "期待",
+    "prompt1_body": "每个人需要什么才会感到被尊重？你们是否清楚说过？",
+    "prompt2_title": "分歧",
+    "prompt2_body": "意见不同时，什么行为能让对话保持安全、具体？",
+    "prompt3_title": "修复",
+    "prompt3_body": "发生误解后，每个人可以做的一件小事是什么？",
+    "evidence_title": "证据边界",
+    "evidence_body": "大型登记研究中，太阳星座配对并未一致预测结婚选择或离婚。另一项跨文化研究也很少支持太阳星座预测测量到的人格。",
+    "source_relationship": "婚姻与离婚研究",
+    "source_personality": "人格研究"
+  },
+  "common": {
+    "back": "选择另一组"
+  },
+  "share": {
+    "button": "分享问题卡",
+    "title": "星座配对对话卡",
+    "text": "把星座文化变成真实的关系问题，不使用兼容度分数。",
+    "success": "已分享，未包含任何星座选择。",
+    "copied": "已复制链接，未包含任何星座选择。",
+    "error": "无法分享，请复制页面地址。"
+  },
+  "related": {
+    "title": "继续可实际测量的活动",
+    "iq": "10题谜题挑战",
+    "iq_desc": "不限时完成",
+    "tarot": "每日塔罗",
+    "tarot_desc": "抽取今日指引牌",
+    "attachment": "依恋风格测试",
+    "attachment_desc": "探索亲密关系模式"
+  },
+  "footer": {
+    "privacy": "隐私",
+    "home": "DopaBrain首页"
+  },
+  "accessibility": {
+    "skip": "跳到主要内容"
+  }
 }
