@@ -8,7 +8,7 @@
   ];
   const SIGN_MAP = new Map(SIGNS.map(([id, icon, element]) => [id, { icon, element }]));
   const ALLOWED_SURFACES = new Set(["direct", "zh_zodiac_guide_primary"]);
-  const ALLOWED_TARGETS = new Set(["reaction_test", "iq_test", "blood_type_culture"]);
+  const ALLOWED_TARGETS = new Set(["daily_tarot", "iq_test", "attachment_style", "reaction_test", "blood_type_culture"]);
 
   class ZodiacPairCards {
     constructor() {
