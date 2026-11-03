@@ -68,6 +68,14 @@
       document.querySelectorAll("#related-links [data-target-slug]").forEach((link, index) => link.addEventListener("click", () => {
         const target = link.dataset.targetSlug;
         if (ALLOWED_TARGETS.has(target)) this.track("zodiac_pair_related_click", { target_slug: target, target_rank: index + 1 });
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "content_cta_click", {
+            cta_surface: "zodiac_match_related",
+            destination: link.getAttribute("href"),
+            source: "zodiac_match",
+            lang: this.language()
+          });
+        }
       }));
       this.setupLanguageSelector();
     }
@@ -114,9 +122,14 @@
     }
 
     updateRelatedLinks() {
+      const base = (window.location.origin && window.location.origin !== "null") ? window.location.origin : "https://dopabrain.com";
+      const lang = this.language();
       document.querySelectorAll("#related-links a").forEach(link => {
-        const url = new URL(link.href, location.origin);
-        url.searchParams.set("lang", this.language());
+        const rawHref = link.getAttribute("data-base-href") || link.getAttribute("href");
+        if (!rawHref || rawHref.startsWith("http") || rawHref.startsWith("#")) return;
+        const url = new URL(rawHref, base);
+        url.searchParams.set("lang", lang);
+        if (!url.searchParams.has("source")) url.searchParams.set("source", "zodiac_match_result");
         link.href = url.pathname + url.search;
       });
     }
