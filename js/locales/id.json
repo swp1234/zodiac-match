@@ -83,5 +83,16 @@
   },
   "accessibility": {
     "skip": "Lewati ke konten utama"
+  },
+  "about": {
+    "title": "Folklor Zodiak vs Sains Hubungan",
+    "faq1_q": "Apakah astrologi menentukan kecocokan dalam hubungan modern?",
+    "faq1_a": "Riset empiris, termasuk studi registri Swedia terhadap 66.063 pernikahan, menunjukkan tidak ada korelasi statistik antara zodiak matahari dengan keharmonisan atau risiko perceraian. Zodiak adalah simbol naratif budaya, bukan sains prediktif.",
+    "faq2_q": "Mengapa deskripsi zodiak sering terasa sangat akurat?",
+    "faq2_a": "Ini merupakan efek Barnum-Forer dan bias konfirmasi: gambaran kepribadian yang umum dan dapat berlaku bagi siapa saja terasa sangat personal ketika dikaitkan dengan simbol arketipe.",
+    "faq3_q": "Bagaimana cara memanfaatkan kartu zodiak secara konstruktif?",
+    "faq3_a": "Alih-alih mencari skor kecocokan, gunakan arketipe simbolis ini sebagai pemicu obrolan untuk mendiskusikan gaya komunikasi, batasan emosional, dan rekonsiliasi saat terjadi kesalahpahaman.",
+    "faq4_q": "Apakah pilihan zodiak saya disimpan di server?",
+    "faq4_a": "Tidak sama sekali. Semua pemrosesan berlangsung sepenuhnya di peramban lokal Anda. Tidak ada tanggal lahir atau riwayat pilihan yang dikirim ke server luar."
   }
 }

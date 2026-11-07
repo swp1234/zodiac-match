@@ -83,5 +83,16 @@
   },
   "accessibility": {
     "skip": "Skip to the main content"
+  },
+  "about": {
+    "title": "Zodiac Folklore vs Relationship Science",
+    "faq1_q": "Does astrology determine compatibility in modern relationships?",
+    "faq1_a": "Empirical research, including Swedish population register analyses covering 66,063 marriages, shows zero statistical correlation between sun signs and marriage longevity or divorce rates. Zodiac signs serve as narrative archetypes, not predictive science.",
+    "faq2_q": "Why do zodiac pairing descriptions feel so accurate?",
+    "faq2_a": "This sensation stems from the Barnum-Forer effect and confirmation bias. Broad, universally applicable personality traits feel uniquely personal when framed around symbolic archetypes.",
+    "faq3_q": "How can zodiac pair cards be used constructively?",
+    "faq3_a": "Rather than evaluating compatibility scores, use the symbolic archetypes as conversational prompts to discuss communication habits, emotional boundaries, and conflict resolution openly.",
+    "faq4_q": "Are my zodiac selections stored or tracked?",
+    "faq4_a": "No. All sign comparisons run entirely client-side in your local browser. No birth dates, sign selections, or interpersonal queries are ever sent to external servers or logged."
   }
 }

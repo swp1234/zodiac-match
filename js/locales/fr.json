@@ -83,5 +83,16 @@
   },
   "accessibility": {
     "skip": "Aller au contenu principal"
+  },
+  "about": {
+    "title": "Folklore Zodiacal vs Science Relationnelle",
+    "faq1_q": "L'astrologie détermine-t-elle la compatibilité des couples modernes ?",
+    "faq1_a": "Les études empiriques, notamment celle sur les registres suédois portant sur 66 063 mariages, n'ont révélé aucune corrélation statistique entre les signes solaires et la longévité du mariage ou le divorce. Les signes sont des archétypes symboliques, non une science prédictive.",
+    "faq2_q": "Pourquoi les descriptions de signes semblent-elles si précises ?",
+    "faq2_a": "Cette sensation découle de l'effet Barnum-Forer et du biais de confirmation : des traits généraux universels semblent singulièrement personnalisés lorsqu'ils sont associés à des symboles.",
+    "faq3_q": "Comment utiliser utilement ces cartes de conversation ?",
+    "faq3_a": "Plutôt que d'attribuer un score de compatibilité, utilisez ces archétypes comme des amorces pour dialoguer ouvertement sur vos attentes, vos limites et la réparation après un conflit.",
+    "faq4_q": "Mes sélections de signes sont-elles enregistrées ?",
+    "faq4_a": "Non. Toutes les interactions s'exécutent localement dans votre navigateur. Aucune date de naissance ou sélection n'est transmise ni conservée sur des serveurs externes."
   }
 }

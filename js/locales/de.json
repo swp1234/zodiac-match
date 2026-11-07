@@ -83,5 +83,16 @@
   },
   "accessibility": {
     "skip": "Zum Hauptinhalt springen"
+  },
+  "about": {
+    "title": "Tierkreis-Folklore vs. Beziehungswissenschaft",
+    "faq1_q": "Bestimmt Astrologie die Kompatibilität in modernen Beziehungen?",
+    "faq1_a": "Empirische Studien, darunter eine schwedische Registeruntersuchung von 66.063 Ehen, zeigen keinerlei statistischen Zusammenhang zwischen Sonnenzeichen und Ehedauer oder Scheidungsrisiko. Sternzeichen sind narrative Archetypen, keine Vorhersagewissenschaft.",
+    "faq2_q": "Warum wirken Tierkreis-Beschreibungen oft so treffend?",
+    "faq2_a": "Dies beruht auf dem Barnum-Forer-Effekt und Bestätigungsfehlern: Allgemein zutreffende Aussagen werden als maßgeschneidert wahrgenommen, wenn sie in symbolische Erzählungen eingebettet sind.",
+    "faq3_q": "Wie können Sternzeichen-Gesprächskarten konstruktiv genutzt werden?",
+    "faq3_a": "Verwenden Sie die Symbole nicht für Kompatibilitätswerte, sondern als offene Gesprächsanlässe, um über Kommunikationsmuster, persönliche Grenzen und Konfliktlösungen zu sprechen.",
+    "faq4_q": "Werden meine ausgewählten Sternzeichen gespeichert?",
+    "faq4_a": "Nein. Alle Auswertungen erfolgen rein lokal in Ihrem Browser. Es werden keinerlei Geburtsdaten, Sternzeichen oder Paardaten an externe Server übermittelt."
   }
 }

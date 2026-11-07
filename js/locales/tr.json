@@ -83,5 +83,16 @@
   },
   "accessibility": {
     "skip": "Ana içeriğe geç"
+  },
+  "about": {
+    "title": "Burç Folklorü ve İlişki Bilimi",
+    "faq1_q": "Astroloji modern ilişkilerde uyumu belirler mi?",
+    "faq1_a": "66.063 evliliği inceleyen İsveç nüfus kayıtları araştırması dahil ampirik çalışmalar, burçlar ile evlilik süresi veya boşanma oranları arasında hiçbir istatistiksel ilişki bulamamıştır. Burçlar tahminsel bilim değil, kültürel anlatı sembolleridir.",
+    "faq2_q": "Burç uyumu açıklamaları neden bu kadar isabetli hissettirir?",
+    "faq2_a": "Bu durum Barnum-Forer etkisi ve doğrulama yanlılığından kaynaklanır: herkese uyabilecek genel kişilik tanımları sembolik bir kılıfla sunulduğunda kişiye özelmiş gibi algılanır.",
+    "faq3_q": "Burç sohbet kartları nasıl yapıcı bir şekilde kullanılabilir?",
+    "faq3_a": "Uyum puanı çıkarmak yerine, bu sembolleri birbirinizin iletişim tarzını, duygusal sınırlarını ve anlaşmazlıkları çözme yöntemlerini konuşmak için açık diyalog aracı olarak kullanın.",
+    "faq4_q": "Burç seçimlerim sunucuda kaydediliyor veya izleniyor mu?",
+    "faq4_a": "Hayır. Tüm karşılaştırmalar yerel tarayıcınızda gerçekleşir. Doğum tarihleri veya burç seçimleri hiçbir harici sunucuya iletilmez."
   }
 }
